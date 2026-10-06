@@ -32,9 +32,11 @@ src/app/            screens (Expo Router: every file is a route)
   drill.tsx         letter drill
   trace.tsx         tracing a list of letters
 src/components/     TraceCanvas, TracePanel, MarksSheet, shared UI
-src/data/           letters.json (letters, romanization, sound hints) and generated glyph shapes
+src/data/           letters.json (letters the app drills, with sound hints), generated glyph shapes,
+                    tamil_alphabet.json/.csv (all 247 letters + 6 Grantha, needs native-speaker review)
 src/lib/            progress and spaced repetition, tracing score, theme and settings
-scripts/            generate-glyphs.py (builds tracing shapes from Noto Sans Tamil, SIL OFL)
+scripts/            generate-glyphs.py (tracing shapes from Noto Sans Tamil, SIL OFL)
+                    generate-alphabet.py (full alphabet data from Unicode)
 ```
 
 To change the letters, edit `src/data/letters.json`, then rebuild the tracing shapes:
