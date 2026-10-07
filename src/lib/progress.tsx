@@ -3,7 +3,6 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 import type { ReactNode } from 'react';
 import { AppState } from 'react-native';
 
-import type { Letter } from '../data/letters';
 
 /** Which way a drill question runs. */
 export type Direction = 'letterToSound' | 'soundToLetter';
@@ -28,6 +27,8 @@ export type LetterProgress = {
   dirs: Record<Direction, boolean>;
   /** Tracing steps passed (0-3). A bonus: it never blocks mastery. */
   traceStep: number;
+  /** When it was first answered (ms since epoch), for "words added this week". */
+  firstSeen?: number;
 };
 
 export type Stage = 'new' | 'learning' | 'familiar' | 'mastered';
@@ -195,7 +196,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           id,
           (p) => {
             const now = Date.now();
-            const base = { ...p, seen: p.seen + 1, lastCorrect: correct };
+            const base = { ...p, seen: p.seen + 1, lastCorrect: correct, firstSeen: p.firstSeen ?? now };
             if (!correct) return { ...base, rung: Math.min(p.rung, 1), due: now };
             const rung = now >= p.due ? Math.min(p.rung + 1, RUNG_DAYS.length - 1) : p.rung;
             return {
@@ -233,7 +234,7 @@ export function useProgress() {
  * Pick the next letter to ask about: letters that are due and on low rungs come
  * up most, and the letter just asked is avoided when there is any choice.
  */
-export function pickNext(pool: Letter[], get: (id: string) => LetterProgress, avoid?: string): Letter {
+export function pickNext<L extends { id: string }>(pool: L[], get: (id: string) => LetterProgress, avoid?: string): L {
   const options = pool.length > 1 ? pool.filter((l) => l.id !== avoid) : pool;
   const now = Date.now();
   const weights = options.map((l) => {

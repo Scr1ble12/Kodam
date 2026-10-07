@@ -5,7 +5,7 @@ import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { ConfirmModal } from '../components/ConfirmModal';
 import { Icon, IconButton, PrimaryButton, Screen, T } from '../components/ui';
 import { useLists } from '../lib/lists';
-import { describeDays, useReminders } from '../lib/reminders';
+import { describeDays, useReminders, VOCAB_TARGET } from '../lib/reminders';
 import type { Reminder } from '../lib/reminders';
 import { useTheme } from '../lib/theme';
 
@@ -42,7 +42,7 @@ export default function ReminderScreen() {
       hour,
       minute,
       days,
-      listId: lists.some((l) => l.id === listId) ? listId : undefined,
+      listId: listId === VOCAB_TARGET || lists.some((l) => l.id === listId) ? listId : undefined,
     };
     await save(r);
     close();
@@ -152,14 +152,15 @@ export default function ReminderScreen() {
           </T>
           <View style={styles.chips}>
             <Chip label="Anything" on={!listId} onPress={() => setListId(undefined)} />
+            <Chip label="Today's words" on={listId === VOCAB_TARGET} onPress={() => setListId(VOCAB_TARGET)} />
             {lists.map((l) => (
               <Chip key={l.id} label={l.name} on={listId === l.id} onPress={() => setListId(l.id)} />
             ))}
           </View>
           <T size={12} tone="muted">
             {lists.length === 0
-              ? 'Save a list on the Alphabet tab and a reminder can open it straight away.'
-              : 'Tapping the reminder opens practice for that list.'}
+              ? 'Tapping the reminder opens what you pick. Save a letter list on the Alphabet tab to see it here.'
+              : 'Tapping the reminder opens what you pick.'}
           </T>
         </View>
 

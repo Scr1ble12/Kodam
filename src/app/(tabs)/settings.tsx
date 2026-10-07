@@ -7,9 +7,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Icon, Segmented, T } from '../../components/ui';
 import { useLists } from '../../lib/lists';
 import { useProgress } from '../../lib/progress';
-import { describeDays, formatTime, REMINDERS_SUPPORTED, useReminders } from '../../lib/reminders';
+import { describeDays, formatTime, REMINDERS_SUPPORTED, useReminders, VOCAB_TARGET } from '../../lib/reminders';
 import { ACCENTS, useTheme } from '../../lib/theme';
-import type { FontName, LetterSize, RomanMode, ThemeName } from '../../lib/theme';
+import type { FontName, LetterSize, RomanMode, SpokenMode, ThemeName } from '../../lib/theme';
 
 const THEMES: { id: ThemeName; label: string }[] = [
   { id: 'light', label: 'Light' },
@@ -31,6 +31,12 @@ const ROMAN: { id: RomanMode; label: string }[] = [
   { id: 'fade', label: 'Auto-fade' },
   { id: 'off', label: 'Off' },
 ];
+
+const SPOKEN: { id: SpokenMode; label: string }[] = [
+  { id: 'both', label: 'Show both' },
+  { id: 'written', label: 'Written only' },
+];
+const NEW_WORDS = [5, 10, 15, 20].map((n) => ({ id: String(n), label: String(n) }));
 
 export default function SettingsScreen() {
   const { colors, settings, update, letterPx } = useTheme();
@@ -90,7 +96,7 @@ export default function SettingsScreen() {
                   </T>
                   <T size={13} tone="muted">
                     {describeDays(r.days)}
-                    {list ? ` · ${list.name}` : ''}
+                    {r.listId === VOCAB_TARGET ? " · Today's words" : list ? ` · ${list.name}` : ''}
                   </T>
                 </View>
                 <Switch
@@ -171,11 +177,24 @@ export default function SettingsScreen() {
         </Section>
 
         <Section title="LEARNING">
-          <Row label="Romanization" last>
+          <Row label="Romanization">
             <Segmented options={ROMAN} value={settings.roman} onChange={(roman) => update({ roman })} />
             <T size={12} tone="muted">
-              Auto-fade hides it on letters you know well.
+              Auto-fade hides it on letters and words you know well.
             </T>
+          </Row>
+          <Row label="Spoken Tamil">
+            <Segmented options={SPOKEN} value={settings.spoken} onChange={(spoken) => update({ spoken })} />
+            <T size={12} tone="muted">
+              Shows how a word is usually said (like இல்ல for இல்லை) next to the written form.
+            </T>
+          </Row>
+          <Row label="New words per day" last>
+            <Segmented
+              options={NEW_WORDS}
+              value={String(settings.newWords)}
+              onChange={(n) => update({ newWords: Number(n) })}
+            />
           </Row>
         </Section>
 

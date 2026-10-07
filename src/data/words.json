@@ -1,0 +1,1216 @@
+{
+ "decks": [
+  {
+   "id": "greetings",
+   "name": "Greetings",
+   "tamilName": "வாழ்த்துகள்",
+   "words": [
+    {
+     "id": "w.greetings.hello",
+     "tamil": "வணக்கம்",
+     "roman": "vaṇakkam",
+     "english": "hello",
+     "say": "vanakkam",
+     "note": "Works for hello and goodbye, any time of day."
+    },
+    {
+     "id": "w.greetings.thank-you",
+     "tamil": "நன்றி",
+     "roman": "naṉṟi",
+     "english": "thank you",
+     "say": "nandri"
+    },
+    {
+     "id": "w.greetings.yes",
+     "tamil": "ஆமாம்",
+     "roman": "āmām",
+     "english": "yes",
+     "spoken": "ஆமா",
+     "spokenRoman": "āmā",
+     "say": "aamaa"
+    },
+    {
+     "id": "w.greetings.no",
+     "tamil": "இல்லை",
+     "roman": "illai",
+     "english": "no",
+     "spoken": "இல்ல",
+     "spokenRoman": "illa",
+     "say": "illa",
+     "note": "Also means \"there isn't\"."
+    },
+    {
+     "id": "w.greetings.okay",
+     "tamil": "சரி",
+     "roman": "cari",
+     "english": "okay",
+     "say": "sari"
+    },
+    {
+     "id": "w.greetings.please",
+     "tamil": "தயவுசெய்து",
+     "roman": "tayavuceytu",
+     "english": "please",
+     "say": "thayavu seidhu",
+     "note": "Formal. In speech people often just say the request politely."
+    },
+    {
+     "id": "w.greetings.sorry-excuse-me",
+     "tamil": "மன்னிக்கவும்",
+     "roman": "maṉṉikkavum",
+     "english": "sorry / excuse me",
+     "spoken": "மன்னிச்சுக்கோங்க",
+     "spokenRoman": "maṉṉiccukkōṅka",
+     "say": "mannichukkonga"
+    },
+    {
+     "id": "w.greetings.goodbye",
+     "tamil": "போய் வருகிறேன்",
+     "roman": "pōy varukiṟēṉ",
+     "english": "goodbye",
+     "spoken": "போயிட்டு வரேன்",
+     "spokenRoman": "pōyiṭṭu varēṉ",
+     "say": "poyittu varen",
+     "note": "Literally \"I'll go and come back\"."
+    },
+    {
+     "id": "w.greetings.how-are-you",
+     "tamil": "எப்படி இருக்கிறீர்கள்?",
+     "roman": "eppaṭi irukkiṟīrkaḷ?",
+     "english": "how are you?",
+     "spoken": "எப்படி இருக்கீங்க?",
+     "spokenRoman": "eppaṭi irukkīṅka?",
+     "say": "eppadi irukkeenga?"
+    },
+    {
+     "id": "w.greetings.i-m-fine",
+     "tamil": "நான் நன்றாக இருக்கிறேன்",
+     "roman": "nāṉ naṉṟāka irukkiṟēṉ",
+     "english": "I'm fine",
+     "spoken": "நான் நல்லா இருக்கேன்",
+     "spokenRoman": "nāṉ nallā irukkēṉ",
+     "say": "naan nallaa irukken"
+    },
+    {
+     "id": "w.greetings.what-s-your-name",
+     "tamil": "உங்கள் பெயர் என்ன?",
+     "roman": "uṅkaḷ peyar eṉṉa?",
+     "english": "what's your name?",
+     "spoken": "உங்க பேரு என்ன?",
+     "spokenRoman": "uṅka pēru eṉṉa?",
+     "say": "unga peru enna?"
+    },
+    {
+     "id": "w.greetings.my-name-is",
+     "tamil": "என் பெயர்",
+     "roman": "eṉ peyar",
+     "english": "my name is",
+     "spoken": "என் பேரு",
+     "spokenRoman": "eṉ pēru",
+     "say": "en peru"
+    },
+    {
+     "id": "w.greetings.come-in-welcome",
+     "tamil": "வாருங்கள்",
+     "roman": "vāruṅkaḷ",
+     "english": "come in / welcome",
+     "spoken": "வாங்க",
+     "spokenRoman": "vāṅka",
+     "say": "vaanga"
+    },
+    {
+     "id": "w.greetings.it-s-okay-no-problem",
+     "tamil": "பரவாயில்லை",
+     "roman": "paravāyillai",
+     "english": "it's okay / no problem",
+     "spoken": "பரவால்ல",
+     "spokenRoman": "paravālla",
+     "say": "paravaalla"
+    },
+    {
+     "id": "w.greetings.good",
+     "tamil": "நல்லது",
+     "roman": "nallatu",
+     "english": "good",
+     "say": "nalladhu"
+    }
+   ]
+  },
+  {
+   "id": "family",
+   "name": "Family",
+   "tamilName": "குடும்பம்",
+   "words": [
+    {
+     "id": "w.family.mother",
+     "tamil": "அம்மா",
+     "roman": "ammā",
+     "english": "mother",
+     "say": "ammaa"
+    },
+    {
+     "id": "w.family.father",
+     "tamil": "அப்பா",
+     "roman": "appā",
+     "english": "father",
+     "say": "appaa"
+    },
+    {
+     "id": "w.family.older-brother",
+     "tamil": "அண்ணன்",
+     "roman": "aṇṇaṉ",
+     "english": "older brother",
+     "say": "annan",
+     "note": "Call him அண்ணா."
+    },
+    {
+     "id": "w.family.older-sister",
+     "tamil": "அக்கா",
+     "roman": "akkā",
+     "english": "older sister",
+     "say": "akkaa"
+    },
+    {
+     "id": "w.family.younger-brother",
+     "tamil": "தம்பி",
+     "roman": "tampi",
+     "english": "younger brother",
+     "say": "thambi"
+    },
+    {
+     "id": "w.family.younger-sister",
+     "tamil": "தங்கை",
+     "roman": "taṅkai",
+     "english": "younger sister",
+     "spoken": "தங்கச்சி",
+     "spokenRoman": "taṅkacci",
+     "say": "thangachi"
+    },
+    {
+     "id": "w.family.grandfather",
+     "tamil": "தாத்தா",
+     "roman": "tāttā",
+     "english": "grandfather",
+     "say": "thaathaa"
+    },
+    {
+     "id": "w.family.grandmother",
+     "tamil": "பாட்டி",
+     "roman": "pāṭṭi",
+     "english": "grandmother",
+     "say": "paatti"
+    },
+    {
+     "id": "w.family.son",
+     "tamil": "மகன்",
+     "roman": "makaṉ",
+     "english": "son",
+     "say": "magan"
+    },
+    {
+     "id": "w.family.daughter",
+     "tamil": "மகள்",
+     "roman": "makaḷ",
+     "english": "daughter",
+     "say": "magal"
+    },
+    {
+     "id": "w.family.husband",
+     "tamil": "கணவர்",
+     "roman": "kaṇavar",
+     "english": "husband",
+     "say": "kanavar"
+    },
+    {
+     "id": "w.family.wife",
+     "tamil": "மனைவி",
+     "roman": "maṉaivi",
+     "english": "wife",
+     "say": "manaivi"
+    },
+    {
+     "id": "w.family.child-baby",
+     "tamil": "குழந்தை",
+     "roman": "kuḻantai",
+     "english": "child / baby",
+     "spoken": "கொழந்த",
+     "spokenRoman": "koḻanta",
+     "say": "kozhandha"
+    },
+    {
+     "id": "w.family.uncle",
+     "tamil": "மாமா",
+     "roman": "māmā",
+     "english": "uncle",
+     "say": "maamaa",
+     "note": "Your mother's brother, and a friendly word for older men."
+    },
+    {
+     "id": "w.family.aunt",
+     "tamil": "அத்தை",
+     "roman": "attai",
+     "english": "aunt",
+     "say": "athai",
+     "note": "Your father's sister."
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "name": "Numbers",
+   "tamilName": "எண்கள்",
+   "words": [
+    {
+     "id": "w.numbers.one",
+     "tamil": "ஒன்று",
+     "roman": "oṉṟu",
+     "english": "one",
+     "spoken": "ஒண்ணு",
+     "spokenRoman": "oṇṇu",
+     "say": "onnu"
+    },
+    {
+     "id": "w.numbers.two",
+     "tamil": "இரண்டு",
+     "roman": "iraṇṭu",
+     "english": "two",
+     "spoken": "ரெண்டு",
+     "spokenRoman": "reṇṭu",
+     "say": "rendu"
+    },
+    {
+     "id": "w.numbers.three",
+     "tamil": "மூன்று",
+     "roman": "mūṉṟu",
+     "english": "three",
+     "spoken": "மூணு",
+     "spokenRoman": "mūṇu",
+     "say": "moonu"
+    },
+    {
+     "id": "w.numbers.four",
+     "tamil": "நான்கு",
+     "roman": "nāṉku",
+     "english": "four",
+     "spoken": "நாலு",
+     "spokenRoman": "nālu",
+     "say": "naalu"
+    },
+    {
+     "id": "w.numbers.five",
+     "tamil": "ஐந்து",
+     "roman": "aintu",
+     "english": "five",
+     "spoken": "அஞ்சு",
+     "spokenRoman": "añcu",
+     "say": "anju"
+    },
+    {
+     "id": "w.numbers.six",
+     "tamil": "ஆறு",
+     "roman": "āṟu",
+     "english": "six",
+     "say": "aaru"
+    },
+    {
+     "id": "w.numbers.seven",
+     "tamil": "ஏழு",
+     "roman": "ēḻu",
+     "english": "seven",
+     "say": "ezhu"
+    },
+    {
+     "id": "w.numbers.eight",
+     "tamil": "எட்டு",
+     "roman": "eṭṭu",
+     "english": "eight",
+     "say": "ettu"
+    },
+    {
+     "id": "w.numbers.nine",
+     "tamil": "ஒன்பது",
+     "roman": "oṉpatu",
+     "english": "nine",
+     "say": "onbadhu"
+    },
+    {
+     "id": "w.numbers.ten",
+     "tamil": "பத்து",
+     "roman": "pattu",
+     "english": "ten",
+     "say": "pathu"
+    },
+    {
+     "id": "w.numbers.eleven",
+     "tamil": "பதினொன்று",
+     "roman": "patiṉoṉṟu",
+     "english": "eleven",
+     "spoken": "பதினொண்ணு",
+     "spokenRoman": "patiṉoṇṇu",
+     "say": "padhinonnu"
+    },
+    {
+     "id": "w.numbers.twenty",
+     "tamil": "இருபது",
+     "roman": "irupatu",
+     "english": "twenty",
+     "say": "irubadhu"
+    },
+    {
+     "id": "w.numbers.fifty",
+     "tamil": "ஐம்பது",
+     "roman": "aimpatu",
+     "english": "fifty",
+     "spoken": "அம்பது",
+     "spokenRoman": "ampatu",
+     "say": "ambadhu"
+    },
+    {
+     "id": "w.numbers.one-hundred",
+     "tamil": "நூறு",
+     "roman": "nūṟu",
+     "english": "one hundred",
+     "say": "nooru"
+    },
+    {
+     "id": "w.numbers.one-thousand",
+     "tamil": "ஆயிரம்",
+     "roman": "āyiram",
+     "english": "one thousand",
+     "say": "aayiram"
+    }
+   ]
+  },
+  {
+   "id": "food",
+   "name": "Food and drink",
+   "tamilName": "உணவு",
+   "words": [
+    {
+     "id": "w.food.water",
+     "tamil": "தண்ணீர்",
+     "roman": "taṇṇīr",
+     "english": "water",
+     "spoken": "தண்ணி",
+     "spokenRoman": "taṇṇi",
+     "say": "thanni"
+    },
+    {
+     "id": "w.food.food-a-meal",
+     "tamil": "சாப்பாடு",
+     "roman": "cāppāṭu",
+     "english": "food / a meal",
+     "say": "saappaadu"
+    },
+    {
+     "id": "w.food.cooked-rice",
+     "tamil": "சோறு",
+     "roman": "cōṟu",
+     "english": "cooked rice",
+     "say": "soru"
+    },
+    {
+     "id": "w.food.rice-uncooked",
+     "tamil": "அரிசி",
+     "roman": "arici",
+     "english": "rice (uncooked)",
+     "say": "arisi"
+    },
+    {
+     "id": "w.food.idli",
+     "tamil": "இட்லி",
+     "roman": "iṭli",
+     "english": "idli",
+     "say": "idli",
+     "note": "Steamed rice cakes."
+    },
+    {
+     "id": "w.food.dosa",
+     "tamil": "தோசை",
+     "roman": "tōcai",
+     "english": "dosa",
+     "say": "dosai"
+    },
+    {
+     "id": "w.food.sambar",
+     "tamil": "சாம்பார்",
+     "roman": "cāmpār",
+     "english": "sambar",
+     "say": "saambaar"
+    },
+    {
+     "id": "w.food.rasam",
+     "tamil": "ரசம்",
+     "roman": "racam",
+     "english": "rasam",
+     "say": "rasam"
+    },
+    {
+     "id": "w.food.coffee",
+     "tamil": "காபி",
+     "roman": "kāpi",
+     "english": "coffee",
+     "say": "kaapi"
+    },
+    {
+     "id": "w.food.tea",
+     "tamil": "டீ",
+     "roman": "ṭī",
+     "english": "tea",
+     "say": "tee"
+    },
+    {
+     "id": "w.food.milk",
+     "tamil": "பால்",
+     "roman": "pāl",
+     "english": "milk",
+     "say": "paal"
+    },
+    {
+     "id": "w.food.yogurt-curd",
+     "tamil": "தயிர்",
+     "roman": "tayir",
+     "english": "yogurt / curd",
+     "say": "thayir"
+    },
+    {
+     "id": "w.food.fruit",
+     "tamil": "பழம்",
+     "roman": "paḻam",
+     "english": "fruit",
+     "say": "pazham"
+    },
+    {
+     "id": "w.food.vegetable",
+     "tamil": "காய்கறி",
+     "roman": "kāykaṟi",
+     "english": "vegetable",
+     "say": "kaaykari"
+    },
+    {
+     "id": "w.food.salt",
+     "tamil": "உப்பு",
+     "roman": "uppu",
+     "english": "salt",
+     "say": "uppu"
+    }
+   ]
+  },
+  {
+   "id": "body",
+   "name": "Body",
+   "tamilName": "உடல்",
+   "words": [
+    {
+     "id": "w.body.head",
+     "tamil": "தலை",
+     "roman": "talai",
+     "english": "head",
+     "say": "thalai"
+    },
+    {
+     "id": "w.body.eye",
+     "tamil": "கண்",
+     "roman": "kaṇ",
+     "english": "eye",
+     "say": "kan"
+    },
+    {
+     "id": "w.body.ear",
+     "tamil": "காது",
+     "roman": "kātu",
+     "english": "ear",
+     "say": "kaadhu"
+    },
+    {
+     "id": "w.body.nose",
+     "tamil": "மூக்கு",
+     "roman": "mūkku",
+     "english": "nose",
+     "say": "mookku"
+    },
+    {
+     "id": "w.body.mouth",
+     "tamil": "வாய்",
+     "roman": "vāy",
+     "english": "mouth",
+     "say": "vaay"
+    },
+    {
+     "id": "w.body.tooth",
+     "tamil": "பல்",
+     "roman": "pal",
+     "english": "tooth",
+     "say": "pal"
+    },
+    {
+     "id": "w.body.hand-arm",
+     "tamil": "கை",
+     "roman": "kai",
+     "english": "hand / arm",
+     "say": "kai"
+    },
+    {
+     "id": "w.body.leg-foot",
+     "tamil": "கால்",
+     "roman": "kāl",
+     "english": "leg / foot",
+     "say": "kaal"
+    },
+    {
+     "id": "w.body.finger",
+     "tamil": "விரல்",
+     "roman": "viral",
+     "english": "finger",
+     "say": "viral"
+    },
+    {
+     "id": "w.body.hair",
+     "tamil": "முடி",
+     "roman": "muṭi",
+     "english": "hair",
+     "say": "mudi"
+    },
+    {
+     "id": "w.body.face",
+     "tamil": "முகம்",
+     "roman": "mukam",
+     "english": "face",
+     "say": "mugam"
+    },
+    {
+     "id": "w.body.stomach",
+     "tamil": "வயிறு",
+     "roman": "vayiṟu",
+     "english": "stomach",
+     "say": "vayiru"
+    },
+    {
+     "id": "w.body.heart",
+     "tamil": "இதயம்",
+     "roman": "itayam",
+     "english": "heart",
+     "say": "idhayam"
+    },
+    {
+     "id": "w.body.shoulder",
+     "tamil": "தோள்",
+     "roman": "tōḷ",
+     "english": "shoulder",
+     "say": "thol"
+    },
+    {
+     "id": "w.body.back",
+     "tamil": "முதுகு",
+     "roman": "mutuku",
+     "english": "back",
+     "say": "mudhugu"
+    }
+   ]
+  },
+  {
+   "id": "home",
+   "name": "Home",
+   "tamilName": "வீடு",
+   "words": [
+    {
+     "id": "w.home.house-home",
+     "tamil": "வீடு",
+     "roman": "vīṭu",
+     "english": "house / home",
+     "say": "veedu"
+    },
+    {
+     "id": "w.home.door",
+     "tamil": "கதவு",
+     "roman": "katavu",
+     "english": "door",
+     "say": "kadhavu"
+    },
+    {
+     "id": "w.home.window",
+     "tamil": "ஜன்னல்",
+     "roman": "jaṉṉal",
+     "english": "window",
+     "say": "jannal"
+    },
+    {
+     "id": "w.home.room",
+     "tamil": "அறை",
+     "roman": "aṟai",
+     "english": "room",
+     "say": "arai"
+    },
+    {
+     "id": "w.home.kitchen",
+     "tamil": "சமையலறை",
+     "roman": "camaiyalaṟai",
+     "english": "kitchen",
+     "say": "samaiyalarai"
+    },
+    {
+     "id": "w.home.bed",
+     "tamil": "படுக்கை",
+     "roman": "paṭukkai",
+     "english": "bed",
+     "say": "padukkai"
+    },
+    {
+     "id": "w.home.chair",
+     "tamil": "நாற்காலி",
+     "roman": "nāṟkāli",
+     "english": "chair",
+     "say": "naarkaali"
+    },
+    {
+     "id": "w.home.table",
+     "tamil": "மேசை",
+     "roman": "mēcai",
+     "english": "table",
+     "say": "mesai"
+    },
+    {
+     "id": "w.home.lamp-light",
+     "tamil": "விளக்கு",
+     "roman": "viḷakku",
+     "english": "lamp / light",
+     "say": "vilakku"
+    },
+    {
+     "id": "w.home.television",
+     "tamil": "தொலைக்காட்சி",
+     "roman": "tolaikkāṭci",
+     "english": "television",
+     "spoken": "டிவி",
+     "spokenRoman": "ṭivi",
+     "say": "TV"
+    },
+    {
+     "id": "w.home.book",
+     "tamil": "புத்தகம்",
+     "roman": "puttakam",
+     "english": "book",
+     "say": "puthagam"
+    },
+    {
+     "id": "w.home.plate",
+     "tamil": "தட்டு",
+     "roman": "taṭṭu",
+     "english": "plate",
+     "say": "thattu"
+    },
+    {
+     "id": "w.home.spoon",
+     "tamil": "கரண்டி",
+     "roman": "karaṇṭi",
+     "english": "spoon",
+     "say": "karandi"
+    },
+    {
+     "id": "w.home.mat",
+     "tamil": "பாய்",
+     "roman": "pāy",
+     "english": "mat",
+     "say": "paay"
+    },
+    {
+     "id": "w.home.key",
+     "tamil": "சாவி",
+     "roman": "cāvi",
+     "english": "key",
+     "say": "saavi"
+    }
+   ]
+  },
+  {
+   "id": "colours",
+   "name": "Colours",
+   "tamilName": "நிறங்கள்",
+   "words": [
+    {
+     "id": "w.colours.colour",
+     "tamil": "நிறம்",
+     "roman": "niṟam",
+     "english": "colour",
+     "say": "niram"
+    },
+    {
+     "id": "w.colours.red",
+     "tamil": "சிவப்பு",
+     "roman": "civappu",
+     "english": "red",
+     "say": "sivappu"
+    },
+    {
+     "id": "w.colours.blue",
+     "tamil": "நீலம்",
+     "roman": "nīlam",
+     "english": "blue",
+     "say": "neelam"
+    },
+    {
+     "id": "w.colours.green",
+     "tamil": "பச்சை",
+     "roman": "paccai",
+     "english": "green",
+     "say": "pachai"
+    },
+    {
+     "id": "w.colours.yellow",
+     "tamil": "மஞ்சள்",
+     "roman": "mañcaḷ",
+     "english": "yellow",
+     "say": "manjal"
+    },
+    {
+     "id": "w.colours.black",
+     "tamil": "கருப்பு",
+     "roman": "karuppu",
+     "english": "black",
+     "say": "karuppu"
+    },
+    {
+     "id": "w.colours.white",
+     "tamil": "வெள்ளை",
+     "roman": "veḷḷai",
+     "english": "white",
+     "say": "vellai"
+    },
+    {
+     "id": "w.colours.orange",
+     "tamil": "ஆரஞ்சு",
+     "roman": "ārañcu",
+     "english": "orange",
+     "say": "aaranju"
+    },
+    {
+     "id": "w.colours.pink",
+     "tamil": "இளஞ்சிவப்பு",
+     "roman": "iḷañcivappu",
+     "english": "pink",
+     "say": "ilanjivappu",
+     "note": "Literally \"young red\"."
+    },
+    {
+     "id": "w.colours.purple",
+     "tamil": "ஊதா",
+     "roman": "ūtā",
+     "english": "purple",
+     "say": "oodhaa"
+    },
+    {
+     "id": "w.colours.brown",
+     "tamil": "பழுப்பு",
+     "roman": "paḻuppu",
+     "english": "brown",
+     "say": "pazhuppu"
+    },
+    {
+     "id": "w.colours.grey",
+     "tamil": "சாம்பல்",
+     "roman": "cāmpal",
+     "english": "grey",
+     "say": "saambal",
+     "note": "Also means ash."
+    },
+    {
+     "id": "w.colours.gold-colour",
+     "tamil": "தங்க நிறம்",
+     "roman": "taṅka niṟam",
+     "english": "gold (colour)",
+     "say": "thanga niram"
+    },
+    {
+     "id": "w.colours.silver-colour",
+     "tamil": "வெள்ளி நிறம்",
+     "roman": "veḷḷi niṟam",
+     "english": "silver (colour)",
+     "say": "velli niram"
+    },
+    {
+     "id": "w.colours.dark-blue",
+     "tamil": "கருநீலம்",
+     "roman": "karunīlam",
+     "english": "dark blue",
+     "say": "karuneelam"
+    }
+   ]
+  },
+  {
+   "id": "time",
+   "name": "Days and time",
+   "tamilName": "நாளும் நேரமும்",
+   "words": [
+    {
+     "id": "w.time.sunday",
+     "tamil": "ஞாயிறு",
+     "roman": "ñāyiṟu",
+     "english": "Sunday",
+     "say": "nyaayiru"
+    },
+    {
+     "id": "w.time.monday",
+     "tamil": "திங்கள்",
+     "roman": "tiṅkaḷ",
+     "english": "Monday",
+     "say": "thingal"
+    },
+    {
+     "id": "w.time.tuesday",
+     "tamil": "செவ்வாய்",
+     "roman": "cevvāy",
+     "english": "Tuesday",
+     "say": "sevvaay"
+    },
+    {
+     "id": "w.time.wednesday",
+     "tamil": "புதன்",
+     "roman": "putaṉ",
+     "english": "Wednesday",
+     "say": "pudhan"
+    },
+    {
+     "id": "w.time.thursday",
+     "tamil": "வியாழன்",
+     "roman": "viyāḻaṉ",
+     "english": "Thursday",
+     "say": "viyaazhan"
+    },
+    {
+     "id": "w.time.friday",
+     "tamil": "வெள்ளி",
+     "roman": "veḷḷi",
+     "english": "Friday",
+     "say": "velli",
+     "note": "Also means silver."
+    },
+    {
+     "id": "w.time.saturday",
+     "tamil": "சனி",
+     "roman": "caṉi",
+     "english": "Saturday",
+     "say": "sani"
+    },
+    {
+     "id": "w.time.today",
+     "tamil": "இன்று",
+     "roman": "iṉṟu",
+     "english": "today",
+     "spoken": "இன்னிக்கு",
+     "spokenRoman": "iṉṉikku",
+     "say": "innikku"
+    },
+    {
+     "id": "w.time.yesterday",
+     "tamil": "நேற்று",
+     "roman": "nēṟṟu",
+     "english": "yesterday",
+     "spoken": "நேத்து",
+     "spokenRoman": "nēttu",
+     "say": "nethu"
+    },
+    {
+     "id": "w.time.tomorrow",
+     "tamil": "நாளை",
+     "roman": "nāḷai",
+     "english": "tomorrow",
+     "spoken": "நாளைக்கு",
+     "spokenRoman": "nāḷaikku",
+     "say": "naalaikku"
+    },
+    {
+     "id": "w.time.morning",
+     "tamil": "காலை",
+     "roman": "kālai",
+     "english": "morning",
+     "say": "kaalai"
+    },
+    {
+     "id": "w.time.afternoon",
+     "tamil": "மதியம்",
+     "roman": "matiyam",
+     "english": "afternoon",
+     "say": "madhiyam"
+    },
+    {
+     "id": "w.time.evening",
+     "tamil": "மாலை",
+     "roman": "mālai",
+     "english": "evening",
+     "spoken": "சாயங்காலம்",
+     "spokenRoman": "cāyaṅkālam",
+     "say": "saayangaalam"
+    },
+    {
+     "id": "w.time.night",
+     "tamil": "இரவு",
+     "roman": "iravu",
+     "english": "night",
+     "spoken": "ராத்திரி",
+     "spokenRoman": "rāttiri",
+     "say": "raathiri"
+    },
+    {
+     "id": "w.time.time",
+     "tamil": "நேரம்",
+     "roman": "nēram",
+     "english": "time",
+     "say": "neram"
+    }
+   ]
+  },
+  {
+   "id": "verbs",
+   "name": "Common verbs",
+   "tamilName": "வினைச்சொற்கள்",
+   "words": [
+    {
+     "id": "w.verbs.come",
+     "tamil": "வா",
+     "roman": "vā",
+     "english": "come!",
+     "say": "vaa",
+     "note": "The casual command, said to a friend or a child."
+    },
+    {
+     "id": "w.verbs.go",
+     "tamil": "போ",
+     "roman": "pō",
+     "english": "go!",
+     "say": "po"
+    },
+    {
+     "id": "w.verbs.eat",
+     "tamil": "சாப்பிடு",
+     "roman": "cāppiṭu",
+     "english": "eat!",
+     "say": "saappidu"
+    },
+    {
+     "id": "w.verbs.drink",
+     "tamil": "குடி",
+     "roman": "kuṭi",
+     "english": "drink!",
+     "say": "kudi"
+    },
+    {
+     "id": "w.verbs.read-study",
+     "tamil": "படி",
+     "roman": "paṭi",
+     "english": "read / study!",
+     "say": "padi"
+    },
+    {
+     "id": "w.verbs.write",
+     "tamil": "எழுது",
+     "roman": "eḻutu",
+     "english": "write!",
+     "say": "ezhudhu"
+    },
+    {
+     "id": "w.verbs.speak",
+     "tamil": "பேசு",
+     "roman": "pēcu",
+     "english": "speak!",
+     "say": "pesu"
+    },
+    {
+     "id": "w.verbs.listen-ask",
+     "tamil": "கேள்",
+     "roman": "kēḷ",
+     "english": "listen / ask!",
+     "spoken": "கேளு",
+     "spokenRoman": "kēḷu",
+     "say": "kelu"
+    },
+    {
+     "id": "w.verbs.look",
+     "tamil": "பார்",
+     "roman": "pār",
+     "english": "look!",
+     "spoken": "பாரு",
+     "spokenRoman": "pāru",
+     "say": "paaru"
+    },
+    {
+     "id": "w.verbs.sleep",
+     "tamil": "தூங்கு",
+     "roman": "tūṅku",
+     "english": "sleep!",
+     "say": "thoongu"
+    },
+    {
+     "id": "w.verbs.sit",
+     "tamil": "உட்கார்",
+     "roman": "uṭkār",
+     "english": "sit!",
+     "spoken": "உக்காரு",
+     "spokenRoman": "ukkāru",
+     "say": "ukkaaru"
+    },
+    {
+     "id": "w.verbs.stop-stand",
+     "tamil": "நில்",
+     "roman": "nil",
+     "english": "stop / stand!",
+     "spoken": "நில்லு",
+     "spokenRoman": "nillu",
+     "say": "nillu"
+    },
+    {
+     "id": "w.verbs.do",
+     "tamil": "செய்",
+     "roman": "cey",
+     "english": "do!",
+     "spoken": "பண்ணு",
+     "spokenRoman": "paṇṇu",
+     "say": "pannu"
+    },
+    {
+     "id": "w.verbs.give",
+     "tamil": "கொடு",
+     "roman": "koṭu",
+     "english": "give!",
+     "spoken": "குடு",
+     "spokenRoman": "kuṭu",
+     "say": "kudu"
+    },
+    {
+     "id": "w.verbs.buy-take",
+     "tamil": "வாங்கு",
+     "roman": "vāṅku",
+     "english": "buy / take!",
+     "say": "vaangu"
+    }
+   ]
+  },
+  {
+   "id": "questions",
+   "name": "Everyday questions",
+   "tamilName": "கேள்விகள்",
+   "words": [
+    {
+     "id": "w.questions.what",
+     "tamil": "என்ன",
+     "roman": "eṉṉa",
+     "english": "what",
+     "say": "enna"
+    },
+    {
+     "id": "w.questions.where",
+     "tamil": "எங்கே",
+     "roman": "eṅkē",
+     "english": "where",
+     "spoken": "எங்க",
+     "spokenRoman": "eṅka",
+     "say": "enga"
+    },
+    {
+     "id": "w.questions.when",
+     "tamil": "எப்போது",
+     "roman": "eppōtu",
+     "english": "when",
+     "spoken": "எப்போ",
+     "spokenRoman": "eppō",
+     "say": "eppo"
+    },
+    {
+     "id": "w.questions.why",
+     "tamil": "ஏன்",
+     "roman": "ēṉ",
+     "english": "why",
+     "say": "en"
+    },
+    {
+     "id": "w.questions.who",
+     "tamil": "யார்",
+     "roman": "yār",
+     "english": "who",
+     "spoken": "யாரு",
+     "spokenRoman": "yāru",
+     "say": "yaaru"
+    },
+    {
+     "id": "w.questions.how",
+     "tamil": "எப்படி",
+     "roman": "eppaṭi",
+     "english": "how",
+     "say": "eppadi"
+    },
+    {
+     "id": "w.questions.how-much",
+     "tamil": "எவ்வளவு",
+     "roman": "evvaḷavu",
+     "english": "how much",
+     "spoken": "எவ்ளோ",
+     "spokenRoman": "evḷō",
+     "say": "evlo"
+    },
+    {
+     "id": "w.questions.how-many",
+     "tamil": "எத்தனை",
+     "roman": "ettaṉai",
+     "english": "how many",
+     "say": "ethanai"
+    },
+    {
+     "id": "w.questions.which-one",
+     "tamil": "எது",
+     "roman": "etu",
+     "english": "which one",
+     "say": "edhu"
+    },
+    {
+     "id": "w.questions.this",
+     "tamil": "இது",
+     "roman": "itu",
+     "english": "this",
+     "say": "idhu"
+    },
+    {
+     "id": "w.questions.that",
+     "tamil": "அது",
+     "roman": "atu",
+     "english": "that",
+     "say": "adhu"
+    },
+    {
+     "id": "w.questions.here",
+     "tamil": "இங்கே",
+     "roman": "iṅkē",
+     "english": "here",
+     "spoken": "இங்க",
+     "spokenRoman": "iṅka",
+     "say": "inga"
+    },
+    {
+     "id": "w.questions.there",
+     "tamil": "அங்கே",
+     "roman": "aṅkē",
+     "english": "there",
+     "spoken": "அங்க",
+     "spokenRoman": "aṅka",
+     "say": "anga"
+    },
+    {
+     "id": "w.questions.what-s-the-price",
+     "tamil": "விலை என்ன?",
+     "roman": "vilai eṉṉa?",
+     "english": "what's the price?",
+     "spoken": "என்ன விலை?",
+     "spokenRoman": "eṉṉa vilai?",
+     "say": "enna vilai?"
+    },
+    {
+     "id": "w.questions.i-don-t-understand",
+     "tamil": "புரியவில்லை",
+     "roman": "puriyavillai",
+     "english": "I don't understand",
+     "spoken": "புரியல",
+     "spokenRoman": "puriyala",
+     "say": "puriyala"
+    }
+   ]
+  }
+ ]
+}

@@ -18,6 +18,7 @@ export type ThemeName = 'light' | 'paper' | 'dark';
 export type FontName = 'mukta' | 'noto' | 'catamaran';
 export type LetterSize = 's' | 'm' | 'l';
 export type RomanMode = 'on' | 'fade' | 'off';
+export type SpokenMode = 'both' | 'written';
 
 export type Settings = {
   theme: ThemeName;
@@ -25,9 +26,13 @@ export type Settings = {
   font: FontName;
   size: LetterSize;
   roman: RomanMode;
+  /** Show the spoken form of a word next to the written one. */
+  spoken: SpokenMode;
+  /** New vocabulary words introduced per day in the daily review. */
+  newWords: number;
 };
 
-const DEFAULTS: Settings = { theme: 'light', accent: '#0E6B63', font: 'mukta', size: 'm', roman: 'fade' };
+const DEFAULTS: Settings = { theme: 'light', accent: '#0E6B63', font: 'mukta', size: 'm', roman: 'fade', spoken: 'both', newWords: 10 };
 const STORAGE_KEY = 'tamil-app/settings/v1';
 
 export const ACCENTS = [

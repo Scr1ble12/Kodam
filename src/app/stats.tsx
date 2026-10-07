@@ -4,6 +4,7 @@ import { ScrollView, StyleSheet, View } from 'react-native';
 import { Icon, IconButton, PrimaryButton, Screen, T } from '../components/ui';
 import { LETTERS, SEGMENTS } from '../data/letters';
 import type { Letter } from '../data/letters';
+import { WORDS } from '../data/words';
 import { dayKey, useProgress } from '../lib/progress';
 import type { Stage } from '../lib/progress';
 import { useTheme } from '../lib/theme';
@@ -49,6 +50,15 @@ export default function StatsScreen() {
     .filter((x) => x.p.seen >= MIN_SEEN && x.p.correct < x.p.seen)
     .sort((a, b) => a.p.correct / a.p.seen - b.p.correct / b.p.seen || b.p.seen - a.p.seen)
     .slice(0, 4);
+
+  // Vocabulary
+  const weekStart = now - mondayOffset * DAY - 12 * 60 * 60 * 1000;
+  const wordStats = WORDS.map((w) => progress.get(w.id));
+  const wordsStarted = wordStats.filter((p) => p.seen > 0).length;
+  const wordsKnown = WORDS.filter((w) => ['familiar', 'mastered'].includes(progress.stage(w.id))).length;
+  const wordSeen = wordStats.reduce((n, p) => n + p.seen, 0);
+  const wordCorrect = wordStats.reduce((n, p) => n + p.correct, 0);
+  const wordsThisWeek = wordStats.filter((p) => (p.firstSeen ?? 0) >= weekStart).length;
 
   // This week (Monday to Sunday), minutes in the app per day
   const week = Array.from({ length: 7 }, (_, d) => {
@@ -149,13 +159,32 @@ export default function StatsScreen() {
         </View>
 
         <View style={card}>
+          <View style={styles.cardTitle}>
+            <T size={15} weight="medium">
+              Vocabulary
+            </T>
+            <T size={13} tone="muted">
+              {wordsKnown} of {WORDS.length} known
+            </T>
+          </View>
+          <View style={styles.tiles}>
+            <Figure value={`${wordsStarted}`} label="words started" />
+            <Figure value={wordSeen ? `${Math.round((wordCorrect / wordSeen) * 100)}%` : '–'} label="reviews right" />
+            <Figure value={`${wordsThisWeek}`} label="added this week" />
+          </View>
+          <T size={12} tone="muted">
+            A word counts as known once you've got it right both ways and it isn't due for a week.
+          </T>
+        </View>
+
+        <View style={card}>
           <T size={15} weight="medium">
-            Track record
+            Letters track record
           </T>
           <View style={styles.tiles}>
             <Figure value={totalSeen ? `${Math.round((totalCorrect / totalSeen) * 100)}%` : '–'} label="right overall" />
             <Figure value={`${totalSeen}`} label="answers ever" />
-            <Figure value={`${weekAnswers}`} label="answers this week" />
+            <Figure value={`${weekAnswers}`} label="answers this week, all" />
           </View>
           <T size={14} weight="medium" style={{ marginTop: 4 }}>
             Trickiest letters

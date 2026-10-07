@@ -16,7 +16,7 @@ export type Reminder = {
   hour: number;
   minute: number;
   days: number[];
-  /** Optional saved list the reminder opens straight into. */
+  /** Optional saved letter list the reminder opens straight into, or VOCAB_TARGET for today's words. */
   listId?: string;
 };
 
@@ -25,6 +25,8 @@ export type Permission = 'unknown' | 'granted' | 'denied';
 
 const STORAGE_KEY = 'tamil-app/reminders/v1';
 const CHANNEL = 'reminders';
+/** A reminder with this target opens today's vocabulary review. */
+export const VOCAB_TARGET = 'vocab';
 const STREAK_SAVER_HOUR = 21;
 /** Local notifications only exist on phones; the web preview just stores the settings. */
 export const REMINDERS_SUPPORTED = Platform.OS === 'ios' || Platform.OS === 'android';
@@ -155,7 +157,13 @@ async function schedule(saved: Saved, lists: LetterList[], practicedToday: boole
   for (const r of saved.reminders) {
     if (!r.enabled) continue;
     const list = lists.find((l) => l.id === r.listId);
-    const content: Notifications.NotificationContentInput = list
+    const content: Notifications.NotificationContentInput = r.listId === VOCAB_TARGET
+      ? {
+          title: 'Your Tamil words are waiting',
+          body: "Today's review is ready: a few reviews and some new words.",
+          data: { url: '/review?today=1' },
+        }
+      : list
       ? {
           title: `Time to practice “${list.name}”`,
           body: `${list.ids.length} ${list.ids.length === 1 ? 'letter' : 'letters'} waiting. A few minutes is enough.`,
