@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
+import { AppState } from 'react-native';
 
 import type { Letter } from '../data/letters';
 
@@ -64,7 +65,19 @@ export function stageLevel(stage: Stage) {
   return { new: 0, learning: 1, familiar: 2, mastered: 3 }[stage];
 }
 
-type Saved = { letters: Record<string, LetterProgress>; days: string[] };
+/** What happened in the app on one day. */
+export type DayActivity = { opens: number; answers: number };
+
+type Saved = {
+  letters: Record<string, LetterProgress>;
+  /** Days with practice (local date keys), for the streak. */
+  days: string[];
+  activity: Record<string, DayActivity>;
+};
+
+const EMPTY_SAVED: Saved = { letters: {}, days: [], activity: {} };
+/** Coming back to the app after this long counts as a new visit. */
+const NEW_VISIT_AFTER = 30 * 60 * 1000;
 
 type ProgressContextValue = {
   get: (id: string) => LetterProgress;
@@ -73,12 +86,16 @@ type ProgressContextValue = {
   passTraceStep: (id: string, step: number) => void;
   /** Consecutive days with practice, counting today or yesterday as the latest. */
   streak: number;
+  bestStreak: number;
+  /** Practice days, oldest first. */
+  days: string[];
+  activity: Record<string, DayActivity>;
   reset: () => void;
 };
 
 const ProgressContext = createContext<ProgressContextValue | null>(null);
 
-function dayKey(t: number) {
+export function dayKey(t: number) {
   const d = new Date(t);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
@@ -94,19 +111,52 @@ function countStreak(days: string[], now: number) {
   return n;
 }
 
+function longestStreak(days: string[]) {
+  let best = 0;
+  let run = 0;
+  let prev = 0;
+  for (const d of [...new Set(days)].sort()) {
+    const t = new Date(`${d}T12:00:00`).getTime();
+    run = prev && Math.round((t - prev) / DAY) === 1 ? run + 1 : 1;
+    best = Math.max(best, run);
+    prev = t;
+  }
+  return best;
+}
+
+function bump(s: Saved, field: keyof DayActivity): Saved {
+  const today = dayKey(Date.now());
+  const cur = s.activity[today] ?? { opens: 0, answers: 0 };
+  return { ...s, activity: { ...s.activity, [today]: { ...cur, [field]: cur[field] + 1 } } };
+}
+
 export function ProgressProvider({ children }: { children: ReactNode }) {
-  const [saved, setSaved] = useState<Saved>({ letters: {}, days: [] });
+  const [saved, setSaved] = useState<Saved>(EMPTY_SAVED);
   const loaded = useRef(false);
+  const lastActive = useRef(Date.now());
 
   useEffect(() => {
     AsyncStorage.getItem(STORAGE_KEY)
       .then((json) => {
-        if (json) setSaved({ letters: {}, days: [], ...JSON.parse(json) });
+        if (json) setSaved({ ...EMPTY_SAVED, ...JSON.parse(json) });
       })
       .catch(() => {})
       .finally(() => {
         loaded.current = true;
+        setSaved((s) => bump(s, 'opens'));
       });
+  }, []);
+
+  // Count a new visit when the app comes back to the foreground after a while.
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (state) => {
+      if (state !== 'active') {
+        lastActive.current = Date.now();
+        return;
+      }
+      if (loaded.current && Date.now() - lastActive.current > NEW_VISIT_AFTER) setSaved((s) => bump(s, 'opens'));
+    });
+    return () => sub.remove();
   }, []);
 
   useEffect(() => {
@@ -118,7 +168,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     setSaved((s) => {
       const today = dayKey(Date.now());
       const days = practiced && !s.days.includes(today) ? [...s.days.slice(-400), today] : s.days;
-      return { days, letters: { ...s.letters, [id]: fn({ ...EMPTY, ...s.letters[id] }) } };
+      return { ...s, days, letters: { ...s.letters, [id]: fn({ ...EMPTY, ...s.letters[id] }) } };
     });
   }, []);
 
@@ -127,7 +177,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     return {
       get,
       stage: (id) => stageOf(get(id)),
-      recordAnswer: (id, direction, correct) =>
+      recordAnswer: (id, direction, correct) => {
+        setSaved((s) => bump(s, 'answers'));
         update(
           id,
           (p) => {
@@ -144,11 +195,15 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
             };
           },
           true,
-        ),
+        );
+      },
       passTraceStep: (id, step) =>
         update(id, (p) => ({ ...p, traceStep: Math.max(p.traceStep, Math.min(step, TRACE_STEPS)) }), true),
       streak: countStreak(saved.days, Date.now()),
-      reset: () => setSaved({ letters: {}, days: [] }),
+      bestStreak: longestStreak(saved.days),
+      days: saved.days,
+      activity: saved.activity,
+      reset: () => setSaved(EMPTY_SAVED),
     };
   }, [saved, update]);
 

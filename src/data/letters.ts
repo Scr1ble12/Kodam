@@ -1,6 +1,7 @@
 import raw from './letters.json';
+import extra from './letters.extra.json';
 
-export type LetterGroup = 'vowel' | 'aytham' | 'consonant';
+export type LetterGroup = 'vowel' | 'aytham' | 'consonant' | 'compound' | 'grantha';
 
 export type Letter = {
   id: string;
@@ -13,10 +14,15 @@ export type Letter = {
   friendly: string;
   /** How it sounds, in plain English. */
   hint: string;
+  /** Compound letters only: the consonant and vowel ids they are built from. */
+  consonant?: string;
+  vowel?: string;
 };
 
-export const LETTERS = raw as Letter[];
+/** Base letters (hand-written hints) followed by the generated compound and Grantha letters. */
+export const LETTERS = [...raw, ...extra] as Letter[];
 export const CONSONANTS = LETTERS.filter((l) => l.group === 'consonant');
+export const COMPOUNDS = LETTERS.filter((l) => l.group === 'compound');
 
 const byId = new Map(LETTERS.map((l) => [l.id, l]));
 
@@ -24,10 +30,12 @@ export function getLetter(id: string): Letter | undefined {
   return byId.get(id);
 }
 
-/** The segments on the Alphabet tab. Compound and Grantha letters come in a later build. */
+/** The segments on the Alphabet tab. */
 export const SEGMENTS = [
-  { id: 'vowels', label: 'Vowels', letters: LETTERS.filter((l) => l.group !== 'consonant') },
+  { id: 'vowels', label: 'Vowels', letters: LETTERS.filter((l) => l.group === 'vowel' || l.group === 'aytham') },
   { id: 'consonants', label: 'Consonants', letters: CONSONANTS },
+  { id: 'compound', label: 'Compound', letters: COMPOUNDS },
+  { id: 'grantha', label: 'Grantha', letters: LETTERS.filter((l) => l.group === 'grantha') },
 ] as const;
 
 export type SegmentId = (typeof SEGMENTS)[number]['id'];
@@ -50,7 +58,18 @@ const CONFUSABLE: string[][] = [
   ['ng', 'nj'],
 ];
 
-export function confusablesOf(id: string): string[] {
+function lookalikes(id: string): string[] {
   const group = CONFUSABLE.find((g) => g.includes(id));
   return group ? group.filter((x) => x !== id) : [];
+}
+
+export function confusablesOf(id: string): string[] {
+  const letter = byId.get(id);
+  if (letter?.group !== 'compound' || !letter.consonant || !letter.vowel) return lookalikes(id);
+  // A compound is confused with the same consonant plus a look-alike vowel, and the reverse.
+  const { consonant, vowel } = letter;
+  return [
+    ...lookalikes(vowel).map((v) => `${consonant}_${v}`),
+    ...lookalikes(consonant).map((c) => `${c}_${vowel}`),
+  ];
 }

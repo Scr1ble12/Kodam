@@ -1,6 +1,6 @@
 """Generate traceable letter shapes from Noto Sans Tamil.
 
-For every letter in src/data/letters.json this script shapes the text with
+For every letter in src/data/letters.json and letters.extra.json this script shapes the text with
 HarfBuzz (so marks like the pulli dot sit in the right place), extracts the
 outline as an SVG path normalised to a 1000x1000 box, and samples a grid of
 points that fall inside the outline. The app draws the path as the guide and
@@ -23,7 +23,7 @@ from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parent.parent
 FONT = ROOT / "scripts" / "fonts" / "NotoSansTamil-Medium.woff"
-LETTERS = ROOT / "src" / "data" / "letters.json"
+LETTERS = [ROOT / "src" / "data" / "letters.json", ROOT / "src" / "data" / "letters.extra.json"]
 OUT = ROOT / "src" / "data" / "glyphs.generated.ts"
 
 BOX = 1000  # output viewBox size
@@ -142,7 +142,7 @@ def edge_dist(px, py, contours):
 
 def main():
     font, glyph_set, names = load_font()
-    letters = json.loads(LETTERS.read_text())
+    letters = [l for path in LETTERS for l in json.loads(path.read_text())]
     out = {}
     for letter in letters:
         rec = record(font, glyph_set, names, letter["tamil"])

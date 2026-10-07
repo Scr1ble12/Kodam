@@ -37,7 +37,8 @@ function shuffle<T>(xs: T[]): T[] {
 
 /** Three wrong answers: look-alike sounds first, then other drilled letters, then the rest of the group. */
 function buildOptions(target: Letter, pool: Letter[]): Letter[] {
-  const sameKind = (l: Letter) => (l.group === 'consonant') === (target.group === 'consonant');
+  const kind = (l: Letter) => (l.group === 'aytham' ? 'vowel' : l.group);
+  const sameKind = (l: Letter) => kind(l) === kind(target);
   const confusable = confusablesOf(target.id)
     .map(getLetter)
     .filter((l): l is Letter => !!l);
@@ -300,7 +301,9 @@ export default function DrillScreen() {
 
             <View style={styles.options}>
               {options.map((o) => {
-                const isAnswer = picked && o.id === letter.id;
+                // Right pick: solid green. Wrong pick: red tint, and the right answer gets a matching green tint.
+                const gotIt = picked === letter.id && o.id === letter.id;
+                const missedIt = !!picked && picked !== letter.id && o.id === letter.id;
                 const isWrongPick = picked === o.id && o.id !== letter.id;
                 return (
                   <Pressable
@@ -311,14 +314,16 @@ export default function DrillScreen() {
                     style={[
                       styles.option,
                       { backgroundColor: colors.surface, borderColor: colors.line },
-                      isAnswer && { backgroundColor: colors.accent, borderColor: colors.accent, borderWidth: 1.5 },
+                      gotIt && { backgroundColor: colors.success, borderColor: colors.success, borderWidth: 1.5 },
+                      missedIt && { backgroundColor: colors.successBg, borderColor: colors.success, borderWidth: 1.5 },
                       isWrongPick && { backgroundColor: colors.errorBg, borderColor: colors.error, borderWidth: 1.5 },
                     ]}
                   >
                     <T
                       size={mode === 'letterToSound' ? 22 : 34}
                       weight="medium"
-                      tone={isAnswer ? 'onAccent' : isWrongPick ? 'error' : 'ink'}
+                      tone={isWrongPick ? 'error' : 'ink'}
+                      style={gotIt ? { color: '#FFFFFF' } : missedIt ? { color: colors.successInk } : undefined}
                     >
                       {mode === 'letterToSound' ? o.roman : o.tamil}
                     </T>

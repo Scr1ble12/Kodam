@@ -15,6 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = ROOT / "src" / "data" / "tamil_alphabet.json"
 OUT_CSV = ROOT / "src" / "data" / "tamil_alphabet.csv"
+# Compound and Grantha letters in the shape the app drills (see src/data/letters.ts).
+OUT_EXTRA = ROOT / "src" / "data" / "letters.extra.json"
 
 PULLI = "்"
 
@@ -56,15 +58,21 @@ CONSONANTS = [
     ("nnn", "ன", "ṉ", "mellinam", "alveolar nasal"),
 ]
 
-# id, letter, ISO 15919, articulation
+# id, letter, ISO 15919, articulation, casual spelling, sound hint
 GRANTHA = [
-    ("ja", "ஜ", "ja", "palatal stop (voiced)"),
-    ("ssa", "ஷ", "ṣa", "retroflex fricative"),
-    ("sa", "ஸ", "sa", "alveolar fricative"),
-    ("ha", "ஹ", "ha", "glottal fricative"),
-    ("ksa", "க்ஷ", "kṣa", "velar stop + retroflex fricative"),
-    ("sri", "ஸ்ரீ", "śrī", "ligature (ś + r + ī)"),
+    ("ja", "ஜ", "ja", "palatal stop (voiced)", "ja", "j as in 'jam'"),
+    ("ssa", "ஷ", "ṣa", "retroflex fricative", "sha", "sh with the tongue curled back"),
+    ("sa", "ஸ", "sa", "alveolar fricative", "sa", "s as in 'sun'"),
+    ("ha", "ஹ", "ha", "glottal fricative", "ha", "h as in 'hat'"),
+    ("ksa", "க்ஷ", "kṣa", "velar stop + retroflex fricative", "ksha", "k and sh together, as in 'Lakshmi'"),
+    ("sri", "ஸ்ரீ", "śrī", "ligature (ś + r + ī)", "shree", "shree, as in 'Sri Lanka'"),
 ]
+
+# Casual spellings, matching src/data/letters.json.
+FRIENDLY_C = {"k": "k", "ng": "ng", "c": "ch", "nj": "nj", "tt": "T", "nn": "N", "t": "th", "n": "n", "p": "p",
+              "m": "m", "y": "y", "r": "r", "l": "l", "v": "v", "zh": "zh", "ll": "L", "rr": "R", "nnn": "n"}
+FRIENDLY_V = {"a": "a", "aa": "aa", "i": "i", "ii": "ee", "u": "u", "uu": "oo", "e": "e", "ee": "ay", "ai": "ai",
+              "o": "o", "oo": "oh", "au": "ow"}
 
 # The ு/ூ column has a different shape for every consonant, and ட/ற with ி/ீ
 # fuse into ligatures, so these are memorized one by one.
@@ -121,7 +129,7 @@ def main():
                 irregular=vid in IRREGULAR_SIGNS or (cid, vid) in IRREGULAR_PAIRS,
                 consonant_class=cls, articulation=art,
             ))
-    for gid, letter, roman, art in GRANTHA:
+    for gid, letter, roman, art, _friendly, _hint in GRANTHA:
         cards.append(card(id=f"g_{gid}", letter=letter, category="grantha", romanization=roman,
                           articulation=art))
 
@@ -139,6 +147,19 @@ def main():
             row["components"] = " ".join(c["components"])
             row["codepoints"] = " ".join(c["codepoints"])
             w.writerow(row)
+    extra = []
+    for cid, base, croman, _cls, _art in CONSONANTS:
+        for vid, vletter, sign, vroman, _length, _pos, _name in VOWELS:
+            how = "the plain consonant" if not sign else f"{base} with the {sign} sign"
+            extra.append({
+                "id": f"{cid}_{vid}", "group": "compound", "tamil": base + sign, "roman": croman + vroman,
+                "friendly": FRIENDLY_C[cid] + FRIENDLY_V[vid], "hint": f"{croman} + {vroman}: {how}",
+                "consonant": cid, "vowel": vid,
+            })
+    for gid, letter, roman, _art, friendly, hint in GRANTHA:
+        extra.append({"id": gid, "group": "grantha", "tamil": letter, "roman": roman, "friendly": friendly,
+                      "hint": hint})
+    OUT_EXTRA.write_text("[\n" + ",\n".join("  " + json.dumps(x, ensure_ascii=False) for x in extra) + "\n]\n")
     print(counts, "total", len(cards))
 
 
