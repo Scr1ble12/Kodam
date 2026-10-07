@@ -2,6 +2,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
+import { ConfirmModal } from '../components/ConfirmModal';
 import { Icon, IconButton, PrimaryButton, Screen, T } from '../components/ui';
 import { useLists } from '../lib/lists';
 import { describeDays, useReminders } from '../lib/reminders';
@@ -166,19 +167,27 @@ export default function ReminderScreen() {
         {existing && (
           <Pressable
             accessibilityRole="button"
-            onPress={() => {
-              if (!confirmDelete) return setConfirmDelete(true);
-              remove(existing.id);
-              close();
-            }}
-            style={[styles.delete, { backgroundColor: confirmDelete ? colors.errorBg : 'transparent' }]}
+            onPress={() => setConfirmDelete(true)}
+            style={[styles.delete, { backgroundColor: colors.errorBg, borderColor: colors.error }]}
           >
-            <T size={15} weight="medium" tone="error">
-              {confirmDelete ? 'Tap again to delete' : 'Delete reminder'}
+            <T size={15} weight="bold" tone="error">
+              Delete reminder
             </T>
           </Pressable>
         )}
       </ScrollView>
+      <ConfirmModal
+        visible={confirmDelete}
+        title="Delete this reminder?"
+        message="You won't get this notification any more. This can't be undone."
+        confirmLabel="Delete"
+        onClose={() => setConfirmDelete(false)}
+        onConfirm={() => {
+          setConfirmDelete(false);
+          if (existing) remove(existing.id);
+          close();
+        }}
+      />
     </Screen>
   );
 }
@@ -233,5 +242,5 @@ const styles = StyleSheet.create({
   day: { width: 40, height: 40, borderRadius: 20, borderWidth: 1, alignItems: 'center', justifyContent: 'center' },
   chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   chip: { minHeight: 36, paddingHorizontal: 14, borderRadius: 999, borderWidth: 1, justifyContent: 'center' },
-  delete: { minHeight: 48, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
+  delete: { minHeight: 48, borderRadius: 14, borderWidth: 1.5, alignItems: 'center', justifyContent: 'center' },
 });

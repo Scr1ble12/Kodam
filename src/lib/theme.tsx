@@ -69,6 +69,7 @@ function buildTheme(s: Settings) {
       error: s.theme === 'dark' ? '#F59A8F' : '#B42318',
       errorInk: s.theme === 'dark' ? '#F8C9C2' : '#8A1C12',
       errorBg: s.theme === 'dark' ? '#3B1C19' : '#FDECEA',
+      onError: s.theme === 'dark' ? '#2A0E0B' : '#FFFFFF',
       success: s.theme === 'dark' ? '#2F9E5A' : '#15803D',
       successInk: s.theme === 'dark' ? '#BDEBCB' : '#14532D',
       successBg: s.theme === 'dark' ? '#163222' : '#E3F4E8',

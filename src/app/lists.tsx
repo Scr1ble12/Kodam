@@ -2,16 +2,18 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
+import { ConfirmModal } from '../components/ConfirmModal';
 import { Icon, IconButton, Screen, T } from '../components/ui';
 import { getLetter } from '../data/letters';
 import { useLists } from '../lib/lists';
+import type { LetterList } from '../lib/lists';
 import { useTheme } from '../lib/theme';
 
 /** Saved letter lists: practice, trace, rename or delete each one. */
 export default function ListsScreen() {
   const { colors } = useTheme();
   const { lists, remove } = useLists();
-  const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
+  const [deleting, setDeleting] = useState<LetterList | null>(null);
   const close = () => (router.canGoBack() ? router.back() : router.replace('/'));
 
   return (
@@ -54,7 +56,6 @@ export default function ListsScreen() {
         {lists.map((list) => {
           const letters = list.ids.map(getLetter).filter((l) => !!l);
           const ids = list.ids.join(',');
-          const deleting = confirmDelete === list.id;
           return (
             <View key={list.id} style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.line }]}>
               <View style={styles.nameRow}>
@@ -79,16 +80,23 @@ export default function ListsScreen() {
               <View style={styles.actions}>
                 <Action label="Practice" primary onPress={() => router.push({ pathname: '/drill', params: { ids } })} />
                 <Action label="Trace" onPress={() => router.push({ pathname: '/trace', params: { ids } })} />
-                <Action
-                  label={deleting ? 'Tap to delete' : 'Delete'}
-                  danger={deleting}
-                  onPress={() => (deleting ? (remove(list.id), setConfirmDelete(null)) : setConfirmDelete(list.id))}
-                />
+                <Action label="Delete" danger onPress={() => setDeleting(list)} />
               </View>
             </View>
           );
         })}
       </ScrollView>
+      <ConfirmModal
+        visible={!!deleting}
+        title={`Delete “${deleting?.name ?? ''}”?`}
+        message={`This list and its ${deleting?.ids.length ?? 0} ${deleting?.ids.length === 1 ? 'letter' : 'letters'} will be removed from My lists. Your progress on the letters stays. This can't be undone.`}
+        confirmLabel="Delete list"
+        onClose={() => setDeleting(null)}
+        onConfirm={() => {
+          if (deleting) remove(deleting.id);
+          setDeleting(null);
+        }}
+      />
     </Screen>
   );
 }
@@ -114,12 +122,12 @@ function Action({
         primary
           ? { backgroundColor: colors.accent }
           : danger
-            ? { backgroundColor: colors.errorBg }
+            ? { backgroundColor: colors.errorBg, borderWidth: 1.5, borderColor: colors.error }
             : { backgroundColor: colors.track },
         { opacity: pressed ? 0.7 : 1 },
       ]}
     >
-      <T size={14} weight="medium" tone={primary ? 'onAccent' : danger ? 'error' : 'ink'}>
+      <T size={14} weight={danger ? 'bold' : 'medium'} tone={primary ? 'onAccent' : danger ? 'error' : 'ink'}>
         {label}
       </T>
     </Pressable>
