@@ -2,18 +2,15 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
-import { NameModal } from '../components/NameModal';
 import { Icon, IconButton, Screen, T } from '../components/ui';
 import { getLetter } from '../data/letters';
 import { useLists } from '../lib/lists';
-import type { LetterList } from '../lib/lists';
 import { useTheme } from '../lib/theme';
 
 /** Saved letter lists: practice, trace, rename or delete each one. */
 export default function ListsScreen() {
   const { colors } = useTheme();
-  const { lists, rename, remove } = useLists();
-  const [renaming, setRenaming] = useState<LetterList | null>(null);
+  const { lists, remove } = useLists();
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
   const close = () => (router.canGoBack() ? router.back() : router.replace('/'));
 
@@ -34,11 +31,22 @@ export default function ListsScreen() {
           </T>
         </View>
 
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => router.push('/list-edit')}
+          style={({ pressed }) => [styles.newList, { borderColor: colors.accent, opacity: pressed ? 0.7 : 1 }]}
+        >
+          <Icon.Plus color={colors.accent} />
+          <T size={15} weight="medium" tone="accent">
+            New list
+          </T>
+        </Pressable>
+
         {lists.length === 0 && (
           <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.line }]}>
             <T size={15}>No lists yet.</T>
             <T size={14} tone="muted">
-              On the Alphabet tab, tap the letters you want, then tap Save list.
+              Tap New list, name it, and pick the letters you want to study together.
             </T>
           </View>
         )}
@@ -58,7 +66,10 @@ export default function ListsScreen() {
                     {letters.length} {letters.length === 1 ? 'letter' : 'letters'}
                   </T>
                 </View>
-                <IconButton label={`Rename ${list.name}`} onPress={() => setRenaming(list)}>
+                <IconButton
+                  label={`Edit ${list.name}`}
+                  onPress={() => router.push({ pathname: '/list-edit', params: { id: list.id } })}
+                >
                   <Icon.Pencil color={colors.muted} size={20} />
                 </IconButton>
               </View>
@@ -78,17 +89,6 @@ export default function ListsScreen() {
           );
         })}
       </ScrollView>
-      <NameModal
-        visible={!!renaming}
-        title="Rename list"
-        initial={renaming?.name ?? ''}
-        confirmLabel="Save"
-        onClose={() => setRenaming(null)}
-        onSubmit={(name) => {
-          if (renaming) rename(renaming.id, name);
-          setRenaming(null);
-        }}
-      />
     </Screen>
   );
 }
@@ -130,6 +130,16 @@ const styles = StyleSheet.create({
   column: { width: '100%', maxWidth: 560, alignSelf: 'center', padding: 20, paddingTop: 8, gap: 14 },
   top: { flexDirection: 'row' },
   card: { borderRadius: 16, borderWidth: 1, padding: 16, gap: 10 },
+  newList: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 8,
+    minHeight: 52,
+    borderRadius: 16,
+    borderWidth: 1.5,
+    borderStyle: 'dashed',
+  },
   nameRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   actions: { flexDirection: 'row', gap: 8 },
   action: { flex: 1, minHeight: 44, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },

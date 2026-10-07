@@ -1,10 +1,13 @@
 import { useState } from 'react';
 import type { ReactNode } from 'react';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { router } from 'expo-router';
+import { Pressable, ScrollView, StyleSheet, Switch, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Segmented, T } from '../../components/ui';
+import { Icon, Segmented, T } from '../../components/ui';
+import { useLists } from '../../lib/lists';
 import { useProgress } from '../../lib/progress';
+import { describeDays, formatTime, REMINDERS_SUPPORTED, useReminders } from '../../lib/reminders';
 import { ACCENTS, useTheme } from '../../lib/theme';
 import type { FontName, LetterSize, RomanMode, ThemeName } from '../../lib/theme';
 
@@ -33,6 +36,9 @@ export default function SettingsScreen() {
   const { colors, settings, update, letterPx } = useTheme();
   const progress = useProgress();
   const [confirmReset, setConfirmReset] = useState(false);
+  const reminders = useReminders();
+  const { lists } = useLists();
+  const switchColors = { true: colors.accent, false: colors.line };
 
   return (
     <SafeAreaView edges={['top']} style={[styles.screen, { backgroundColor: colors.bg }]}>
@@ -66,6 +72,73 @@ export default function SettingsScreen() {
             )}
           </View>
         </View>
+
+        <Section title="REMINDERS">
+          {reminders.reminders.map((r) => {
+            const list = lists.find((l) => l.id === r.listId);
+            return (
+              <Pressable
+                key={r.id}
+                accessibilityRole="button"
+                accessibilityLabel={`Reminder at ${formatTime(r.hour, r.minute)}, ${describeDays(r.days)}. Edit`}
+                onPress={() => router.push({ pathname: '/reminder', params: { id: r.id } })}
+                style={[styles.row, styles.rowInline, { borderBottomWidth: 1, borderBottomColor: colors.line }]}
+              >
+                <View style={{ flex: 1 }}>
+                  <T size={20} weight="medium" tone={r.enabled ? 'ink' : 'muted'}>
+                    {formatTime(r.hour, r.minute)}
+                  </T>
+                  <T size={13} tone="muted">
+                    {describeDays(r.days)}
+                    {list ? ` · ${list.name}` : ''}
+                  </T>
+                </View>
+                <Switch
+                  value={r.enabled}
+                  onValueChange={(on) => reminders.setEnabled(r.id, on)}
+                  trackColor={switchColors}
+                  accessibilityLabel={`Reminder at ${formatTime(r.hour, r.minute)}`}
+                />
+              </Pressable>
+            );
+          })}
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push('/reminder')}
+            style={[styles.row, styles.rowInline, { borderBottomWidth: 1, borderBottomColor: colors.line }]}
+          >
+            <View style={styles.linkLabel}>
+              <Icon.Bell color={colors.accent} />
+              <T size={15} weight="medium" tone="accent">
+                Add a reminder
+              </T>
+            </View>
+            <Icon.Chevron color={colors.muted} />
+          </Pressable>
+          <Row label="Streak saver" last>
+            <View style={styles.rowInline}>
+              <T size={12} tone="muted" style={{ flex: 1, paddingRight: 12 }}>
+                One extra nudge at 9 PM on days you haven't practiced yet.
+              </T>
+              <Switch
+                value={reminders.streakSaver}
+                onValueChange={reminders.setStreakSaver}
+                trackColor={switchColors}
+                accessibilityLabel="Streak saver"
+              />
+            </View>
+          </Row>
+        </Section>
+        {!REMINDERS_SUPPORTED ? (
+          <T size={12} tone="muted" style={{ marginTop: -10 }}>
+            Reminders are sent as notifications on your phone. They can be set up here but only fire in the iPhone or
+            Android app.
+          </T>
+        ) : reminders.permission === 'denied' ? (
+          <T size={12} tone="error" style={{ marginTop: -10 }}>
+            Notifications are turned off for this app. Turn them on in your phone's Settings so reminders can reach you.
+          </T>
+        ) : null}
 
         <Section title="APPEARANCE">
           <Row label="Theme">
@@ -107,6 +180,17 @@ export default function SettingsScreen() {
         </Section>
 
         <Section title="PROGRESS">
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push('/stats')}
+            style={[styles.row, styles.rowInline, { borderBottomWidth: 1, borderBottomColor: colors.line }]}
+          >
+            <View style={styles.linkLabel}>
+              <Icon.Chart color={colors.accent} />
+              <T size={15}>Your stats</T>
+            </View>
+            <Icon.Chevron color={colors.muted} />
+          </Pressable>
           <Row label="Reset progress" last inline>
             <Pressable
               accessibilityRole="button"
@@ -168,6 +252,7 @@ const styles = StyleSheet.create({
   section: { borderRadius: 16, borderWidth: 1 },
   row: { padding: 14, gap: 10 },
   rowInline: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  linkLabel: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   swatches: { flexDirection: 'row', gap: 8 },
   swatch: { width: 32, height: 32, borderRadius: 16, borderWidth: 3 },
   reset: { minHeight: 36, paddingHorizontal: 14, borderRadius: 10, justifyContent: 'center' },

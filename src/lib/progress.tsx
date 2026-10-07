@@ -66,7 +66,7 @@ export function stageLevel(stage: Stage) {
 }
 
 /** What happened in the app on one day. */
-export type DayActivity = { opens: number; answers: number };
+export type DayActivity = { opens: number; answers: number; correct?: number; seconds?: number };
 
 type Saved = {
   letters: Record<string, LetterProgress>;
@@ -90,6 +90,8 @@ type ProgressContextValue = {
   /** Practice days, oldest first. */
   days: string[];
   activity: Record<string, DayActivity>;
+  /** Seconds in the app today that haven't been saved yet (the current stretch). */
+  unsavedSeconds: () => number;
   reset: () => void;
 };
 
@@ -124,16 +126,20 @@ function longestStreak(days: string[]) {
   return best;
 }
 
-function bump(s: Saved, field: keyof DayActivity): Saved {
-  const today = dayKey(Date.now());
-  const cur = s.activity[today] ?? { opens: 0, answers: 0 };
-  return { ...s, activity: { ...s.activity, [today]: { ...cur, [field]: cur[field] + 1 } } };
+function bump(s: Saved, field: keyof DayActivity, by = 1, at = Date.now()): Saved {
+  const day = dayKey(at);
+  const cur = s.activity[day] ?? { opens: 0, answers: 0 };
+  return { ...s, activity: { ...s.activity, [day]: { ...cur, [field]: (cur[field] ?? 0) + by } } };
 }
+
+/** Longest stretch of time-in-app counted at once, so a phone left on the table doesn't inflate it. */
+const MAX_SESSION = 20 * 60 * 1000;
 
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const [saved, setSaved] = useState<Saved>(EMPTY_SAVED);
   const loaded = useRef(false);
   const lastActive = useRef(Date.now());
+  const activeSince = useRef(Date.now());
 
   useEffect(() => {
     AsyncStorage.getItem(STORAGE_KEY)
@@ -151,9 +157,15 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     const sub = AppState.addEventListener('change', (state) => {
       if (state !== 'active') {
-        lastActive.current = Date.now();
+        const now = Date.now();
+        const spent = Math.min(now - activeSince.current, MAX_SESSION);
+        // 'inactive' (iOS app switcher) is followed by 'background', so count each stretch once.
+        if (spent > 1000) setSaved((s) => bump(s, 'seconds', Math.round(spent / 1000), activeSince.current));
+        activeSince.current = now;
+        lastActive.current = now;
         return;
       }
+      activeSince.current = Date.now();
       if (loaded.current && Date.now() - lastActive.current > NEW_VISIT_AFTER) setSaved((s) => bump(s, 'opens'));
     });
     return () => sub.remove();
@@ -178,7 +190,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       get,
       stage: (id) => stageOf(get(id)),
       recordAnswer: (id, direction, correct) => {
-        setSaved((s) => bump(s, 'answers'));
+        setSaved((s) => (correct ? bump(bump(s, 'answers'), 'correct') : bump(s, 'answers')));
         update(
           id,
           (p) => {
@@ -203,6 +215,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
       bestStreak: longestStreak(saved.days),
       days: saved.days,
       activity: saved.activity,
+      unsavedSeconds: () => Math.min(Date.now() - activeSince.current, MAX_SESSION) / 1000,
       reset: () => setSaved(EMPTY_SAVED),
     };
   }, [saved, update]);

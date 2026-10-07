@@ -73,3 +73,9 @@ export function confusablesOf(id: string): string[] {
     ...lookalikes(consonant).map((c) => `${c}_${vowel}`),
   ];
 }
+
+/** The Alphabet segment a letter lives in. */
+export function homeSegment(id: string | undefined): SegmentId | undefined {
+  if (!id) return undefined;
+  return SEGMENTS.find((s) => (s.letters as readonly Letter[]).some((l) => l.id === id))?.id;
+}

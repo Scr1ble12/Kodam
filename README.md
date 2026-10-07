@@ -4,15 +4,17 @@ A Tamil script learning app for iOS and Android, built with Expo (React Native +
 
 ## What's in this build
 
-- **Alphabet tab**: all 247 letters plus the 6 Grantha letters (Vowels, Consonants, Compound, Grantha) with romanization and a mastery bar. Tap letters to pick what to drill, and save a selection as a named list to reuse later (rename or delete lists under Manage lists).
-- **Activity**: tap the streak pill to see current and best streak, a 12-week grid of visits, and visits and answers for the last 7 days.
+- **Alphabet tab**: all 247 letters plus the 6 Grantha letters (Vowels, Consonants, Compound, Grantha) with romanization and a mastery bar. Tap letters to pick what to drill.
+- **My lists**: the top of the Alphabet tab. Tap New list to name a list and pick its letters, or save the current selection with the bookmark button. Tap a list to select its letters, tap it again to clear. Manage lets you practice, trace, edit or delete each list.
+- **Stats**: tap the streak pill (or Settings → Your stats) for streaks, letter progress by stage and category, accuracy, your trickiest letters, minutes in the app this week, and a 12-week grid of visits.
+- **Reminders**: Settings → Reminders. Pick a time, days, and optionally a list to open; plus a 9 PM streak saver on days you haven't practiced. Sent as local notifications on the phone (works in Expo Go; not on web).
 - **Letter drill**: Letter → Sound and Sound → Letter, four choices each. Look-alike letters (ல/ள/ழ, ந/ண/ன, ர/ற, short and long vowels) show up as wrong answers on purpose. A missed letter comes back three questions later. Includes the "dots and lines" guide sheet.
 - **Tracing**: three steps that fade the support away (trace the letter, trace a faint outline, write from memory). It scores how much of the letter you covered and how much ink stayed on the lines, in any stroke order.
 - **Spaced repetition**: each right answer on a due letter pushes its next review out (1, 3, 7, 21, 45 days); a wrong answer resets it. Stages follow the spec: New, Learning, Familiar, Mastered.
 - **Settings**: theme (Light, Paper, Dark), accent colour, Tamil font (Mukta Malar, Noto Sans Tamil, Catamaran), letter size, romanization (Always, Auto-fade, Off), reset progress.
 - Progress and settings are saved on the device only.
 
-Not yet built: Vocabulary (placeholder tab), reminders, stroke-order animations. The audio button uses the phone's text-to-speech as a placeholder until real recordings exist.
+Not yet built: Vocabulary (placeholder tab), stroke-order animations. The audio button uses the phone's text-to-speech as a placeholder until real recordings exist.
 
 ## Run it
 

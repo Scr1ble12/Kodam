@@ -26,7 +26,13 @@
     },
     "plugins": [
       "expo-router",
-      "expo-font"
+      "expo-font",
+      [
+        "expo-notifications",
+        {
+          "color": "#0E6B63"
+        }
+      ]
     ],
     "scheme": "tamilapp"
   }

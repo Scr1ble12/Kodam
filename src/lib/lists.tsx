@@ -11,6 +11,8 @@ type ListsContextValue = {
   lists: LetterList[];
   create: (name: string, ids: string[]) => LetterList;
   rename: (id: string, name: string) => void;
+  /** Change a list's name and letters. */
+  edit: (id: string, name: string, ids: string[]) => void;
   remove: (id: string) => void;
 };
 
@@ -45,6 +47,7 @@ export function ListsProvider({ children }: { children: ReactNode }) {
         return list;
       },
       rename: (id, name) => setLists((ls) => ls.map((l) => (l.id === id ? { ...l, name } : l))),
+      edit: (id, name, ids) => setLists((ls) => ls.map((l) => (l.id === id ? { ...l, name, ids } : l))),
       remove: (id) => setLists((ls) => ls.filter((l) => l.id !== id)),
     }),
     [lists],

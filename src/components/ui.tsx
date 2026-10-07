@@ -224,6 +224,42 @@ export const Icon = {
       <Path {...stroke(color)} d="M12 2v3M12 19v3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M2 12h3M19 12h3M4.9 19.1L7 17M17 7l2.1-2.1" />
     </Svg>
   ),
+  Plus: ({ color, size = 20 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color, 2)} d="M12 5v14M5 12h14" />
+    </Svg>
+  ),
+  Bell: ({ color, size = 20 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color)} d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15z" />
+      <Path {...stroke(color)} d="M10 20.5a2 2 0 0 0 4 0" />
+    </Svg>
+  ),
+  Chart: ({ color, size = 20 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color, 2)} d="M5 20V12M12 20V5M19 20v-9" />
+    </Svg>
+  ),
+  Chevron: ({ color, size = 18 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color, 2)} d="M9 5l7 7-7 7" />
+    </Svg>
+  ),
+  Up: ({ color, size = 20 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color, 2)} d="M6 15l6-6 6 6" />
+    </Svg>
+  ),
+  Down: ({ color, size = 20 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color, 2)} d="M6 9l6 6 6-6" />
+    </Svg>
+  ),
+  Bookmark: ({ color, size = 20 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color)} d="M6 3.5h12v17l-6-4-6 4z" />
+    </Svg>
+  ),
   Undo: ({ color, size = 20 }: IconProps) => (
     <Svg width={size} height={size} viewBox="0 0 24 24">
       <Path {...stroke(color)} d="M9 14L4 9l5-5" />

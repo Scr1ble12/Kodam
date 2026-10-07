@@ -1,28 +1,25 @@
 import { router } from 'expo-router';
 import { useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { GRID_PAD, LetterGrid, MAX_WIDTH } from '../../components/LetterGrid';
 import { NameModal } from '../../components/NameModal';
 import { Icon, IconButton, PrimaryButton, Segmented, T } from '../../components/ui';
-import { CONSONANTS, LETTERS, SEGMENTS } from '../../data/letters';
+import { getLetter, homeSegment, LETTERS, SEGMENTS } from '../../data/letters';
 import type { Letter, SegmentId } from '../../data/letters';
 import { nextListName, useLists } from '../../lib/lists';
-import { stageLevel, useProgress } from '../../lib/progress';
-import { showRoman } from '../../lib/roman';
+import type { LetterList } from '../../lib/lists';
+import { useProgress } from '../../lib/progress';
 import { useTheme } from '../../lib/theme';
 
-const PAD = 20;
-const GAP = 10;
-const MAX_WIDTH = 560;
 /** The "N of 247" count follows the spec: every letter except the optional Grantha set. */
 const COUNTED = LETTERS.filter((l) => l.group !== 'grantha');
 
 export default function AlphabetScreen() {
-  const { colors, letterPx, settings } = useTheme();
+  const { colors } = useTheme();
   const progress = useProgress();
   const { lists, create } = useLists();
-  const { width } = useWindowDimensions();
   const [segment, setSegment] = useState<SegmentId>('vowels');
   const [selected, setSelected] = useState<Record<string, boolean>>({});
   const [naming, setNaming] = useState(false);
@@ -31,8 +28,8 @@ export default function AlphabetScreen() {
   const chosen = LETTERS.filter((l) => selected[l.id]);
   const allOn = letters.every((l) => selected[l.id]);
   const mastered = COUNTED.filter((l) => progress.stage(l.id) === 'mastered').length;
-  const cell = (Math.min(width, MAX_WIDTH) - PAD * 2 - GAP * 3) / 4;
-  const chosenKey = chosen.map((l) => l.id).join(',');
+  const chosenKey = sortedKey(chosen.map((l) => l.id));
+  const activeList = chosen.length ? lists.find((l) => sortedKey(l.ids) === chosenKey) : undefined;
 
   const setMany = (group: readonly Letter[], on: boolean) =>
     setSelected((cur) => {
@@ -41,51 +38,15 @@ export default function AlphabetScreen() {
       return next;
     });
 
-  const loadList = (ids: string[]) => {
-    setSelected(Object.fromEntries(ids.map((id) => [id, true])));
-    const first = LETTERS.find((l) => l.id === ids[0]);
-    const home = first && SEGMENTS.find((s) => (s.letters as readonly Letter[]).includes(first));
-    if (home) setSegment(home.id);
+  // Tapping the list that is already picked clears it again.
+  const toggleList = (list: LetterList) => {
+    if (activeList?.id === list.id) return setSelected({});
+    setSelected(Object.fromEntries(list.ids.map((id) => [id, true])));
+    const home = homeSegment(list.ids[0]);
+    if (home) setSegment(home);
   };
 
   const ids = (chosen.length ? chosen : letters).map((l) => l.id).join(',');
-
-  const renderCell = (l: Letter) => {
-    const on = !!selected[l.id];
-    const stage = progress.stage(l.id);
-    return (
-      <Pressable
-        key={l.id}
-        accessibilityRole="checkbox"
-        accessibilityState={{ checked: on }}
-        accessibilityLabel={`${l.tamil}, ${l.roman}`}
-        onPress={() => setSelected((cur) => ({ ...cur, [l.id]: !cur[l.id] }))}
-        style={[
-          styles.cell,
-          { width: cell, height: Math.max(80, letterPx * 2.6) },
-          on
-            ? { backgroundColor: colors.accent, borderColor: colors.accent, borderWidth: 1.5 }
-            : { backgroundColor: colors.surface, borderColor: colors.line },
-        ]}
-      >
-        <T size={letterPx} tone={on ? 'onAccent' : 'ink'}>
-          {l.tamil}
-        </T>
-        {showRoman(settings.roman, stage) && (
-          <T size={12} tone={on ? 'onAccent' : 'muted'} style={{ lineHeight: 15 }}>
-            {l.roman}
-          </T>
-        )}
-        {!on && (
-          <View style={[styles.bar, { backgroundColor: colors.line }]}>
-            <View
-              style={[styles.barFill, { backgroundColor: colors.accent, width: `${(stageLevel(stage) / 3) * 100}%` }]}
-            />
-          </View>
-        )}
-      </Pressable>
-    );
-  };
 
   return (
     <SafeAreaView edges={['top']} style={[styles.screen, { backgroundColor: colors.bg }]}>
@@ -105,8 +66,8 @@ export default function AlphabetScreen() {
             </View>
             <Pressable
               accessibilityRole="button"
-              accessibilityLabel={`${progress.streak} day streak, see activity`}
-              onPress={() => router.push('/activity')}
+              accessibilityLabel={`${progress.streak} day streak, see your stats`}
+              onPress={() => router.push('/stats')}
               style={({ pressed }) => [styles.streak, { backgroundColor: colors.streakBg, opacity: pressed ? 0.7 : 1 }]}
             >
               <Icon.Flame color={colors.streakInk} />
@@ -118,51 +79,92 @@ export default function AlphabetScreen() {
               </T>
             </Pressable>
           </View>
+        </View>
 
-          {lists.length > 0 && (
-            <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.lists}>
-              {lists.map((list) => {
-                const on = list.ids.join(',') === chosenKey;
-                return (
-                  <Pressable
-                    key={list.id}
-                    accessibilityRole="button"
-                    accessibilityState={{ selected: on }}
-                    onPress={() => loadList(list.ids)}
-                    style={[
-                      styles.listChip,
-                      on
-                        ? { backgroundColor: colors.ink, borderColor: colors.ink }
-                        : { backgroundColor: colors.surface, borderColor: colors.line },
-                    ]}
-                  >
-                    <T size={13} weight="medium" style={{ color: on ? colors.bg : colors.ink }}>
-                      {list.name}
-                    </T>
-                    <T size={12} style={{ color: on ? colors.bg : colors.muted }}>
-                      {list.ids.length}
-                    </T>
-                  </Pressable>
-                );
-              })}
-              <Pressable
-                accessibilityRole="button"
-                onPress={() => router.push('/lists')}
-                style={[styles.listChip, { borderColor: colors.line }]}
-              >
+        <View style={styles.listsBlock}>
+          <View style={styles.listsTitle}>
+            <T size={17} weight="bold">
+              My lists
+            </T>
+            {lists.length > 0 && (
+              <Pressable onPress={() => router.push('/lists')} hitSlop={10} accessibilityRole="button">
                 <T size={13} weight="medium" tone="accent">
-                  Manage lists
+                  Manage
                 </T>
               </Pressable>
-            </ScrollView>
-          )}
+            )}
+          </View>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.listsRow}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="New list"
+              onPress={() =>
+                router.push({
+                  pathname: '/list-edit',
+                  params: chosen.length ? { ids: chosen.map((l) => l.id).join(',') } : {},
+                })
+              }
+              style={({ pressed }) => [
+                styles.listCard,
+                styles.newCard,
+                { borderColor: colors.accent, opacity: pressed ? 0.7 : 1 },
+              ]}
+            >
+              <Icon.Plus color={colors.accent} size={22} />
+              <T size={14} weight="medium" tone="accent">
+                New list
+              </T>
+            </Pressable>
+            {lists.length === 0 && (
+              <View style={[styles.listCard, styles.emptyCard, { backgroundColor: colors.surface, borderColor: colors.line }]}>
+                <T size={13} tone="muted">
+                  Save the letters you study most and pick them up again in one tap.
+                </T>
+              </View>
+            )}
+            {lists.map((list) => {
+              const on = activeList?.id === list.id;
+              const preview = list.ids
+                .slice(0, 4)
+                .map((id) => getLetter(id)?.tamil ?? '')
+                .join(' ');
+              return (
+                <Pressable
+                  key={list.id}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: on }}
+                  accessibilityLabel={`${list.name}, ${list.ids.length} letters`}
+                  onPress={() => toggleList(list)}
+                  style={({ pressed }) => [
+                    styles.listCard,
+                    on
+                      ? { backgroundColor: colors.accent, borderColor: colors.accent }
+                      : { backgroundColor: colors.surface, borderColor: colors.line },
+                    { opacity: pressed ? 0.8 : 1 },
+                  ]}
+                >
+                  <T size={14} weight="medium" numberOfLines={1} tone={on ? 'onAccent' : 'ink'}>
+                    {list.name}
+                  </T>
+                  <T size={18} numberOfLines={1} tone={on ? 'onAccent' : 'ink'}>
+                    {preview}
+                  </T>
+                  <T size={12} tone={on ? 'onAccent' : 'muted'}>
+                    {list.ids.length} {list.ids.length === 1 ? 'letter' : 'letters'}
+                  </T>
+                </Pressable>
+              );
+            })}
+          </ScrollView>
+        </View>
 
+        <View style={styles.pickHeader}>
           <Segmented options={SEGMENTS} value={segment} onChange={setSegment} />
           <View style={styles.hintRow}>
             {chosen.length ? (
               <View style={styles.links}>
                 <T size={13} tone="muted">
-                  {chosen.length} selected
+                  {activeList ? activeList.name : `${chosen.length} selected`}
                 </T>
                 <Pressable onPress={() => setSelected({})} hitSlop={10} accessibilityRole="button">
                   <T size={13} weight="medium" tone="accent">
@@ -175,54 +177,29 @@ export default function AlphabetScreen() {
                 Tap letters to choose what to drill
               </T>
             )}
-            <View style={styles.links}>
-              {chosen.length > 0 && (
-                <Pressable onPress={() => setNaming(true)} hitSlop={10} accessibilityRole="button">
-                  <T size={13} weight="medium" tone="accent">
-                    Save list
-                  </T>
-                </Pressable>
-              )}
-              {!allOn && (
-                <Pressable onPress={() => setMany(letters, true)} hitSlop={10} accessibilityRole="button">
-                  <T size={13} weight="medium" tone="accent">
-                    Select all
-                  </T>
-                </Pressable>
-              )}
-            </View>
+            {!allOn && (
+              <Pressable onPress={() => setMany(letters, true)} hitSlop={10} accessibilityRole="button">
+                <T size={13} weight="medium" tone="accent">
+                  Select all
+                </T>
+              </Pressable>
+            )}
           </View>
         </View>
 
-        <ScrollView contentContainerStyle={styles.grid}>
-          {segment === 'compound'
-            ? // Compound letters come in rows of twelve, one row per consonant. Tap a row's header to pick it all.
-              CONSONANTS.map((c) => {
-                const row = letters.filter((l) => l.consonant === c.id);
-                const rowOn = row.every((l) => selected[l.id]);
-                return (
-                  <View key={c.id} style={styles.section}>
-                    <Pressable
-                      accessibilityRole="button"
-                      accessibilityLabel={`${rowOn ? 'Unselect' : 'Select'} the ${c.roman} row`}
-                      onPress={() => setMany(row, !rowOn)}
-                      style={styles.sectionHeader}
-                    >
-                      <T size={16} weight="medium">
-                        {c.tamil} · {c.roman}
-                      </T>
-                      <T size={13} weight="medium" tone="accent">
-                        {rowOn ? 'Unselect row' : 'Select row'}
-                      </T>
-                    </Pressable>
-                    <View style={styles.cells}>{row.map(renderCell)}</View>
-                  </View>
-                );
-              })
-            : letters.map(renderCell)}
-        </ScrollView>
+        <LetterGrid
+          segment={segment}
+          selected={selected}
+          onToggle={(id) => setSelected((cur) => ({ ...cur, [id]: !cur[id] }))}
+          setMany={setMany}
+        />
 
         <View style={[styles.footer, { borderTopColor: colors.line, backgroundColor: colors.bg }]}>
+          {chosen.length > 0 && !activeList && (
+            <IconButton bordered size={52} label="Save as a list" onPress={() => setNaming(true)}>
+              <Icon.Bookmark color={colors.accent} />
+            </IconButton>
+          )}
           <PrimaryButton
             style={{ flex: 1 }}
             disabled={chosen.length === 0}
@@ -259,10 +236,12 @@ export default function AlphabetScreen() {
   );
 }
 
+const sortedKey = (ids: string[]) => [...ids].sort().join(',');
+
 const styles = StyleSheet.create({
   screen: { flex: 1 },
   column: { flex: 1, width: '100%', maxWidth: MAX_WIDTH, alignSelf: 'center' },
-  header: { paddingHorizontal: PAD, paddingTop: 16, paddingBottom: 12, gap: 14 },
+  header: { paddingHorizontal: GRID_PAD, paddingTop: 16, paddingBottom: 12 },
   titleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' },
   streak: {
     flexDirection: 'row',
@@ -272,24 +251,19 @@ const styles = StyleSheet.create({
     minHeight: 44,
     borderRadius: 999,
   },
-  lists: { gap: 8 },
-  listChip: {
+  listsBlock: { gap: 8, paddingBottom: 14 },
+  listsTitle: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    gap: 6,
-    minHeight: 36,
-    paddingHorizontal: 14,
-    borderRadius: 999,
-    borderWidth: 1,
+    paddingHorizontal: GRID_PAD,
   },
+  listsRow: { gap: 10, paddingHorizontal: GRID_PAD },
+  listCard: { width: 128, height: 92, borderRadius: 16, borderWidth: 1, padding: 12, justifyContent: 'space-between' },
+  newCard: { width: 96, borderStyle: 'dashed', borderWidth: 1.5, alignItems: 'center', justifyContent: 'center', gap: 4 },
+  emptyCard: { width: 220, justifyContent: 'center' },
+  pickHeader: { paddingHorizontal: GRID_PAD, paddingBottom: 12, gap: 12 },
   hintRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   links: { flexDirection: 'row', alignItems: 'center', gap: 14 },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: GAP, paddingHorizontal: PAD, paddingBottom: 16 },
-  section: { width: '100%', gap: 8 },
-  sectionHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', minHeight: 36 },
-  cells: { flexDirection: 'row', flexWrap: 'wrap', gap: GAP },
-  cell: { borderRadius: 14, borderWidth: 1, alignItems: 'center', justifyContent: 'center', paddingBottom: 4 },
-  bar: { width: 28, height: 3, borderRadius: 2, marginTop: 4, overflow: 'hidden' },
-  barFill: { height: 3, borderRadius: 2 },
-  footer: { flexDirection: 'row', gap: 10, paddingHorizontal: PAD, paddingVertical: 12, borderTopWidth: 1 },
+  footer: { flexDirection: 'row', gap: 10, paddingHorizontal: GRID_PAD, paddingVertical: 12, borderTopWidth: 1 },
 });
