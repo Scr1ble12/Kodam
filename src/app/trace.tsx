@@ -1,10 +1,9 @@
 import { Redirect, router, useLocalSearchParams } from 'expo-router';
 import { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { TracePanel } from '../components/TracePanel';
-import { Icon, IconButton, T } from '../components/ui';
+import { Icon, IconButton, Screen, T } from '../components/ui';
 import { getLetter } from '../data/letters';
 import type { Letter } from '../data/letters';
 import { useTheme } from '../lib/theme';
@@ -26,7 +25,7 @@ export default function TraceScreen() {
   const last = index === letters.length - 1;
 
   return (
-    <SafeAreaView style={[styles.screen, { backgroundColor: colors.bg }]}>
+    <Screen>
       <View style={styles.content}>
         <View style={styles.top}>
           <IconButton label="Close tracing" onPress={close}>
@@ -49,12 +48,11 @@ export default function TraceScreen() {
           onNext={() => (last ? close() : setIndex(index + 1))}
         />
       </View>
-    </SafeAreaView>
+    </Screen>
   );
 }
 
 const styles = StyleSheet.create({
-  screen: { flex: 1 },
   content: { padding: 20, paddingTop: 8, gap: 16, width: '100%', maxWidth: 560, alignSelf: 'center' },
   top: { flexDirection: 'row', alignItems: 'center', gap: 14 },
   track: { flex: 1, height: 6, borderRadius: 3, overflow: 'hidden' },

@@ -1,9 +1,31 @@
 import type { ReactNode } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { StyleProp, TextStyle, ViewStyle } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import Svg, { Circle, Path } from 'react-native-svg';
 
 import { useTheme } from '../lib/theme';
+
+/**
+ * A full-screen page padded clear of the notch, Dynamic Island and home bar.
+ * Uses the insets directly so it also works inside stack screens without a header.
+ */
+export function Screen({ children }: { children: ReactNode }) {
+  const { colors } = useTheme();
+  const insets = useSafeAreaInsets();
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: colors.bg,
+        paddingTop: Math.max(insets.top, 12),
+        paddingBottom: insets.bottom,
+      }}
+    >
+      {children}
+    </View>
+  );
+}
 
 type Tone = 'ink' | 'muted' | 'accent' | 'onAccent' | 'error';
 

@@ -21,8 +21,8 @@ function Root() {
       <StatusBar style={dark ? 'light' : 'dark'} />
       <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.bg } }}>
         <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="drill" options={{ presentation: 'fullScreenModal', gestureEnabled: false }} />
-        <Stack.Screen name="trace" options={{ presentation: 'fullScreenModal', gestureEnabled: false }} />
+        <Stack.Screen name="drill" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
+        <Stack.Screen name="trace" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
       </Stack>
     </>
   );

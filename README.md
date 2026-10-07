@@ -22,6 +22,8 @@ npx expo start
 
 Then scan the QR code with the **Expo Go** app on your phone (iOS or Android), or press `w` to open it in a web browser.
 
+If your phone can't reach the dev server because Expo picked the wrong network address, start it with your computer's IP: `REACT_NATIVE_PACKAGER_HOSTNAME=<your-ip> npx expo start`.
+
 Typecheck: `npm run typecheck`.
 
 ## Project layout
