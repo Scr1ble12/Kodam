@@ -1,6 +1,6 @@
 import data from './words.json';
 
-/** One vocabulary word. DRAFT content: needs a native speaker's review before release. */
+/** One vocabulary word, checked against Tamil-English dictionaries (see scripts/generate-words.py). */
 export type Word = {
   /** `w.<deck>.<slug>`, kept apart from letter ids in the shared progress store. */
   id: string;

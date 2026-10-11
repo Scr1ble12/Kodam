@@ -4,7 +4,10 @@ Each word is (written Tamil, spoken Tamil or None if it's said as written, Engli
 Spoken forms follow common Chennai-style colloquial Tamil. Romanization (ISO 15919) is generated
 from the Tamil script so it can't drift from the spelling.
 
-DRAFT CONTENT: a native speaker should review every word before release.
+Checked 2026-10-11 against the Madras Tamil Lexicon (via wisdomlib.org), Glosbe, Wiktionary and the
+UChicago / MSU Tamil courses: no spelling or meaning errors found. A few spoken forms (இல்ல, பரவால்ல,
+மன்னிச்சுக்கோங்க, தங்கச்சி, பதினொண்ணு, அம்பது, கேளு, இங்க, என்ன விலை?) had no dictionary entry and
+follow the patterns of confirmed ones.
 
     python3 scripts/generate-words.py
 """
@@ -46,8 +49,8 @@ DECKS = [
         ("கணவர்", None, "husband", None),
         ("மனைவி", None, "wife", None),
         ("குழந்தை", "கொழந்த", "child / baby", None),
-        ("மாமா", None, "uncle", "Your mother's brother, and a friendly word for older men."),
-        ("அத்தை", None, "aunt", "Your father's sister."),
+        ("மாமா", None, "uncle", "Your mother's brother. Also father-in-law, and a friendly word for older men."),
+        ("அத்தை", None, "aunt", "Your father's sister. Sometimes also mother-in-law."),
     ]),
     ("numbers", "Numbers", "எண்கள்", [
         ("ஒன்று", "ஒண்ணு", "one", None),
@@ -92,7 +95,7 @@ DECKS = [
         ("பல்", None, "tooth", None),
         ("கை", None, "hand / arm", None),
         ("கால்", None, "leg / foot", None),
-        ("விரல்", None, "finger", None),
+        ("விரல்", None, "finger / toe", None),
         ("முடி", None, "hair", None),
         ("முகம்", None, "face", None),
         ("வயிறு", None, "stomach", None),
@@ -113,7 +116,7 @@ DECKS = [
         ("தொலைக்காட்சி", "டிவி", "television", None),
         ("புத்தகம்", None, "book", None),
         ("தட்டு", None, "plate", None),
-        ("கரண்டி", None, "spoon", None),
+        ("கரண்டி", None, "spoon / ladle", None),
         ("பாய்", None, "mat", None),
         ("சாவி", None, "key", None),
     ]),
@@ -122,31 +125,31 @@ DECKS = [
         ("சிவப்பு", None, "red", None),
         ("நீலம்", None, "blue", None),
         ("பச்சை", None, "green", None),
-        ("மஞ்சள்", None, "yellow", None),
+        ("மஞ்சள்", None, "yellow", "Also means turmeric."),
         ("கருப்பு", None, "black", None),
         ("வெள்ளை", None, "white", None),
         ("ஆரஞ்சு", None, "orange", None),
         ("இளஞ்சிவப்பு", None, "pink", "Literally \"young red\"."),
         ("ஊதா", None, "purple", None),
         ("பழுப்பு", None, "brown", None),
-        ("சாம்பல்", None, "grey", "Also means ash."),
+        ("சாம்பல் நிறம்", None, "grey", "சாம்பல் on its own means ash."),
         ("தங்க நிறம்", None, "gold (colour)", None),
         ("வெள்ளி நிறம்", None, "silver (colour)", None),
         ("கருநீலம்", None, "dark blue", None),
     ]),
     ("time", "Days and time", "நாளும் நேரமும்", [
-        ("ஞாயிறு", None, "Sunday", None),
-        ("திங்கள்", None, "Monday", None),
-        ("செவ்வாய்", None, "Tuesday", None),
-        ("புதன்", None, "Wednesday", None),
-        ("வியாழன்", None, "Thursday", None),
-        ("வெள்ளி", None, "Friday", "Also means silver."),
-        ("சனி", None, "Saturday", None),
-        ("இன்று", "இன்னிக்கு", "today", None),
+        ("ஞாயிறு", None, "Sunday", "Short for ஞாயிற்றுக்கிழமை. Also means the sun."),
+        ("திங்கள்", None, "Monday", "Short for திங்கட்கிழமை. Also means the moon."),
+        ("செவ்வாய்", None, "Tuesday", "Short for செவ்வாய்க்கிழமை. Also means Mars."),
+        ("புதன்", None, "Wednesday", "Short for புதன்கிழமை. Also means Mercury."),
+        ("வியாழன்", None, "Thursday", "Short for வியாழக்கிழமை. Also means Jupiter."),
+        ("வெள்ளி", None, "Friday", "Short for வெள்ளிக்கிழமை. Also means silver."),
+        ("சனி", None, "Saturday", "Short for சனிக்கிழமை. Also means Saturn."),
+        ("இன்று", "இன்னைக்கு", "today", None),
         ("நேற்று", "நேத்து", "yesterday", None),
         ("நாளை", "நாளைக்கு", "tomorrow", None),
         ("காலை", None, "morning", None),
-        ("மதியம்", None, "afternoon", None),
+        ("மதியம்", None, "noon / afternoon", None),
         ("மாலை", "சாயங்காலம்", "evening", None),
         ("இரவு", "ராத்திரி", "night", None),
         ("நேரம்", None, "time", None),
@@ -296,7 +299,13 @@ def say(text: str) -> str:
     return re.sub(r"[\u0b80-\u0bff]+", lambda m: say_word(m.group(0)), unicodedata.normalize("NFC", text))
 
 
+# Words whose English changed after release keep their old id, so saved progress and custom decks still find them.
+ID_SLUGS = {"finger / toe": "finger", "spoon / ladle": "spoon", "noon / afternoon": "afternoon"}
+
+
 def slug(english: str) -> str:
+    if english in ID_SLUGS:
+        return ID_SLUGS[english]
     return re.sub(r"[^a-z0-9]+", "-", english.lower()).strip("-")
 
 

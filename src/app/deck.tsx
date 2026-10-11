@@ -117,7 +117,7 @@ export default function DeckScreen() {
         </View>
 
         <T size={12} tone="muted" style={{ textAlign: 'center' }}>
-          Tap a word to hear it. Draft word list: a native speaker still needs to review it.
+          Tap a word to hear it. Words checked against the Madras Tamil Lexicon and university Tamil courses.
         </T>
 
         {deck.custom && (

@@ -243,7 +243,7 @@
      "roman": "māmā",
      "english": "uncle",
      "say": "maamaa",
-     "note": "Your mother's brother, and a friendly word for older men."
+     "note": "Your mother's brother. Also father-in-law, and a friendly word for older men."
     },
     {
      "id": "w.family.aunt",
@@ -251,7 +251,7 @@
      "roman": "attai",
      "english": "aunt",
      "say": "athai",
-     "note": "Your father's sister."
+     "note": "Your father's sister. Sometimes also mother-in-law."
     }
    ]
   },
@@ -561,7 +561,7 @@
      "id": "w.body.finger",
      "tamil": "விரல்",
      "roman": "viral",
-     "english": "finger",
+     "english": "finger / toe",
      "say": "viral"
     },
     {
@@ -703,7 +703,7 @@
      "id": "w.home.spoon",
      "tamil": "கரண்டி",
      "roman": "karaṇṭi",
-     "english": "spoon",
+     "english": "spoon / ladle",
      "say": "karandi"
     },
     {
@@ -760,7 +760,8 @@
      "tamil": "மஞ்சள்",
      "roman": "mañcaḷ",
      "english": "yellow",
-     "say": "manjal"
+     "say": "manjal",
+     "note": "Also means turmeric."
     },
     {
      "id": "w.colours.black",
@@ -807,11 +808,11 @@
     },
     {
      "id": "w.colours.grey",
-     "tamil": "சாம்பல்",
-     "roman": "cāmpal",
+     "tamil": "சாம்பல் நிறம்",
+     "roman": "cāmpal niṟam",
      "english": "grey",
-     "say": "saambal",
-     "note": "Also means ash."
+     "say": "saambal niram",
+     "note": "சாம்பல் on its own means ash."
     },
     {
      "id": "w.colours.gold-colour",
@@ -846,35 +847,40 @@
      "tamil": "ஞாயிறு",
      "roman": "ñāyiṟu",
      "english": "Sunday",
-     "say": "nyaayiru"
+     "say": "nyaayiru",
+     "note": "Short for ஞாயிற்றுக்கிழமை. Also means the sun."
     },
     {
      "id": "w.time.monday",
      "tamil": "திங்கள்",
      "roman": "tiṅkaḷ",
      "english": "Monday",
-     "say": "thingal"
+     "say": "thingal",
+     "note": "Short for திங்கட்கிழமை. Also means the moon."
     },
     {
      "id": "w.time.tuesday",
      "tamil": "செவ்வாய்",
      "roman": "cevvāy",
      "english": "Tuesday",
-     "say": "sevvaay"
+     "say": "sevvaay",
+     "note": "Short for செவ்வாய்க்கிழமை. Also means Mars."
     },
     {
      "id": "w.time.wednesday",
      "tamil": "புதன்",
      "roman": "putaṉ",
      "english": "Wednesday",
-     "say": "pudhan"
+     "say": "pudhan",
+     "note": "Short for புதன்கிழமை. Also means Mercury."
     },
     {
      "id": "w.time.thursday",
      "tamil": "வியாழன்",
      "roman": "viyāḻaṉ",
      "english": "Thursday",
-     "say": "viyaazhan"
+     "say": "viyaazhan",
+     "note": "Short for வியாழக்கிழமை. Also means Jupiter."
     },
     {
      "id": "w.time.friday",
@@ -882,23 +888,24 @@
      "roman": "veḷḷi",
      "english": "Friday",
      "say": "velli",
-     "note": "Also means silver."
+     "note": "Short for வெள்ளிக்கிழமை. Also means silver."
     },
     {
      "id": "w.time.saturday",
      "tamil": "சனி",
      "roman": "caṉi",
      "english": "Saturday",
-     "say": "sani"
+     "say": "sani",
+     "note": "Short for சனிக்கிழமை. Also means Saturn."
     },
     {
      "id": "w.time.today",
      "tamil": "இன்று",
      "roman": "iṉṟu",
      "english": "today",
-     "spoken": "இன்னிக்கு",
-     "spokenRoman": "iṉṉikku",
-     "say": "innikku"
+     "spoken": "இன்னைக்கு",
+     "spokenRoman": "iṉṉaikku",
+     "say": "innaikku"
     },
     {
      "id": "w.time.yesterday",
@@ -929,7 +936,7 @@
      "id": "w.time.afternoon",
      "tamil": "மதியம்",
      "roman": "matiyam",
-     "english": "afternoon",
+     "english": "noon / afternoon",
      "say": "madhiyam"
     },
     {
