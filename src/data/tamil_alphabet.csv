@@ -1,0 +1,254 @@
+id,letter,category,tamil_name,romanization,components,vowel,consonant,length,sign_position,irregular,consonant_class,articulation,codepoints,audio,stroke_order,needs_review
+v_a,அ,vowel,அகரம்,a,,a,,short,,False,,,U+0B85,,,True
+v_aa,ஆ,vowel,ஆகாரம்,ā,,aa,,long,,False,,,U+0B86,,,True
+v_i,இ,vowel,இகரம்,i,,i,,short,,False,,,U+0B87,,,True
+v_ii,ஈ,vowel,ஈகாரம்,ī,,ii,,long,,False,,,U+0B88,,,True
+v_u,உ,vowel,உகரம்,u,,u,,short,,False,,,U+0B89,,,True
+v_uu,ஊ,vowel,ஊகாரம்,ū,,uu,,long,,False,,,U+0B8A,,,True
+v_e,எ,vowel,எகரம்,e,,e,,short,,False,,,U+0B8E,,,True
+v_ee,ஏ,vowel,ஏகாரம்,ē,,ee,,long,,False,,,U+0B8F,,,True
+v_ai,ஐ,vowel,ஐகாரம்,ai,,ai,,long,,False,,,U+0B90,,,True
+v_o,ஒ,vowel,ஒகரம்,o,,o,,short,,False,,,U+0B92,,,True
+v_oo,ஓ,vowel,ஓகாரம்,ō,,oo,,long,,False,,,U+0B93,,,True
+v_au,ஔ,vowel,ஔகாரம்,au,,au,,long,,False,,,U+0B94,,,True
+aytham,ஃ,aytham,ஆய்த எழுத்து,ḵ,,,,,,False,,breathy fricative,U+0B83,,,True
+c_k,க்,consonant,இக்,k,,,k,,,False,vallinam,velar stop,U+0B95 U+0BCD,,,True
+c_ng,ங்,consonant,இங்,ṅ,,,ng,,,False,mellinam,velar nasal,U+0B99 U+0BCD,,,True
+c_c,ச்,consonant,இச்,c,,,c,,,False,vallinam,palatal stop,U+0B9A U+0BCD,,,True
+c_nj,ஞ்,consonant,இஞ்,ñ,,,nj,,,False,mellinam,palatal nasal,U+0B9E U+0BCD,,,True
+c_tt,ட்,consonant,இட்,ṭ,,,tt,,,False,vallinam,retroflex stop,U+0B9F U+0BCD,,,True
+c_nn,ண்,consonant,இண்,ṇ,,,nn,,,False,mellinam,retroflex nasal,U+0BA3 U+0BCD,,,True
+c_t,த்,consonant,இத்,t,,,t,,,False,vallinam,dental stop,U+0BA4 U+0BCD,,,True
+c_n,ந்,consonant,இந்,n,,,n,,,False,mellinam,dental nasal,U+0BA8 U+0BCD,,,True
+c_p,ப்,consonant,இப்,p,,,p,,,False,vallinam,labial stop,U+0BAA U+0BCD,,,True
+c_m,ம்,consonant,இம்,m,,,m,,,False,mellinam,labial nasal,U+0BAE U+0BCD,,,True
+c_y,ய்,consonant,இய்,y,,,y,,,False,idaiyinam,palatal approximant,U+0BAF U+0BCD,,,True
+c_r,ர்,consonant,இர்,r,,,r,,,False,idaiyinam,alveolar tap,U+0BB0 U+0BCD,,,True
+c_l,ல்,consonant,இல்,l,,,l,,,False,idaiyinam,alveolar lateral,U+0BB2 U+0BCD,,,True
+c_v,வ்,consonant,இவ்,v,,,v,,,False,idaiyinam,labiodental approximant,U+0BB5 U+0BCD,,,True
+c_zh,ழ்,consonant,இழ்,ḻ,,,zh,,,False,idaiyinam,retroflex approximant,U+0BB4 U+0BCD,,,True
+c_ll,ள்,consonant,இள்,ḷ,,,ll,,,False,idaiyinam,retroflex lateral,U+0BB3 U+0BCD,,,True
+c_rr,ற்,consonant,இற்,ṟ,,,rr,,,False,vallinam,alveolar trill,U+0BB1 U+0BCD,,,True
+c_nnn,ன்,consonant,இன்,ṉ,,,nnn,,,False,mellinam,alveolar nasal,U+0BA9 U+0BCD,,,True
+cv_k_a,க,compound,,ka,c_k v_a,a,k,short,none,False,vallinam,velar stop,U+0B95,,,True
+cv_k_aa,கா,compound,,kā,c_k v_aa,aa,k,long,right,False,vallinam,velar stop,U+0B95 U+0BBE,,,True
+cv_k_i,கி,compound,,ki,c_k v_i,i,k,short,above,False,vallinam,velar stop,U+0B95 U+0BBF,,,True
+cv_k_ii,கீ,compound,,kī,c_k v_ii,ii,k,long,above,False,vallinam,velar stop,U+0B95 U+0BC0,,,True
+cv_k_u,கு,compound,,ku,c_k v_u,u,k,short,ligature,True,vallinam,velar stop,U+0B95 U+0BC1,,,True
+cv_k_uu,கூ,compound,,kū,c_k v_uu,uu,k,long,ligature,True,vallinam,velar stop,U+0B95 U+0BC2,,,True
+cv_k_e,கெ,compound,,ke,c_k v_e,e,k,short,left,False,vallinam,velar stop,U+0B95 U+0BC6,,,True
+cv_k_ee,கே,compound,,kē,c_k v_ee,ee,k,long,left,False,vallinam,velar stop,U+0B95 U+0BC7,,,True
+cv_k_ai,கை,compound,,kai,c_k v_ai,ai,k,long,left,False,vallinam,velar stop,U+0B95 U+0BC8,,,True
+cv_k_o,கொ,compound,,ko,c_k v_o,o,k,short,both,False,vallinam,velar stop,U+0B95 U+0BCA,,,True
+cv_k_oo,கோ,compound,,kō,c_k v_oo,oo,k,long,both,False,vallinam,velar stop,U+0B95 U+0BCB,,,True
+cv_k_au,கௌ,compound,,kau,c_k v_au,au,k,long,both,False,vallinam,velar stop,U+0B95 U+0BCC,,,True
+cv_ng_a,ங,compound,,ṅa,c_ng v_a,a,ng,short,none,False,mellinam,velar nasal,U+0B99,,,True
+cv_ng_aa,ஙா,compound,,ṅā,c_ng v_aa,aa,ng,long,right,False,mellinam,velar nasal,U+0B99 U+0BBE,,,True
+cv_ng_i,ஙி,compound,,ṅi,c_ng v_i,i,ng,short,above,False,mellinam,velar nasal,U+0B99 U+0BBF,,,True
+cv_ng_ii,ஙீ,compound,,ṅī,c_ng v_ii,ii,ng,long,above,False,mellinam,velar nasal,U+0B99 U+0BC0,,,True
+cv_ng_u,ஙு,compound,,ṅu,c_ng v_u,u,ng,short,ligature,True,mellinam,velar nasal,U+0B99 U+0BC1,,,True
+cv_ng_uu,ஙூ,compound,,ṅū,c_ng v_uu,uu,ng,long,ligature,True,mellinam,velar nasal,U+0B99 U+0BC2,,,True
+cv_ng_e,ஙெ,compound,,ṅe,c_ng v_e,e,ng,short,left,False,mellinam,velar nasal,U+0B99 U+0BC6,,,True
+cv_ng_ee,ஙே,compound,,ṅē,c_ng v_ee,ee,ng,long,left,False,mellinam,velar nasal,U+0B99 U+0BC7,,,True
+cv_ng_ai,ஙை,compound,,ṅai,c_ng v_ai,ai,ng,long,left,False,mellinam,velar nasal,U+0B99 U+0BC8,,,True
+cv_ng_o,ஙொ,compound,,ṅo,c_ng v_o,o,ng,short,both,False,mellinam,velar nasal,U+0B99 U+0BCA,,,True
+cv_ng_oo,ஙோ,compound,,ṅō,c_ng v_oo,oo,ng,long,both,False,mellinam,velar nasal,U+0B99 U+0BCB,,,True
+cv_ng_au,ஙௌ,compound,,ṅau,c_ng v_au,au,ng,long,both,False,mellinam,velar nasal,U+0B99 U+0BCC,,,True
+cv_c_a,ச,compound,,ca,c_c v_a,a,c,short,none,False,vallinam,palatal stop,U+0B9A,,,True
+cv_c_aa,சா,compound,,cā,c_c v_aa,aa,c,long,right,False,vallinam,palatal stop,U+0B9A U+0BBE,,,True
+cv_c_i,சி,compound,,ci,c_c v_i,i,c,short,above,False,vallinam,palatal stop,U+0B9A U+0BBF,,,True
+cv_c_ii,சீ,compound,,cī,c_c v_ii,ii,c,long,above,False,vallinam,palatal stop,U+0B9A U+0BC0,,,True
+cv_c_u,சு,compound,,cu,c_c v_u,u,c,short,ligature,True,vallinam,palatal stop,U+0B9A U+0BC1,,,True
+cv_c_uu,சூ,compound,,cū,c_c v_uu,uu,c,long,ligature,True,vallinam,palatal stop,U+0B9A U+0BC2,,,True
+cv_c_e,செ,compound,,ce,c_c v_e,e,c,short,left,False,vallinam,palatal stop,U+0B9A U+0BC6,,,True
+cv_c_ee,சே,compound,,cē,c_c v_ee,ee,c,long,left,False,vallinam,palatal stop,U+0B9A U+0BC7,,,True
+cv_c_ai,சை,compound,,cai,c_c v_ai,ai,c,long,left,False,vallinam,palatal stop,U+0B9A U+0BC8,,,True
+cv_c_o,சொ,compound,,co,c_c v_o,o,c,short,both,False,vallinam,palatal stop,U+0B9A U+0BCA,,,True
+cv_c_oo,சோ,compound,,cō,c_c v_oo,oo,c,long,both,False,vallinam,palatal stop,U+0B9A U+0BCB,,,True
+cv_c_au,சௌ,compound,,cau,c_c v_au,au,c,long,both,False,vallinam,palatal stop,U+0B9A U+0BCC,,,True
+cv_nj_a,ஞ,compound,,ña,c_nj v_a,a,nj,short,none,False,mellinam,palatal nasal,U+0B9E,,,True
+cv_nj_aa,ஞா,compound,,ñā,c_nj v_aa,aa,nj,long,right,False,mellinam,palatal nasal,U+0B9E U+0BBE,,,True
+cv_nj_i,ஞி,compound,,ñi,c_nj v_i,i,nj,short,above,False,mellinam,palatal nasal,U+0B9E U+0BBF,,,True
+cv_nj_ii,ஞீ,compound,,ñī,c_nj v_ii,ii,nj,long,above,False,mellinam,palatal nasal,U+0B9E U+0BC0,,,True
+cv_nj_u,ஞு,compound,,ñu,c_nj v_u,u,nj,short,ligature,True,mellinam,palatal nasal,U+0B9E U+0BC1,,,True
+cv_nj_uu,ஞூ,compound,,ñū,c_nj v_uu,uu,nj,long,ligature,True,mellinam,palatal nasal,U+0B9E U+0BC2,,,True
+cv_nj_e,ஞெ,compound,,ñe,c_nj v_e,e,nj,short,left,False,mellinam,palatal nasal,U+0B9E U+0BC6,,,True
+cv_nj_ee,ஞே,compound,,ñē,c_nj v_ee,ee,nj,long,left,False,mellinam,palatal nasal,U+0B9E U+0BC7,,,True
+cv_nj_ai,ஞை,compound,,ñai,c_nj v_ai,ai,nj,long,left,False,mellinam,palatal nasal,U+0B9E U+0BC8,,,True
+cv_nj_o,ஞொ,compound,,ño,c_nj v_o,o,nj,short,both,False,mellinam,palatal nasal,U+0B9E U+0BCA,,,True
+cv_nj_oo,ஞோ,compound,,ñō,c_nj v_oo,oo,nj,long,both,False,mellinam,palatal nasal,U+0B9E U+0BCB,,,True
+cv_nj_au,ஞௌ,compound,,ñau,c_nj v_au,au,nj,long,both,False,mellinam,palatal nasal,U+0B9E U+0BCC,,,True
+cv_tt_a,ட,compound,,ṭa,c_tt v_a,a,tt,short,none,False,vallinam,retroflex stop,U+0B9F,,,True
+cv_tt_aa,டா,compound,,ṭā,c_tt v_aa,aa,tt,long,right,False,vallinam,retroflex stop,U+0B9F U+0BBE,,,True
+cv_tt_i,டி,compound,,ṭi,c_tt v_i,i,tt,short,above,True,vallinam,retroflex stop,U+0B9F U+0BBF,,,True
+cv_tt_ii,டீ,compound,,ṭī,c_tt v_ii,ii,tt,long,above,True,vallinam,retroflex stop,U+0B9F U+0BC0,,,True
+cv_tt_u,டு,compound,,ṭu,c_tt v_u,u,tt,short,ligature,True,vallinam,retroflex stop,U+0B9F U+0BC1,,,True
+cv_tt_uu,டூ,compound,,ṭū,c_tt v_uu,uu,tt,long,ligature,True,vallinam,retroflex stop,U+0B9F U+0BC2,,,True
+cv_tt_e,டெ,compound,,ṭe,c_tt v_e,e,tt,short,left,False,vallinam,retroflex stop,U+0B9F U+0BC6,,,True
+cv_tt_ee,டே,compound,,ṭē,c_tt v_ee,ee,tt,long,left,False,vallinam,retroflex stop,U+0B9F U+0BC7,,,True
+cv_tt_ai,டை,compound,,ṭai,c_tt v_ai,ai,tt,long,left,False,vallinam,retroflex stop,U+0B9F U+0BC8,,,True
+cv_tt_o,டொ,compound,,ṭo,c_tt v_o,o,tt,short,both,False,vallinam,retroflex stop,U+0B9F U+0BCA,,,True
+cv_tt_oo,டோ,compound,,ṭō,c_tt v_oo,oo,tt,long,both,False,vallinam,retroflex stop,U+0B9F U+0BCB,,,True
+cv_tt_au,டௌ,compound,,ṭau,c_tt v_au,au,tt,long,both,False,vallinam,retroflex stop,U+0B9F U+0BCC,,,True
+cv_nn_a,ண,compound,,ṇa,c_nn v_a,a,nn,short,none,False,mellinam,retroflex nasal,U+0BA3,,,True
+cv_nn_aa,ணா,compound,,ṇā,c_nn v_aa,aa,nn,long,right,False,mellinam,retroflex nasal,U+0BA3 U+0BBE,,,True
+cv_nn_i,ணி,compound,,ṇi,c_nn v_i,i,nn,short,above,False,mellinam,retroflex nasal,U+0BA3 U+0BBF,,,True
+cv_nn_ii,ணீ,compound,,ṇī,c_nn v_ii,ii,nn,long,above,False,mellinam,retroflex nasal,U+0BA3 U+0BC0,,,True
+cv_nn_u,ணு,compound,,ṇu,c_nn v_u,u,nn,short,ligature,True,mellinam,retroflex nasal,U+0BA3 U+0BC1,,,True
+cv_nn_uu,ணூ,compound,,ṇū,c_nn v_uu,uu,nn,long,ligature,True,mellinam,retroflex nasal,U+0BA3 U+0BC2,,,True
+cv_nn_e,ணெ,compound,,ṇe,c_nn v_e,e,nn,short,left,False,mellinam,retroflex nasal,U+0BA3 U+0BC6,,,True
+cv_nn_ee,ணே,compound,,ṇē,c_nn v_ee,ee,nn,long,left,False,mellinam,retroflex nasal,U+0BA3 U+0BC7,,,True
+cv_nn_ai,ணை,compound,,ṇai,c_nn v_ai,ai,nn,long,left,False,mellinam,retroflex nasal,U+0BA3 U+0BC8,,,True
+cv_nn_o,ணொ,compound,,ṇo,c_nn v_o,o,nn,short,both,False,mellinam,retroflex nasal,U+0BA3 U+0BCA,,,True
+cv_nn_oo,ணோ,compound,,ṇō,c_nn v_oo,oo,nn,long,both,False,mellinam,retroflex nasal,U+0BA3 U+0BCB,,,True
+cv_nn_au,ணௌ,compound,,ṇau,c_nn v_au,au,nn,long,both,False,mellinam,retroflex nasal,U+0BA3 U+0BCC,,,True
+cv_t_a,த,compound,,ta,c_t v_a,a,t,short,none,False,vallinam,dental stop,U+0BA4,,,True
+cv_t_aa,தா,compound,,tā,c_t v_aa,aa,t,long,right,False,vallinam,dental stop,U+0BA4 U+0BBE,,,True
+cv_t_i,தி,compound,,ti,c_t v_i,i,t,short,above,False,vallinam,dental stop,U+0BA4 U+0BBF,,,True
+cv_t_ii,தீ,compound,,tī,c_t v_ii,ii,t,long,above,False,vallinam,dental stop,U+0BA4 U+0BC0,,,True
+cv_t_u,து,compound,,tu,c_t v_u,u,t,short,ligature,True,vallinam,dental stop,U+0BA4 U+0BC1,,,True
+cv_t_uu,தூ,compound,,tū,c_t v_uu,uu,t,long,ligature,True,vallinam,dental stop,U+0BA4 U+0BC2,,,True
+cv_t_e,தெ,compound,,te,c_t v_e,e,t,short,left,False,vallinam,dental stop,U+0BA4 U+0BC6,,,True
+cv_t_ee,தே,compound,,tē,c_t v_ee,ee,t,long,left,False,vallinam,dental stop,U+0BA4 U+0BC7,,,True
+cv_t_ai,தை,compound,,tai,c_t v_ai,ai,t,long,left,False,vallinam,dental stop,U+0BA4 U+0BC8,,,True
+cv_t_o,தொ,compound,,to,c_t v_o,o,t,short,both,False,vallinam,dental stop,U+0BA4 U+0BCA,,,True
+cv_t_oo,தோ,compound,,tō,c_t v_oo,oo,t,long,both,False,vallinam,dental stop,U+0BA4 U+0BCB,,,True
+cv_t_au,தௌ,compound,,tau,c_t v_au,au,t,long,both,False,vallinam,dental stop,U+0BA4 U+0BCC,,,True
+cv_n_a,ந,compound,,na,c_n v_a,a,n,short,none,False,mellinam,dental nasal,U+0BA8,,,True
+cv_n_aa,நா,compound,,nā,c_n v_aa,aa,n,long,right,False,mellinam,dental nasal,U+0BA8 U+0BBE,,,True
+cv_n_i,நி,compound,,ni,c_n v_i,i,n,short,above,False,mellinam,dental nasal,U+0BA8 U+0BBF,,,True
+cv_n_ii,நீ,compound,,nī,c_n v_ii,ii,n,long,above,False,mellinam,dental nasal,U+0BA8 U+0BC0,,,True
+cv_n_u,நு,compound,,nu,c_n v_u,u,n,short,ligature,True,mellinam,dental nasal,U+0BA8 U+0BC1,,,True
+cv_n_uu,நூ,compound,,nū,c_n v_uu,uu,n,long,ligature,True,mellinam,dental nasal,U+0BA8 U+0BC2,,,True
+cv_n_e,நெ,compound,,ne,c_n v_e,e,n,short,left,False,mellinam,dental nasal,U+0BA8 U+0BC6,,,True
+cv_n_ee,நே,compound,,nē,c_n v_ee,ee,n,long,left,False,mellinam,dental nasal,U+0BA8 U+0BC7,,,True
+cv_n_ai,நை,compound,,nai,c_n v_ai,ai,n,long,left,False,mellinam,dental nasal,U+0BA8 U+0BC8,,,True
+cv_n_o,நொ,compound,,no,c_n v_o,o,n,short,both,False,mellinam,dental nasal,U+0BA8 U+0BCA,,,True
+cv_n_oo,நோ,compound,,nō,c_n v_oo,oo,n,long,both,False,mellinam,dental nasal,U+0BA8 U+0BCB,,,True
+cv_n_au,நௌ,compound,,nau,c_n v_au,au,n,long,both,False,mellinam,dental nasal,U+0BA8 U+0BCC,,,True
+cv_p_a,ப,compound,,pa,c_p v_a,a,p,short,none,False,vallinam,labial stop,U+0BAA,,,True
+cv_p_aa,பா,compound,,pā,c_p v_aa,aa,p,long,right,False,vallinam,labial stop,U+0BAA U+0BBE,,,True
+cv_p_i,பி,compound,,pi,c_p v_i,i,p,short,above,False,vallinam,labial stop,U+0BAA U+0BBF,,,True
+cv_p_ii,பீ,compound,,pī,c_p v_ii,ii,p,long,above,False,vallinam,labial stop,U+0BAA U+0BC0,,,True
+cv_p_u,பு,compound,,pu,c_p v_u,u,p,short,ligature,True,vallinam,labial stop,U+0BAA U+0BC1,,,True
+cv_p_uu,பூ,compound,,pū,c_p v_uu,uu,p,long,ligature,True,vallinam,labial stop,U+0BAA U+0BC2,,,True
+cv_p_e,பெ,compound,,pe,c_p v_e,e,p,short,left,False,vallinam,labial stop,U+0BAA U+0BC6,,,True
+cv_p_ee,பே,compound,,pē,c_p v_ee,ee,p,long,left,False,vallinam,labial stop,U+0BAA U+0BC7,,,True
+cv_p_ai,பை,compound,,pai,c_p v_ai,ai,p,long,left,False,vallinam,labial stop,U+0BAA U+0BC8,,,True
+cv_p_o,பொ,compound,,po,c_p v_o,o,p,short,both,False,vallinam,labial stop,U+0BAA U+0BCA,,,True
+cv_p_oo,போ,compound,,pō,c_p v_oo,oo,p,long,both,False,vallinam,labial stop,U+0BAA U+0BCB,,,True
+cv_p_au,பௌ,compound,,pau,c_p v_au,au,p,long,both,False,vallinam,labial stop,U+0BAA U+0BCC,,,True
+cv_m_a,ம,compound,,ma,c_m v_a,a,m,short,none,False,mellinam,labial nasal,U+0BAE,,,True
+cv_m_aa,மா,compound,,mā,c_m v_aa,aa,m,long,right,False,mellinam,labial nasal,U+0BAE U+0BBE,,,True
+cv_m_i,மி,compound,,mi,c_m v_i,i,m,short,above,False,mellinam,labial nasal,U+0BAE U+0BBF,,,True
+cv_m_ii,மீ,compound,,mī,c_m v_ii,ii,m,long,above,False,mellinam,labial nasal,U+0BAE U+0BC0,,,True
+cv_m_u,மு,compound,,mu,c_m v_u,u,m,short,ligature,True,mellinam,labial nasal,U+0BAE U+0BC1,,,True
+cv_m_uu,மூ,compound,,mū,c_m v_uu,uu,m,long,ligature,True,mellinam,labial nasal,U+0BAE U+0BC2,,,True
+cv_m_e,மெ,compound,,me,c_m v_e,e,m,short,left,False,mellinam,labial nasal,U+0BAE U+0BC6,,,True
+cv_m_ee,மே,compound,,mē,c_m v_ee,ee,m,long,left,False,mellinam,labial nasal,U+0BAE U+0BC7,,,True
+cv_m_ai,மை,compound,,mai,c_m v_ai,ai,m,long,left,False,mellinam,labial nasal,U+0BAE U+0BC8,,,True
+cv_m_o,மொ,compound,,mo,c_m v_o,o,m,short,both,False,mellinam,labial nasal,U+0BAE U+0BCA,,,True
+cv_m_oo,மோ,compound,,mō,c_m v_oo,oo,m,long,both,False,mellinam,labial nasal,U+0BAE U+0BCB,,,True
+cv_m_au,மௌ,compound,,mau,c_m v_au,au,m,long,both,False,mellinam,labial nasal,U+0BAE U+0BCC,,,True
+cv_y_a,ய,compound,,ya,c_y v_a,a,y,short,none,False,idaiyinam,palatal approximant,U+0BAF,,,True
+cv_y_aa,யா,compound,,yā,c_y v_aa,aa,y,long,right,False,idaiyinam,palatal approximant,U+0BAF U+0BBE,,,True
+cv_y_i,யி,compound,,yi,c_y v_i,i,y,short,above,False,idaiyinam,palatal approximant,U+0BAF U+0BBF,,,True
+cv_y_ii,யீ,compound,,yī,c_y v_ii,ii,y,long,above,False,idaiyinam,palatal approximant,U+0BAF U+0BC0,,,True
+cv_y_u,யு,compound,,yu,c_y v_u,u,y,short,ligature,True,idaiyinam,palatal approximant,U+0BAF U+0BC1,,,True
+cv_y_uu,யூ,compound,,yū,c_y v_uu,uu,y,long,ligature,True,idaiyinam,palatal approximant,U+0BAF U+0BC2,,,True
+cv_y_e,யெ,compound,,ye,c_y v_e,e,y,short,left,False,idaiyinam,palatal approximant,U+0BAF U+0BC6,,,True
+cv_y_ee,யே,compound,,yē,c_y v_ee,ee,y,long,left,False,idaiyinam,palatal approximant,U+0BAF U+0BC7,,,True
+cv_y_ai,யை,compound,,yai,c_y v_ai,ai,y,long,left,False,idaiyinam,palatal approximant,U+0BAF U+0BC8,,,True
+cv_y_o,யொ,compound,,yo,c_y v_o,o,y,short,both,False,idaiyinam,palatal approximant,U+0BAF U+0BCA,,,True
+cv_y_oo,யோ,compound,,yō,c_y v_oo,oo,y,long,both,False,idaiyinam,palatal approximant,U+0BAF U+0BCB,,,True
+cv_y_au,யௌ,compound,,yau,c_y v_au,au,y,long,both,False,idaiyinam,palatal approximant,U+0BAF U+0BCC,,,True
+cv_r_a,ர,compound,,ra,c_r v_a,a,r,short,none,False,idaiyinam,alveolar tap,U+0BB0,,,True
+cv_r_aa,ரா,compound,,rā,c_r v_aa,aa,r,long,right,False,idaiyinam,alveolar tap,U+0BB0 U+0BBE,,,True
+cv_r_i,ரி,compound,,ri,c_r v_i,i,r,short,above,False,idaiyinam,alveolar tap,U+0BB0 U+0BBF,,,True
+cv_r_ii,ரீ,compound,,rī,c_r v_ii,ii,r,long,above,False,idaiyinam,alveolar tap,U+0BB0 U+0BC0,,,True
+cv_r_u,ரு,compound,,ru,c_r v_u,u,r,short,ligature,True,idaiyinam,alveolar tap,U+0BB0 U+0BC1,,,True
+cv_r_uu,ரூ,compound,,rū,c_r v_uu,uu,r,long,ligature,True,idaiyinam,alveolar tap,U+0BB0 U+0BC2,,,True
+cv_r_e,ரெ,compound,,re,c_r v_e,e,r,short,left,False,idaiyinam,alveolar tap,U+0BB0 U+0BC6,,,True
+cv_r_ee,ரே,compound,,rē,c_r v_ee,ee,r,long,left,False,idaiyinam,alveolar tap,U+0BB0 U+0BC7,,,True
+cv_r_ai,ரை,compound,,rai,c_r v_ai,ai,r,long,left,False,idaiyinam,alveolar tap,U+0BB0 U+0BC8,,,True
+cv_r_o,ரொ,compound,,ro,c_r v_o,o,r,short,both,False,idaiyinam,alveolar tap,U+0BB0 U+0BCA,,,True
+cv_r_oo,ரோ,compound,,rō,c_r v_oo,oo,r,long,both,False,idaiyinam,alveolar tap,U+0BB0 U+0BCB,,,True
+cv_r_au,ரௌ,compound,,rau,c_r v_au,au,r,long,both,False,idaiyinam,alveolar tap,U+0BB0 U+0BCC,,,True
+cv_l_a,ல,compound,,la,c_l v_a,a,l,short,none,False,idaiyinam,alveolar lateral,U+0BB2,,,True
+cv_l_aa,லா,compound,,lā,c_l v_aa,aa,l,long,right,False,idaiyinam,alveolar lateral,U+0BB2 U+0BBE,,,True
+cv_l_i,லி,compound,,li,c_l v_i,i,l,short,above,False,idaiyinam,alveolar lateral,U+0BB2 U+0BBF,,,True
+cv_l_ii,லீ,compound,,lī,c_l v_ii,ii,l,long,above,False,idaiyinam,alveolar lateral,U+0BB2 U+0BC0,,,True
+cv_l_u,லு,compound,,lu,c_l v_u,u,l,short,ligature,True,idaiyinam,alveolar lateral,U+0BB2 U+0BC1,,,True
+cv_l_uu,லூ,compound,,lū,c_l v_uu,uu,l,long,ligature,True,idaiyinam,alveolar lateral,U+0BB2 U+0BC2,,,True
+cv_l_e,லெ,compound,,le,c_l v_e,e,l,short,left,False,idaiyinam,alveolar lateral,U+0BB2 U+0BC6,,,True
+cv_l_ee,லே,compound,,lē,c_l v_ee,ee,l,long,left,False,idaiyinam,alveolar lateral,U+0BB2 U+0BC7,,,True
+cv_l_ai,லை,compound,,lai,c_l v_ai,ai,l,long,left,False,idaiyinam,alveolar lateral,U+0BB2 U+0BC8,,,True
+cv_l_o,லொ,compound,,lo,c_l v_o,o,l,short,both,False,idaiyinam,alveolar lateral,U+0BB2 U+0BCA,,,True
+cv_l_oo,லோ,compound,,lō,c_l v_oo,oo,l,long,both,False,idaiyinam,alveolar lateral,U+0BB2 U+0BCB,,,True
+cv_l_au,லௌ,compound,,lau,c_l v_au,au,l,long,both,False,idaiyinam,alveolar lateral,U+0BB2 U+0BCC,,,True
+cv_v_a,வ,compound,,va,c_v v_a,a,v,short,none,False,idaiyinam,labiodental approximant,U+0BB5,,,True
+cv_v_aa,வா,compound,,vā,c_v v_aa,aa,v,long,right,False,idaiyinam,labiodental approximant,U+0BB5 U+0BBE,,,True
+cv_v_i,வி,compound,,vi,c_v v_i,i,v,short,above,False,idaiyinam,labiodental approximant,U+0BB5 U+0BBF,,,True
+cv_v_ii,வீ,compound,,vī,c_v v_ii,ii,v,long,above,False,idaiyinam,labiodental approximant,U+0BB5 U+0BC0,,,True
+cv_v_u,வு,compound,,vu,c_v v_u,u,v,short,ligature,True,idaiyinam,labiodental approximant,U+0BB5 U+0BC1,,,True
+cv_v_uu,வூ,compound,,vū,c_v v_uu,uu,v,long,ligature,True,idaiyinam,labiodental approximant,U+0BB5 U+0BC2,,,True
+cv_v_e,வெ,compound,,ve,c_v v_e,e,v,short,left,False,idaiyinam,labiodental approximant,U+0BB5 U+0BC6,,,True
+cv_v_ee,வே,compound,,vē,c_v v_ee,ee,v,long,left,False,idaiyinam,labiodental approximant,U+0BB5 U+0BC7,,,True
+cv_v_ai,வை,compound,,vai,c_v v_ai,ai,v,long,left,False,idaiyinam,labiodental approximant,U+0BB5 U+0BC8,,,True
+cv_v_o,வொ,compound,,vo,c_v v_o,o,v,short,both,False,idaiyinam,labiodental approximant,U+0BB5 U+0BCA,,,True
+cv_v_oo,வோ,compound,,vō,c_v v_oo,oo,v,long,both,False,idaiyinam,labiodental approximant,U+0BB5 U+0BCB,,,True
+cv_v_au,வௌ,compound,,vau,c_v v_au,au,v,long,both,False,idaiyinam,labiodental approximant,U+0BB5 U+0BCC,,,True
+cv_zh_a,ழ,compound,,ḻa,c_zh v_a,a,zh,short,none,False,idaiyinam,retroflex approximant,U+0BB4,,,True
+cv_zh_aa,ழா,compound,,ḻā,c_zh v_aa,aa,zh,long,right,False,idaiyinam,retroflex approximant,U+0BB4 U+0BBE,,,True
+cv_zh_i,ழி,compound,,ḻi,c_zh v_i,i,zh,short,above,False,idaiyinam,retroflex approximant,U+0BB4 U+0BBF,,,True
+cv_zh_ii,ழீ,compound,,ḻī,c_zh v_ii,ii,zh,long,above,False,idaiyinam,retroflex approximant,U+0BB4 U+0BC0,,,True
+cv_zh_u,ழு,compound,,ḻu,c_zh v_u,u,zh,short,ligature,True,idaiyinam,retroflex approximant,U+0BB4 U+0BC1,,,True
+cv_zh_uu,ழூ,compound,,ḻū,c_zh v_uu,uu,zh,long,ligature,True,idaiyinam,retroflex approximant,U+0BB4 U+0BC2,,,True
+cv_zh_e,ழெ,compound,,ḻe,c_zh v_e,e,zh,short,left,False,idaiyinam,retroflex approximant,U+0BB4 U+0BC6,,,True
+cv_zh_ee,ழே,compound,,ḻē,c_zh v_ee,ee,zh,long,left,False,idaiyinam,retroflex approximant,U+0BB4 U+0BC7,,,True
+cv_zh_ai,ழை,compound,,ḻai,c_zh v_ai,ai,zh,long,left,False,idaiyinam,retroflex approximant,U+0BB4 U+0BC8,,,True
+cv_zh_o,ழொ,compound,,ḻo,c_zh v_o,o,zh,short,both,False,idaiyinam,retroflex approximant,U+0BB4 U+0BCA,,,True
+cv_zh_oo,ழோ,compound,,ḻō,c_zh v_oo,oo,zh,long,both,False,idaiyinam,retroflex approximant,U+0BB4 U+0BCB,,,True
+cv_zh_au,ழௌ,compound,,ḻau,c_zh v_au,au,zh,long,both,False,idaiyinam,retroflex approximant,U+0BB4 U+0BCC,,,True
+cv_ll_a,ள,compound,,ḷa,c_ll v_a,a,ll,short,none,False,idaiyinam,retroflex lateral,U+0BB3,,,True
+cv_ll_aa,ளா,compound,,ḷā,c_ll v_aa,aa,ll,long,right,False,idaiyinam,retroflex lateral,U+0BB3 U+0BBE,,,True
+cv_ll_i,ளி,compound,,ḷi,c_ll v_i,i,ll,short,above,False,idaiyinam,retroflex lateral,U+0BB3 U+0BBF,,,True
+cv_ll_ii,ளீ,compound,,ḷī,c_ll v_ii,ii,ll,long,above,False,idaiyinam,retroflex lateral,U+0BB3 U+0BC0,,,True
+cv_ll_u,ளு,compound,,ḷu,c_ll v_u,u,ll,short,ligature,True,idaiyinam,retroflex lateral,U+0BB3 U+0BC1,,,True
+cv_ll_uu,ளூ,compound,,ḷū,c_ll v_uu,uu,ll,long,ligature,True,idaiyinam,retroflex lateral,U+0BB3 U+0BC2,,,True
+cv_ll_e,ளெ,compound,,ḷe,c_ll v_e,e,ll,short,left,False,idaiyinam,retroflex lateral,U+0BB3 U+0BC6,,,True
+cv_ll_ee,ளே,compound,,ḷē,c_ll v_ee,ee,ll,long,left,False,idaiyinam,retroflex lateral,U+0BB3 U+0BC7,,,True
+cv_ll_ai,ளை,compound,,ḷai,c_ll v_ai,ai,ll,long,left,False,idaiyinam,retroflex lateral,U+0BB3 U+0BC8,,,True
+cv_ll_o,ளொ,compound,,ḷo,c_ll v_o,o,ll,short,both,False,idaiyinam,retroflex lateral,U+0BB3 U+0BCA,,,True
+cv_ll_oo,ளோ,compound,,ḷō,c_ll v_oo,oo,ll,long,both,False,idaiyinam,retroflex lateral,U+0BB3 U+0BCB,,,True
+cv_ll_au,ளௌ,compound,,ḷau,c_ll v_au,au,ll,long,both,False,idaiyinam,retroflex lateral,U+0BB3 U+0BCC,,,True
+cv_rr_a,ற,compound,,ṟa,c_rr v_a,a,rr,short,none,False,vallinam,alveolar trill,U+0BB1,,,True
+cv_rr_aa,றா,compound,,ṟā,c_rr v_aa,aa,rr,long,right,False,vallinam,alveolar trill,U+0BB1 U+0BBE,,,True
+cv_rr_i,றி,compound,,ṟi,c_rr v_i,i,rr,short,above,False,vallinam,alveolar trill,U+0BB1 U+0BBF,,,True
+cv_rr_ii,றீ,compound,,ṟī,c_rr v_ii,ii,rr,long,above,False,vallinam,alveolar trill,U+0BB1 U+0BC0,,,True
+cv_rr_u,று,compound,,ṟu,c_rr v_u,u,rr,short,ligature,True,vallinam,alveolar trill,U+0BB1 U+0BC1,,,True
+cv_rr_uu,றூ,compound,,ṟū,c_rr v_uu,uu,rr,long,ligature,True,vallinam,alveolar trill,U+0BB1 U+0BC2,,,True
+cv_rr_e,றெ,compound,,ṟe,c_rr v_e,e,rr,short,left,False,vallinam,alveolar trill,U+0BB1 U+0BC6,,,True
+cv_rr_ee,றே,compound,,ṟē,c_rr v_ee,ee,rr,long,left,False,vallinam,alveolar trill,U+0BB1 U+0BC7,,,True
+cv_rr_ai,றை,compound,,ṟai,c_rr v_ai,ai,rr,long,left,False,vallinam,alveolar trill,U+0BB1 U+0BC8,,,True
+cv_rr_o,றொ,compound,,ṟo,c_rr v_o,o,rr,short,both,False,vallinam,alveolar trill,U+0BB1 U+0BCA,,,True
+cv_rr_oo,றோ,compound,,ṟō,c_rr v_oo,oo,rr,long,both,False,vallinam,alveolar trill,U+0BB1 U+0BCB,,,True
+cv_rr_au,றௌ,compound,,ṟau,c_rr v_au,au,rr,long,both,False,vallinam,alveolar trill,U+0BB1 U+0BCC,,,True
+cv_nnn_a,ன,compound,,ṉa,c_nnn v_a,a,nnn,short,none,False,mellinam,alveolar nasal,U+0BA9,,,True
+cv_nnn_aa,னா,compound,,ṉā,c_nnn v_aa,aa,nnn,long,right,False,mellinam,alveolar nasal,U+0BA9 U+0BBE,,,True
+cv_nnn_i,னி,compound,,ṉi,c_nnn v_i,i,nnn,short,above,False,mellinam,alveolar nasal,U+0BA9 U+0BBF,,,True
+cv_nnn_ii,னீ,compound,,ṉī,c_nnn v_ii,ii,nnn,long,above,False,mellinam,alveolar nasal,U+0BA9 U+0BC0,,,True
+cv_nnn_u,னு,compound,,ṉu,c_nnn v_u,u,nnn,short,ligature,True,mellinam,alveolar nasal,U+0BA9 U+0BC1,,,True
+cv_nnn_uu,னூ,compound,,ṉū,c_nnn v_uu,uu,nnn,long,ligature,True,mellinam,alveolar nasal,U+0BA9 U+0BC2,,,True
+cv_nnn_e,னெ,compound,,ṉe,c_nnn v_e,e,nnn,short,left,False,mellinam,alveolar nasal,U+0BA9 U+0BC6,,,True
+cv_nnn_ee,னே,compound,,ṉē,c_nnn v_ee,ee,nnn,long,left,False,mellinam,alveolar nasal,U+0BA9 U+0BC7,,,True
+cv_nnn_ai,னை,compound,,ṉai,c_nnn v_ai,ai,nnn,long,left,False,mellinam,alveolar nasal,U+0BA9 U+0BC8,,,True
+cv_nnn_o,னொ,compound,,ṉo,c_nnn v_o,o,nnn,short,both,False,mellinam,alveolar nasal,U+0BA9 U+0BCA,,,True
+cv_nnn_oo,னோ,compound,,ṉō,c_nnn v_oo,oo,nnn,long,both,False,mellinam,alveolar nasal,U+0BA9 U+0BCB,,,True
+cv_nnn_au,னௌ,compound,,ṉau,c_nnn v_au,au,nnn,long,both,False,mellinam,alveolar nasal,U+0BA9 U+0BCC,,,True
+g_ja,ஜ,grantha,,ja,,,,,,False,,palatal stop (voiced),U+0B9C,,,True
+g_ssa,ஷ,grantha,,ṣa,,,,,,False,,retroflex fricative,U+0BB7,,,True
+g_sa,ஸ,grantha,,sa,,,,,,False,,alveolar fricative,U+0BB8,,,True
+g_ha,ஹ,grantha,,ha,,,,,,False,,glottal fricative,U+0BB9,,,True
+g_ksa,க்ஷ,grantha,,kṣa,,,,,,False,,velar stop + retroflex fricative,U+0B95 U+0BCD U+0BB7,,,True
+g_sri,ஸ்ரீ,grantha,,śrī,,,,,,False,,ligature (ś + r + ī),U+0BB8 U+0BCD U+0BB0 U+0BC0,,,True
