@@ -6,7 +6,7 @@ title: Kodam Privacy Policy
 
 _Last updated: 24 October 2026_
 
-Kodam ("the app") is made by [developer name]. This policy explains what the app does with your information. The short version: **it doesn't collect any.**
+Kodam ("the app") is made by Arjun Iyer. This policy explains what the app does with your information. The short version: **it doesn't collect any.**
 
 ## What we collect
 
@@ -44,4 +44,4 @@ If this policy ever changes, for example because a future version adds an option
 
 ## Contact
 
-Questions about this policy: [contact email]
+Questions about this policy: struck54@protonmail.com
