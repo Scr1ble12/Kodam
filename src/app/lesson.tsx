@@ -15,6 +15,7 @@ import { useProgress } from '../lib/progress';
 import type { Direction } from '../lib/progress';
 import { speakTamil } from '../lib/speech';
 import { useTheme } from '../lib/theme';
+import { useUnlock } from '../lib/unlock';
 
 /** A read item with everything filled in from the vocabulary when it names a word. */
 type Reading = {
@@ -125,6 +126,7 @@ export default function LessonScreen() {
   const lessons = useLessons();
   const { id } = useLocalSearchParams<{ id: string }>();
   const lesson = getLesson(id);
+  const { isLessonLocked } = useUnlock();
 
   const [cards, setCards] = useState<Card[]>(() => (lesson ? buildCards(lesson) : []));
   const [index, setIndex] = useState(0);
@@ -160,6 +162,7 @@ export default function LessonScreen() {
   }, [picked, correctKey]);
 
   if (!lesson) return <Redirect href="/lessons" />;
+  if (isLessonLocked(lesson.id)) return <Redirect href="/unlock" />;
   const unit = unitOf(lesson.id);
 
   const answer = (choice: string) => {
@@ -202,8 +205,12 @@ export default function LessonScreen() {
           {nextLesson ? (
             <>
               <PrimaryButton
-                label={`Next: ${nextLesson.title}`}
-                onPress={() => router.replace({ pathname: '/lesson', params: { id: nextLesson.id } })}
+                label={isLessonLocked(nextLesson.id) ? 'Unlock the next lessons' : `Next: ${nextLesson.title}`}
+                onPress={() =>
+                  isLessonLocked(nextLesson.id)
+                    ? router.replace('/unlock')
+                    : router.replace({ pathname: '/lesson', params: { id: nextLesson.id } })
+                }
               />
               <SecondaryButton label="All lessons" onPress={close} />
             </>

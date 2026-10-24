@@ -14,7 +14,9 @@ A Tamil script learning app for iOS and Android, built with Expo (React Native +
 - **Tracing**: three steps that fade the support away (trace the letter, trace a faint outline, write from memory). It scores how much of the letter you covered and how much ink stayed on the lines, in any stroke order.
 - **Spaced repetition**: each right answer on a due letter pushes its next review out (1, 3, 7, 21, 45 days); a wrong answer resets it. Stages follow the spec: New, Learning, Familiar, Mastered.
 - **Settings**: theme (Light, Paper, Dark), accent colour, Tamil font (Mukta Malar, Noto Sans Tamil, Catamaran), letter size, romanization (Always, Auto-fade, Off), reset progress.
+- **Full Unlock**: a one-time in-app purchase (product ID `full_unlock`, via `expo-iap`). Free: the whole alphabet, lesson units 1–2, the Greetings deck and all settings. The unlock adds the other decks, units 3–4 and future content. Locked items show a lock and open the Full Unlock screen, which asks a grown-up a multiplication question before buying. Purchases don't work in Expo Go or on the web; development builds have a "Test: pretend unlocked" switch in Settings. The free/paid split lives in `src/lib/unlock.tsx`.
 - Progress and settings are saved on the device only.
+- **Launching**: see `docs/launch-checklist.md`, `docs/store-listing.md`, `docs/privacy-policy.md` and `docs/store-screenshots/`. Icons come from `scripts/generate-icons.py`.
 
 Not yet built: stroke-order animations, more lesson units. The audio button uses the phone's text-to-speech as a placeholder until real recordings exist.
 

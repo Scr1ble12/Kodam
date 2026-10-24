@@ -7,6 +7,7 @@ import { LESSONS, UNITS, unitOf } from '../../data/lessons';
 import { useLessons } from '../../lib/lessons';
 import { useProgress } from '../../lib/progress';
 import { useTheme } from '../../lib/theme';
+import { useUnlock } from '../../lib/unlock';
 
 /** The Lessons tab: the next lesson up top, then every unit and lesson in order. Any lesson can be opened. */
 export default function LessonsScreen() {
@@ -15,6 +16,8 @@ export default function LessonsScreen() {
   const { done, next } = useLessons();
   const finished = LESSONS.filter((l) => done[l.id]).length;
   const nextUnit = next && unitOf(next.id);
+  const { isLessonLocked } = useUnlock();
+  const nextLocked = !!next && isLessonLocked(next.id);
 
   return (
     <SafeAreaView edges={['top']} style={[styles.screen, { backgroundColor: colors.bg }]}>
@@ -49,7 +52,7 @@ export default function LessonsScreen() {
 
         <View style={[styles.hero, { backgroundColor: colors.surface, borderColor: colors.line }]}>
           <T size={13} weight="bold" tone="accent" style={{ letterSpacing: 0.8 }}>
-            {next ? (finished ? 'UP NEXT' : 'START HERE') : 'ALL DONE'}
+            {next ? (nextLocked ? 'UP NEXT · FULL UNLOCK' : finished ? 'UP NEXT' : 'START HERE') : 'ALL DONE'}
           </T>
           <T size={22} weight="bold">
             {next ? next.title : 'You finished every lesson'}
@@ -59,8 +62,10 @@ export default function LessonsScreen() {
           </T>
           {next && (
             <PrimaryButton
-              label={finished ? 'Continue' : 'Start the first lesson'}
-              onPress={() => router.push({ pathname: '/lesson', params: { id: next.id } })}
+              label={nextLocked ? 'See the Full Unlock' : finished ? 'Continue' : 'Start the first lesson'}
+              onPress={() =>
+                nextLocked ? router.push('/unlock') : router.push({ pathname: '/lesson', params: { id: next.id } })
+              }
             />
           )}
         </View>
@@ -84,12 +89,15 @@ export default function LessonsScreen() {
                 const isNext = next?.id === lesson.id;
                 const n = LESSONS.indexOf(lesson) + 1;
                 const last = i === unit.lessons.length - 1;
+                const locked = isLessonLocked(lesson.id);
                 return (
                   <Pressable
                     key={lesson.id}
                     accessibilityRole="button"
-                    accessibilityLabel={`Lesson ${n}: ${lesson.title}${isDone ? ', done' : isNext ? ', next' : ''}`}
-                    onPress={() => router.push({ pathname: '/lesson', params: { id: lesson.id } })}
+                    accessibilityLabel={`Lesson ${n}: ${lesson.title}${isDone ? ', done' : isNext ? ', next' : ''}${locked ? ', part of the Full Unlock' : ''}`}
+                    onPress={() =>
+                      locked ? router.push('/unlock') : router.push({ pathname: '/lesson', params: { id: lesson.id } })
+                    }
                     style={({ pressed }) => [styles.row, { opacity: pressed ? 0.7 : 1 }]}
                   >
                     <View style={styles.rail}>
@@ -124,7 +132,7 @@ export default function LessonsScreen() {
                         {lesson.summary}
                       </T>
                     </View>
-                    <Icon.Chevron color={colors.muted} />
+                    {locked ? <Icon.Lock color={colors.muted} /> : <Icon.Chevron color={colors.muted} />}
                   </Pressable>
                 );
               })}

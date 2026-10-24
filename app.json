@@ -8,17 +8,22 @@
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.tamilapp.learn"
+      "bundleIdentifier": "com.tamilapp.learn",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0E6B63",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.tamilapp.learn"
+      "package": "com.tamilapp.learn",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -32,7 +37,16 @@
         {
           "color": "#0E6B63"
         }
-      ]
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 160,
+          "backgroundColor": "#0E6B63"
+        }
+      ],
+      "expo-iap"
     ],
     "scheme": "tamilapp"
   }

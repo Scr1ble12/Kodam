@@ -11,6 +11,7 @@ import { useProgress } from '../../lib/progress';
 import { describeDays, formatTime, REMINDERS_SUPPORTED, useReminders, VOCAB_TARGET } from '../../lib/reminders';
 import { ACCENTS, useTheme } from '../../lib/theme';
 import type { FontName, LetterSize, RomanMode, SpokenMode, ThemeName } from '../../lib/theme';
+import { useUnlock } from '../../lib/unlock';
 
 const THEMES: { id: ThemeName; label: string }[] = [
   { id: 'light', label: 'Light' },
@@ -43,6 +44,7 @@ export default function SettingsScreen() {
   const { colors, settings, update, letterPx } = useTheme();
   const progress = useProgress();
   const lessons = useLessons();
+  const unlock = useUnlock();
   const [confirmReset, setConfirmReset] = useState(false);
   const reminders = useReminders();
   const { lists } = useLists();
@@ -199,6 +201,42 @@ export default function SettingsScreen() {
             />
           </Row>
         </Section>
+
+        <Section title="FULL UNLOCK">
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => router.push('/unlock')}
+            style={[styles.row, styles.rowInline, { borderBottomWidth: 1, borderBottomColor: colors.line }]}
+          >
+            <View style={styles.linkLabel}>
+              <Icon.Lock color={colors.accent} />
+              <T size={15}>{unlock.unlocked ? 'Unlocked. Thank you!' : 'Unlock every deck and lesson'}</T>
+            </View>
+            <Icon.Chevron color={colors.muted} />
+          </Pressable>
+          <Pressable
+            accessibilityRole="button"
+            onPress={() => !unlock.busy && unlock.restore()}
+            style={[styles.row, styles.rowInline, __DEV__ && { borderBottomWidth: 1, borderBottomColor: colors.line }]}
+          >
+            <T size={15}>{unlock.busy ? 'Checking…' : 'Restore purchase'}</T>
+          </Pressable>
+          {__DEV__ && (
+            <Row label="Test: pretend unlocked" last inline>
+              <Switch
+                value={unlock.unlocked}
+                onValueChange={unlock.setTestUnlocked}
+                trackColor={{ true: colors.accent, false: colors.line }}
+                accessibilityLabel="Test: pretend unlocked"
+              />
+            </Row>
+          )}
+        </Section>
+        {unlock.error && (
+          <T size={13} tone="error" style={{ textAlign: 'center', marginTop: -8 }}>
+            {unlock.error}
+          </T>
+        )}
 
         <Section title="PROGRESS">
           <Pressable

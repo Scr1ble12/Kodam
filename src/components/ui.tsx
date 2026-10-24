@@ -260,6 +260,12 @@ export const Icon = {
       <Path {...stroke(color)} d="M6 3.5h12v17l-6-4-6 4z" />
     </Svg>
   ),
+  Lock: ({ color, size = 18 }: IconProps) => (
+    <Svg width={size} height={size} viewBox="0 0 24 24">
+      <Path {...stroke(color, 2)} d="M5.5 11h13v9.5h-13z" />
+      <Path {...stroke(color, 2)} d="M8 11V8a4 4 0 0 1 8 0v3" />
+    </Svg>
+  ),
   Undo: ({ color, size = 20 }: IconProps) => (
     <Svg width={size} height={size} viewBox="0 0 24 24">
       <Path {...stroke(color)} d="M9 14L4 9l5-5" />
