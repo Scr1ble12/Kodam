@@ -1,6 +1,7 @@
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
+import { LessonsProvider } from '../lib/lessons';
 import { ListsProvider } from '../lib/lists';
 import { ProgressProvider } from '../lib/progress';
 import { RemindersProvider } from '../lib/reminders';
@@ -13,9 +14,11 @@ export default function RootLayout() {
       <ProgressProvider>
         <ListsProvider>
           <VocabProvider>
-            <RemindersProvider>
-              <Root />
-            </RemindersProvider>
+            <LessonsProvider>
+              <RemindersProvider>
+                <Root />
+              </RemindersProvider>
+            </LessonsProvider>
           </VocabProvider>
         </ListsProvider>
       </ProgressProvider>
@@ -37,6 +40,7 @@ function Root() {
         <Stack.Screen name="stats" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="reminder" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="review" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
+        <Stack.Screen name="lesson" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
         <Stack.Screen name="deck" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="deck-edit" options={{ animation: 'slide_from_bottom' }} />
       </Stack>

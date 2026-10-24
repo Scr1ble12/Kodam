@@ -5,6 +5,7 @@ import { Pressable, ScrollView, StyleSheet, Switch, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { Icon, Segmented, T } from '../../components/ui';
+import { useLessons } from '../../lib/lessons';
 import { useLists } from '../../lib/lists';
 import { useProgress } from '../../lib/progress';
 import { describeDays, formatTime, REMINDERS_SUPPORTED, useReminders, VOCAB_TARGET } from '../../lib/reminders';
@@ -41,6 +42,7 @@ const NEW_WORDS = [5, 10, 15, 20].map((n) => ({ id: String(n), label: String(n) 
 export default function SettingsScreen() {
   const { colors, settings, update, letterPx } = useTheme();
   const progress = useProgress();
+  const lessons = useLessons();
   const [confirmReset, setConfirmReset] = useState(false);
   const reminders = useReminders();
   const { lists } = useLists();
@@ -216,6 +218,7 @@ export default function SettingsScreen() {
               onPress={() => {
                 if (!confirmReset) return setConfirmReset(true);
                 progress.reset();
+                lessons.reset();
                 setConfirmReset(false);
               }}
               style={[styles.reset, { backgroundColor: confirmReset ? colors.errorBg : colors.track }]}

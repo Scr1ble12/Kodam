@@ -81,6 +81,7 @@ export default function AlphabetScreen() {
           </View>
         </View>
 
+
         <View style={styles.listsBlock}>
           <View style={styles.listsTitle}>
             <T size={17} weight="bold">

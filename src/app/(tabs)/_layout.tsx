@@ -32,6 +32,7 @@ export default function TabsLayout() {
       }}
     >
       <Tabs.Screen name="index" options={{ title: 'Alphabet', tabBarIcon: glyph('அ') }} />
+      <Tabs.Screen name="lessons" options={{ title: 'Lessons', tabBarIcon: glyph('பா') }} />
       <Tabs.Screen name="vocabulary" options={{ title: 'Vocabulary', tabBarIcon: glyph('சொ') }} />
       <Tabs.Screen name="settings" options={{ title: 'Settings', tabBarIcon: ({ color }) => <Icon.Gear color={String(color)} /> }} />
     </Tabs>

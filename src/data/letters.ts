@@ -79,3 +79,23 @@ export function homeSegment(id: string | undefined): SegmentId | undefined {
   if (!id) return undefined;
   return SEGMENTS.find((s) => (s.letters as readonly Letter[]).some((l) => l.id === id))?.id;
 }
+
+const byTamil = new Map(LETTERS.map((l) => [l.tamil, l]));
+
+/**
+ * Splits Tamil text into letters as a reader sees them (a consonant with its vowel
+ * sign or dot counts as one), each with its entry in the alphabet when there is one.
+ */
+export function splitLetters(text: string): { text: string; letter?: Letter }[] {
+  const parts: string[] = [];
+  for (const ch of text) {
+    const code = ch.codePointAt(0)!;
+    // Vowel signs (U+0BBE–U+0BCD) and the au length mark (U+0BD7) join the letter before them.
+    const joins = (code >= 0x0bbe && code <= 0x0bcd) || code === 0x0bd7;
+    if (joins && parts.length) parts[parts.length - 1] += ch;
+    else parts.push(ch);
+  }
+  return parts
+    .filter((p) => p.trim() && !/^[\s,.?!]+$/.test(p))
+    .map((p) => ({ text: p, letter: byTamil.get(p.normalize('NFC')) }));
+}
