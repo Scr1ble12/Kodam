@@ -6,12 +6,12 @@ Fill in the bracketed parts, then paste each field into App Store Connect and th
 
 | Field | Value |
 |---|---|
-| App name (both stores, max 30) | [APP NAME]: Learn Tamil |
+| App name (both stores, max 30) | Kodam: Learn Tamil |
 | iOS subtitle (max 30) | Read and speak Tamil |
 | Category | Education |
 | Age rating | 4+ (Apple) · Everyone (Google) |
 | Price | Free, with a one-time Full Unlock in-app purchase ([price]) |
-| Privacy policy URL | [URL where docs/privacy-policy.md is published] |
+| Privacy policy URL | https://scr1ble12.github.io/Kodam/privacy-policy |
 
 ## Google Play short description (max 80)
 

@@ -1,4 +1,4 @@
-# Tamil App
+# Kodam
 
 A Tamil script learning app for iOS and Android, built with Expo (React Native + TypeScript) from one codebase. The product spec is in [SPEC.md](SPEC.md).
 

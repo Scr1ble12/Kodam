@@ -1,8 +1,12 @@
+---
+title: Kodam Privacy Policy
+---
+
 # Privacy Policy
 
-_Last updated: [date of release]_
+_Last updated: 24 October 2026_
 
-[APP NAME] ("the app") is made by [developer name]. This policy explains what the app does with your information. The short version: **it doesn't collect any.**
+Kodam ("the app") is made by [developer name]. This policy explains what the app does with your information. The short version: **it doesn't collect any.**
 
 ## What we collect
 

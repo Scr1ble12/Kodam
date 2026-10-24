@@ -1,14 +1,14 @@
 {
   "expo": {
-    "name": "Tamil App",
-    "slug": "tamil-app",
+    "name": "Kodam",
+    "slug": "kodam",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.tamilapp.learn",
+      "bundleIdentifier": "com.kodam.learn",
       "buildNumber": "1",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
@@ -22,7 +22,7 @@
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "package": "com.tamilapp.learn",
+      "package": "com.kodam.learn",
       "versionCode": 1
     },
     "web": {
@@ -48,6 +48,6 @@
       ],
       "expo-iap"
     ],
-    "scheme": "tamilapp"
+    "scheme": "kodam"
   }
 }
