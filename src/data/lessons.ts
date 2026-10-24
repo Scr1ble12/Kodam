@@ -71,7 +71,7 @@ export const UNITS: Unit[] = [
             kind: 'teach',
             title: 'Two more pairs',
             body:
-              'The next two pairs work the same way: a short vowel, then its long partner.\n\nTamil vowels use your lips more than English ones. Round them for உ and ஊ.',
+              'The next two pairs work the same way: a short vowel, then its long partner.\n\nRound your lips for உ and ஊ, as in "put" and "food".',
             examples: ['உ', 'ஊ', 'எ', 'ஏ'],
           },
           { kind: 'letters', ids: ['u', 'uu', 'e', 'ee'] },
@@ -87,7 +87,7 @@ export const UNITS: Unit[] = [
             kind: 'teach',
             title: 'The last vowels',
             body:
-              'ஒ and ஓ are one more short and long pair. ஐ and ஔ have no short partner; they count as long.\n\nஃ is a special letter that is neither a vowel nor a consonant. It sounds like a soft h and is rare today.',
+              'ஒ and ஓ are one more short and long pair. ஐ and ஔ have no short partner; they count as long.\n\nஃ is a special letter that is neither a vowel nor a consonant. It sounds like a soft h. Today it mostly appears in ஃப, which writes the f sound in English words.',
             examples: ['ஐ', 'ஒ', 'ஓ', 'ஔ'],
           },
           { kind: 'letters', ids: ['ai', 'o', 'oo', 'au', 'aytham'] },
@@ -124,7 +124,7 @@ export const UNITS: Unit[] = [
             kind: 'teach',
             title: 'Hard letters soften',
             body:
-              'At the start of a word, or when doubled, the hard letters stay hard. In the middle of a word they soften: க can sound like g or h, ச like s or j, ட like d, த like dh and ப like b.\n\nSo மகன் (son) is said "magan", not "makan".',
+              'At the start of a word, when doubled, or next to another hard letter, the hard letters stay hard. Between two vowels, or after an n or m sound, they soften: க can sound like g or h, ச like s or j, ட like d, த like dh and ப like b.\n\nSo மகன் (son) is said "magan", not "makan".',
             examples: ['மகன்', 'பக்கம்'],
           },
           { kind: 'quiz', ids: HARD, count: 8 },
@@ -301,7 +301,7 @@ export const UNITS: Unit[] = [
               { word: 'w.food.dosa' },
               { word: 'w.verbs.go' },
               { word: 'w.body.shoulder' },
-              { tamil: 'கோவில்', english: 'temple', say: 'kovil', spoken: 'கோயில்' },
+              { tamil: 'கோவில்', english: 'temple', say: 'kovil' },
             ],
           },
         ],
@@ -315,7 +315,7 @@ export const UNITS: Unit[] = [
             kind: 'teach',
             title: 'Learn these by sight',
             body:
-              'The signs for u and uu change shape from one consonant to the next. There is no single rule, so learn each one by sight.\n\nCompare கு and கூ, டு and டூ, மு and மூ.',
+              'The signs for u and uu change shape from one consonant to the next. They fall into a few shape groups, with some exceptions, so it\'s easiest to learn each one by sight.\n\nCompare கு and கூ, டு and டூ, மு and மூ.',
             examples: ['கு', 'கூ', 'டு', 'டூ', 'மு', 'மூ'],
           },
           {
@@ -388,7 +388,7 @@ export const UNITS: Unit[] = [
             kind: 'teach',
             title: 'Add ஆ to ask',
             body:
-              'To turn a sentence into a yes-or-no question, add ஆ (the ா sign) to the last word: இது வீடு becomes இது வீடா? "Is this a house?"\n\nA word ending in ம் drops the dot first: புத்தகம் becomes புத்தகமா? Answer with ஆமாம் (yes) or இல்லை (no).',
+              'To turn a sentence into a yes-or-no question, add ஆ (the ா sign) to the last word: இது வீடு becomes இது வீடா? "Is this a house?" A final ு sign is replaced by ா.\n\nA word ending in ம் drops the dot first: புத்தகம் becomes புத்தகமா? Answer with ஆமாம் (yes) or இல்லை (no).',
             examples: ['இது வீடா?', 'புத்தகமா?', 'ஆமாம்', 'இல்லை'],
           },
           {
