@@ -13,7 +13,11 @@ The app is still called "Tamil App". Pick the store name, then tell Claude. Clau
 | Apple App Store | $99 a year | developer.apple.com/programs |
 | Google Play | $25 once | play.google.com/console |
 
-Apple's enrollment can take a day or two to be approved. Google asks new personal accounts to run a closed test with a group of testers for about two weeks before the app can go public. Check Google's current numbers when you sign up; friends and family can be the testers.
+Apple's enrollment can take a day or two to be approved. Use your legal name, turn on two-factor sign-in, and pay with a card that allows international payments.
+
+Google asks personal accounts created after 13 November 2023 to run a closed test before the app can go public. The test needs at least **12 testers who stay enrolled for 14 days in a row**. Friends and family with Android phones work.
+
+**From India:** Apple enrollment in India only works through the **Apple Developer app** (iPhone, iPad or Mac), and the fee is shown in rupees. Some people in India have recently hit a "not available in your country/region" error at payment; if you do, contact Apple Developer Support. The stores pay out to a bank account in the country you register with, so if you're only visiting India, register with your home-country details.
 
 ## 3. Create a free Expo account
 
