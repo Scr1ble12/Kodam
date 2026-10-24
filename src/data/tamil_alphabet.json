@@ -1,0 +1,6184 @@
+[
+ {
+  "id": "v_a",
+  "letter": "அ",
+  "category": "vowel",
+  "tamil_name": "அகரம்",
+  "romanization": "a",
+  "components": [],
+  "vowel": "a",
+  "consonant": null,
+  "length": "short",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B85"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_aa",
+  "letter": "ஆ",
+  "category": "vowel",
+  "tamil_name": "ஆகாரம்",
+  "romanization": "ā",
+  "components": [],
+  "vowel": "aa",
+  "consonant": null,
+  "length": "long",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B86"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_i",
+  "letter": "இ",
+  "category": "vowel",
+  "tamil_name": "இகரம்",
+  "romanization": "i",
+  "components": [],
+  "vowel": "i",
+  "consonant": null,
+  "length": "short",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B87"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_ii",
+  "letter": "ஈ",
+  "category": "vowel",
+  "tamil_name": "ஈகாரம்",
+  "romanization": "ī",
+  "components": [],
+  "vowel": "ii",
+  "consonant": null,
+  "length": "long",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B88"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_u",
+  "letter": "உ",
+  "category": "vowel",
+  "tamil_name": "உகரம்",
+  "romanization": "u",
+  "components": [],
+  "vowel": "u",
+  "consonant": null,
+  "length": "short",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B89"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_uu",
+  "letter": "ஊ",
+  "category": "vowel",
+  "tamil_name": "ஊகாரம்",
+  "romanization": "ū",
+  "components": [],
+  "vowel": "uu",
+  "consonant": null,
+  "length": "long",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B8A"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_e",
+  "letter": "எ",
+  "category": "vowel",
+  "tamil_name": "எகரம்",
+  "romanization": "e",
+  "components": [],
+  "vowel": "e",
+  "consonant": null,
+  "length": "short",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B8E"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_ee",
+  "letter": "ஏ",
+  "category": "vowel",
+  "tamil_name": "ஏகாரம்",
+  "romanization": "ē",
+  "components": [],
+  "vowel": "ee",
+  "consonant": null,
+  "length": "long",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B8F"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_ai",
+  "letter": "ஐ",
+  "category": "vowel",
+  "tamil_name": "ஐகாரம்",
+  "romanization": "ai",
+  "components": [],
+  "vowel": "ai",
+  "consonant": null,
+  "length": "long",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B90"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_o",
+  "letter": "ஒ",
+  "category": "vowel",
+  "tamil_name": "ஒகரம்",
+  "romanization": "o",
+  "components": [],
+  "vowel": "o",
+  "consonant": null,
+  "length": "short",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B92"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_oo",
+  "letter": "ஓ",
+  "category": "vowel",
+  "tamil_name": "ஓகாரம்",
+  "romanization": "ō",
+  "components": [],
+  "vowel": "oo",
+  "consonant": null,
+  "length": "long",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B93"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "v_au",
+  "letter": "ஔ",
+  "category": "vowel",
+  "tamil_name": "ஔகாரம்",
+  "romanization": "au",
+  "components": [],
+  "vowel": "au",
+  "consonant": null,
+  "length": "long",
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": null,
+  "codepoints": [
+   "U+0B94"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "aytham",
+  "letter": "ஃ",
+  "category": "aytham",
+  "tamil_name": "ஆய்த எழுத்து",
+  "romanization": "ḵ",
+  "components": [],
+  "vowel": null,
+  "consonant": null,
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": "breathy fricative",
+  "codepoints": [
+   "U+0B83"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_k",
+  "letter": "க்",
+  "category": "consonant",
+  "tamil_name": "இக்",
+  "romanization": "k",
+  "components": [],
+  "vowel": null,
+  "consonant": "k",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_ng",
+  "letter": "ங்",
+  "category": "consonant",
+  "tamil_name": "இங்",
+  "romanization": "ṅ",
+  "components": [],
+  "vowel": null,
+  "consonant": "ng",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_c",
+  "letter": "ச்",
+  "category": "consonant",
+  "tamil_name": "இச்",
+  "romanization": "c",
+  "components": [],
+  "vowel": null,
+  "consonant": "c",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_nj",
+  "letter": "ஞ்",
+  "category": "consonant",
+  "tamil_name": "இஞ்",
+  "romanization": "ñ",
+  "components": [],
+  "vowel": null,
+  "consonant": "nj",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_tt",
+  "letter": "ட்",
+  "category": "consonant",
+  "tamil_name": "இட்",
+  "romanization": "ṭ",
+  "components": [],
+  "vowel": null,
+  "consonant": "tt",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_nn",
+  "letter": "ண்",
+  "category": "consonant",
+  "tamil_name": "இண்",
+  "romanization": "ṇ",
+  "components": [],
+  "vowel": null,
+  "consonant": "nn",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_t",
+  "letter": "த்",
+  "category": "consonant",
+  "tamil_name": "இத்",
+  "romanization": "t",
+  "components": [],
+  "vowel": null,
+  "consonant": "t",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_n",
+  "letter": "ந்",
+  "category": "consonant",
+  "tamil_name": "இந்",
+  "romanization": "n",
+  "components": [],
+  "vowel": null,
+  "consonant": "n",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_p",
+  "letter": "ப்",
+  "category": "consonant",
+  "tamil_name": "இப்",
+  "romanization": "p",
+  "components": [],
+  "vowel": null,
+  "consonant": "p",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_m",
+  "letter": "ம்",
+  "category": "consonant",
+  "tamil_name": "இம்",
+  "romanization": "m",
+  "components": [],
+  "vowel": null,
+  "consonant": "m",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_y",
+  "letter": "ய்",
+  "category": "consonant",
+  "tamil_name": "இய்",
+  "romanization": "y",
+  "components": [],
+  "vowel": null,
+  "consonant": "y",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_r",
+  "letter": "ர்",
+  "category": "consonant",
+  "tamil_name": "இர்",
+  "romanization": "r",
+  "components": [],
+  "vowel": null,
+  "consonant": "r",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_l",
+  "letter": "ல்",
+  "category": "consonant",
+  "tamil_name": "இல்",
+  "romanization": "l",
+  "components": [],
+  "vowel": null,
+  "consonant": "l",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_v",
+  "letter": "வ்",
+  "category": "consonant",
+  "tamil_name": "இவ்",
+  "romanization": "v",
+  "components": [],
+  "vowel": null,
+  "consonant": "v",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_zh",
+  "letter": "ழ்",
+  "category": "consonant",
+  "tamil_name": "இழ்",
+  "romanization": "ḻ",
+  "components": [],
+  "vowel": null,
+  "consonant": "zh",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_ll",
+  "letter": "ள்",
+  "category": "consonant",
+  "tamil_name": "இள்",
+  "romanization": "ḷ",
+  "components": [],
+  "vowel": null,
+  "consonant": "ll",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_rr",
+  "letter": "ற்",
+  "category": "consonant",
+  "tamil_name": "இற்",
+  "romanization": "ṟ",
+  "components": [],
+  "vowel": null,
+  "consonant": "rr",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "c_nnn",
+  "letter": "ன்",
+  "category": "consonant",
+  "tamil_name": "இன்",
+  "romanization": "ṉ",
+  "components": [],
+  "vowel": null,
+  "consonant": "nnn",
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BCD"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_a",
+  "letter": "க",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ka",
+  "components": [
+   "c_k",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "k",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_aa",
+  "letter": "கா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "kā",
+  "components": [
+   "c_k",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "k",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_i",
+  "letter": "கி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ki",
+  "components": [
+   "c_k",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "k",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_ii",
+  "letter": "கீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "kī",
+  "components": [
+   "c_k",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "k",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_u",
+  "letter": "கு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ku",
+  "components": [
+   "c_k",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "k",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_uu",
+  "letter": "கூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "kū",
+  "components": [
+   "c_k",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "k",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_e",
+  "letter": "கெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ke",
+  "components": [
+   "c_k",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "k",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_ee",
+  "letter": "கே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "kē",
+  "components": [
+   "c_k",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "k",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_ai",
+  "letter": "கை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "kai",
+  "components": [
+   "c_k",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "k",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_o",
+  "letter": "கொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ko",
+  "components": [
+   "c_k",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "k",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_oo",
+  "letter": "கோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "kō",
+  "components": [
+   "c_k",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "k",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_k_au",
+  "letter": "கௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "kau",
+  "components": [
+   "c_k",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "k",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "velar stop",
+  "codepoints": [
+   "U+0B95",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_a",
+  "letter": "ங",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅa",
+  "components": [
+   "c_ng",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "ng",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_aa",
+  "letter": "ஙா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅā",
+  "components": [
+   "c_ng",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "ng",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_i",
+  "letter": "ஙி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅi",
+  "components": [
+   "c_ng",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "ng",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_ii",
+  "letter": "ஙீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅī",
+  "components": [
+   "c_ng",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "ng",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_u",
+  "letter": "ஙு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅu",
+  "components": [
+   "c_ng",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "ng",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_uu",
+  "letter": "ஙூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅū",
+  "components": [
+   "c_ng",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "ng",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_e",
+  "letter": "ஙெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅe",
+  "components": [
+   "c_ng",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "ng",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_ee",
+  "letter": "ஙே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅē",
+  "components": [
+   "c_ng",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "ng",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_ai",
+  "letter": "ஙை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅai",
+  "components": [
+   "c_ng",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "ng",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_o",
+  "letter": "ஙொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅo",
+  "components": [
+   "c_ng",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "ng",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_oo",
+  "letter": "ஙோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅō",
+  "components": [
+   "c_ng",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "ng",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ng_au",
+  "letter": "ஙௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṅau",
+  "components": [
+   "c_ng",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "ng",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "velar nasal",
+  "codepoints": [
+   "U+0B99",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_a",
+  "letter": "ச",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ca",
+  "components": [
+   "c_c",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "c",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_aa",
+  "letter": "சா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cā",
+  "components": [
+   "c_c",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "c",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_i",
+  "letter": "சி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ci",
+  "components": [
+   "c_c",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "c",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_ii",
+  "letter": "சீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cī",
+  "components": [
+   "c_c",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "c",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_u",
+  "letter": "சு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cu",
+  "components": [
+   "c_c",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "c",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_uu",
+  "letter": "சூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cū",
+  "components": [
+   "c_c",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "c",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_e",
+  "letter": "செ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ce",
+  "components": [
+   "c_c",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "c",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_ee",
+  "letter": "சே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cē",
+  "components": [
+   "c_c",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "c",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_ai",
+  "letter": "சை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cai",
+  "components": [
+   "c_c",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "c",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_o",
+  "letter": "சொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "co",
+  "components": [
+   "c_c",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "c",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_oo",
+  "letter": "சோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cō",
+  "components": [
+   "c_c",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "c",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_c_au",
+  "letter": "சௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "cau",
+  "components": [
+   "c_c",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "c",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "palatal stop",
+  "codepoints": [
+   "U+0B9A",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_a",
+  "letter": "ஞ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ña",
+  "components": [
+   "c_nj",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "nj",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_aa",
+  "letter": "ஞா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñā",
+  "components": [
+   "c_nj",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "nj",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_i",
+  "letter": "ஞி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñi",
+  "components": [
+   "c_nj",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "nj",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_ii",
+  "letter": "ஞீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñī",
+  "components": [
+   "c_nj",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "nj",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_u",
+  "letter": "ஞு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñu",
+  "components": [
+   "c_nj",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "nj",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_uu",
+  "letter": "ஞூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñū",
+  "components": [
+   "c_nj",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "nj",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_e",
+  "letter": "ஞெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñe",
+  "components": [
+   "c_nj",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "nj",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_ee",
+  "letter": "ஞே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñē",
+  "components": [
+   "c_nj",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "nj",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_ai",
+  "letter": "ஞை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñai",
+  "components": [
+   "c_nj",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "nj",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_o",
+  "letter": "ஞொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ño",
+  "components": [
+   "c_nj",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "nj",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_oo",
+  "letter": "ஞோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñō",
+  "components": [
+   "c_nj",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "nj",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nj_au",
+  "letter": "ஞௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ñau",
+  "components": [
+   "c_nj",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "nj",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "palatal nasal",
+  "codepoints": [
+   "U+0B9E",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_a",
+  "letter": "ட",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭa",
+  "components": [
+   "c_tt",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "tt",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_aa",
+  "letter": "டா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭā",
+  "components": [
+   "c_tt",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "tt",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_i",
+  "letter": "டி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭi",
+  "components": [
+   "c_tt",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "tt",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_ii",
+  "letter": "டீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭī",
+  "components": [
+   "c_tt",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "tt",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_u",
+  "letter": "டு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭu",
+  "components": [
+   "c_tt",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "tt",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_uu",
+  "letter": "டூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭū",
+  "components": [
+   "c_tt",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "tt",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_e",
+  "letter": "டெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭe",
+  "components": [
+   "c_tt",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "tt",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_ee",
+  "letter": "டே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭē",
+  "components": [
+   "c_tt",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "tt",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_ai",
+  "letter": "டை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭai",
+  "components": [
+   "c_tt",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "tt",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_o",
+  "letter": "டொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭo",
+  "components": [
+   "c_tt",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "tt",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_oo",
+  "letter": "டோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭō",
+  "components": [
+   "c_tt",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "tt",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_tt_au",
+  "letter": "டௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṭau",
+  "components": [
+   "c_tt",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "tt",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "retroflex stop",
+  "codepoints": [
+   "U+0B9F",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_a",
+  "letter": "ண",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇa",
+  "components": [
+   "c_nn",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "nn",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_aa",
+  "letter": "ணா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇā",
+  "components": [
+   "c_nn",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "nn",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_i",
+  "letter": "ணி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇi",
+  "components": [
+   "c_nn",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "nn",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_ii",
+  "letter": "ணீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇī",
+  "components": [
+   "c_nn",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "nn",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_u",
+  "letter": "ணு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇu",
+  "components": [
+   "c_nn",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "nn",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_uu",
+  "letter": "ணூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇū",
+  "components": [
+   "c_nn",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "nn",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_e",
+  "letter": "ணெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇe",
+  "components": [
+   "c_nn",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "nn",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_ee",
+  "letter": "ணே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇē",
+  "components": [
+   "c_nn",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "nn",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_ai",
+  "letter": "ணை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇai",
+  "components": [
+   "c_nn",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "nn",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_o",
+  "letter": "ணொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇo",
+  "components": [
+   "c_nn",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "nn",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_oo",
+  "letter": "ணோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇō",
+  "components": [
+   "c_nn",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "nn",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nn_au",
+  "letter": "ணௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṇau",
+  "components": [
+   "c_nn",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "nn",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "retroflex nasal",
+  "codepoints": [
+   "U+0BA3",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_a",
+  "letter": "த",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ta",
+  "components": [
+   "c_t",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "t",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_aa",
+  "letter": "தா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tā",
+  "components": [
+   "c_t",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "t",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_i",
+  "letter": "தி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ti",
+  "components": [
+   "c_t",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "t",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_ii",
+  "letter": "தீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tī",
+  "components": [
+   "c_t",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "t",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_u",
+  "letter": "து",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tu",
+  "components": [
+   "c_t",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "t",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_uu",
+  "letter": "தூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tū",
+  "components": [
+   "c_t",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "t",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_e",
+  "letter": "தெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "te",
+  "components": [
+   "c_t",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "t",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_ee",
+  "letter": "தே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tē",
+  "components": [
+   "c_t",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "t",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_ai",
+  "letter": "தை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tai",
+  "components": [
+   "c_t",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "t",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_o",
+  "letter": "தொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "to",
+  "components": [
+   "c_t",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "t",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_oo",
+  "letter": "தோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tō",
+  "components": [
+   "c_t",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "t",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_t_au",
+  "letter": "தௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "tau",
+  "components": [
+   "c_t",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "t",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "dental stop",
+  "codepoints": [
+   "U+0BA4",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_a",
+  "letter": "ந",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "na",
+  "components": [
+   "c_n",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "n",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_aa",
+  "letter": "நா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nā",
+  "components": [
+   "c_n",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "n",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_i",
+  "letter": "நி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ni",
+  "components": [
+   "c_n",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "n",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_ii",
+  "letter": "நீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nī",
+  "components": [
+   "c_n",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "n",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_u",
+  "letter": "நு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nu",
+  "components": [
+   "c_n",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "n",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_uu",
+  "letter": "நூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nū",
+  "components": [
+   "c_n",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "n",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_e",
+  "letter": "நெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ne",
+  "components": [
+   "c_n",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "n",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_ee",
+  "letter": "நே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nē",
+  "components": [
+   "c_n",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "n",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_ai",
+  "letter": "நை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nai",
+  "components": [
+   "c_n",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "n",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_o",
+  "letter": "நொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "no",
+  "components": [
+   "c_n",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "n",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_oo",
+  "letter": "நோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nō",
+  "components": [
+   "c_n",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "n",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_n_au",
+  "letter": "நௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "nau",
+  "components": [
+   "c_n",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "n",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "dental nasal",
+  "codepoints": [
+   "U+0BA8",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_a",
+  "letter": "ப",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pa",
+  "components": [
+   "c_p",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "p",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_aa",
+  "letter": "பா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pā",
+  "components": [
+   "c_p",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "p",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_i",
+  "letter": "பி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pi",
+  "components": [
+   "c_p",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "p",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_ii",
+  "letter": "பீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pī",
+  "components": [
+   "c_p",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "p",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_u",
+  "letter": "பு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pu",
+  "components": [
+   "c_p",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "p",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_uu",
+  "letter": "பூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pū",
+  "components": [
+   "c_p",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "p",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_e",
+  "letter": "பெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pe",
+  "components": [
+   "c_p",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "p",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_ee",
+  "letter": "பே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pē",
+  "components": [
+   "c_p",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "p",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_ai",
+  "letter": "பை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pai",
+  "components": [
+   "c_p",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "p",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_o",
+  "letter": "பொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "po",
+  "components": [
+   "c_p",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "p",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_oo",
+  "letter": "போ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pō",
+  "components": [
+   "c_p",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "p",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_p_au",
+  "letter": "பௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "pau",
+  "components": [
+   "c_p",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "p",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "labial stop",
+  "codepoints": [
+   "U+0BAA",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_a",
+  "letter": "ம",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ma",
+  "components": [
+   "c_m",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "m",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_aa",
+  "letter": "மா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mā",
+  "components": [
+   "c_m",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "m",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_i",
+  "letter": "மி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mi",
+  "components": [
+   "c_m",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "m",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_ii",
+  "letter": "மீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mī",
+  "components": [
+   "c_m",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "m",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_u",
+  "letter": "மு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mu",
+  "components": [
+   "c_m",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "m",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_uu",
+  "letter": "மூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mū",
+  "components": [
+   "c_m",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "m",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_e",
+  "letter": "மெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "me",
+  "components": [
+   "c_m",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "m",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_ee",
+  "letter": "மே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mē",
+  "components": [
+   "c_m",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "m",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_ai",
+  "letter": "மை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mai",
+  "components": [
+   "c_m",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "m",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_o",
+  "letter": "மொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mo",
+  "components": [
+   "c_m",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "m",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_oo",
+  "letter": "மோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mō",
+  "components": [
+   "c_m",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "m",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_m_au",
+  "letter": "மௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "mau",
+  "components": [
+   "c_m",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "m",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "labial nasal",
+  "codepoints": [
+   "U+0BAE",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_a",
+  "letter": "ய",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ya",
+  "components": [
+   "c_y",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "y",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_aa",
+  "letter": "யா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yā",
+  "components": [
+   "c_y",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "y",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_i",
+  "letter": "யி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yi",
+  "components": [
+   "c_y",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "y",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_ii",
+  "letter": "யீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yī",
+  "components": [
+   "c_y",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "y",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_u",
+  "letter": "யு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yu",
+  "components": [
+   "c_y",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "y",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_uu",
+  "letter": "யூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yū",
+  "components": [
+   "c_y",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "y",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_e",
+  "letter": "யெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ye",
+  "components": [
+   "c_y",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "y",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_ee",
+  "letter": "யே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yē",
+  "components": [
+   "c_y",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "y",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_ai",
+  "letter": "யை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yai",
+  "components": [
+   "c_y",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "y",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_o",
+  "letter": "யொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yo",
+  "components": [
+   "c_y",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "y",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_oo",
+  "letter": "யோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yō",
+  "components": [
+   "c_y",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "y",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_y_au",
+  "letter": "யௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "yau",
+  "components": [
+   "c_y",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "y",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "palatal approximant",
+  "codepoints": [
+   "U+0BAF",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_a",
+  "letter": "ர",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ra",
+  "components": [
+   "c_r",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "r",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_aa",
+  "letter": "ரா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "rā",
+  "components": [
+   "c_r",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "r",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_i",
+  "letter": "ரி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ri",
+  "components": [
+   "c_r",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "r",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_ii",
+  "letter": "ரீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "rī",
+  "components": [
+   "c_r",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "r",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_u",
+  "letter": "ரு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ru",
+  "components": [
+   "c_r",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "r",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_uu",
+  "letter": "ரூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "rū",
+  "components": [
+   "c_r",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "r",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_e",
+  "letter": "ரெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "re",
+  "components": [
+   "c_r",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "r",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_ee",
+  "letter": "ரே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "rē",
+  "components": [
+   "c_r",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "r",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_ai",
+  "letter": "ரை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "rai",
+  "components": [
+   "c_r",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "r",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_o",
+  "letter": "ரொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ro",
+  "components": [
+   "c_r",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "r",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_oo",
+  "letter": "ரோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "rō",
+  "components": [
+   "c_r",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "r",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_r_au",
+  "letter": "ரௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "rau",
+  "components": [
+   "c_r",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "r",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar tap",
+  "codepoints": [
+   "U+0BB0",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_a",
+  "letter": "ல",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "la",
+  "components": [
+   "c_l",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "l",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_aa",
+  "letter": "லா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lā",
+  "components": [
+   "c_l",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "l",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_i",
+  "letter": "லி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "li",
+  "components": [
+   "c_l",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "l",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_ii",
+  "letter": "லீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lī",
+  "components": [
+   "c_l",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "l",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_u",
+  "letter": "லு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lu",
+  "components": [
+   "c_l",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "l",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_uu",
+  "letter": "லூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lū",
+  "components": [
+   "c_l",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "l",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_e",
+  "letter": "லெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "le",
+  "components": [
+   "c_l",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "l",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_ee",
+  "letter": "லே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lē",
+  "components": [
+   "c_l",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "l",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_ai",
+  "letter": "லை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lai",
+  "components": [
+   "c_l",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "l",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_o",
+  "letter": "லொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lo",
+  "components": [
+   "c_l",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "l",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_oo",
+  "letter": "லோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lō",
+  "components": [
+   "c_l",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "l",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_l_au",
+  "letter": "லௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "lau",
+  "components": [
+   "c_l",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "l",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "alveolar lateral",
+  "codepoints": [
+   "U+0BB2",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_a",
+  "letter": "வ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "va",
+  "components": [
+   "c_v",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "v",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_aa",
+  "letter": "வா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vā",
+  "components": [
+   "c_v",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "v",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_i",
+  "letter": "வி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vi",
+  "components": [
+   "c_v",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "v",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_ii",
+  "letter": "வீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vī",
+  "components": [
+   "c_v",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "v",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_u",
+  "letter": "வு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vu",
+  "components": [
+   "c_v",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "v",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_uu",
+  "letter": "வூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vū",
+  "components": [
+   "c_v",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "v",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_e",
+  "letter": "வெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ve",
+  "components": [
+   "c_v",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "v",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_ee",
+  "letter": "வே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vē",
+  "components": [
+   "c_v",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "v",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_ai",
+  "letter": "வை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vai",
+  "components": [
+   "c_v",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "v",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_o",
+  "letter": "வொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vo",
+  "components": [
+   "c_v",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "v",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_oo",
+  "letter": "வோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vō",
+  "components": [
+   "c_v",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "v",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_v_au",
+  "letter": "வௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "vau",
+  "components": [
+   "c_v",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "v",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "labiodental approximant",
+  "codepoints": [
+   "U+0BB5",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_a",
+  "letter": "ழ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻa",
+  "components": [
+   "c_zh",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "zh",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_aa",
+  "letter": "ழா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻā",
+  "components": [
+   "c_zh",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "zh",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_i",
+  "letter": "ழி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻi",
+  "components": [
+   "c_zh",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "zh",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_ii",
+  "letter": "ழீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻī",
+  "components": [
+   "c_zh",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "zh",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_u",
+  "letter": "ழு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻu",
+  "components": [
+   "c_zh",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "zh",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_uu",
+  "letter": "ழூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻū",
+  "components": [
+   "c_zh",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "zh",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_e",
+  "letter": "ழெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻe",
+  "components": [
+   "c_zh",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "zh",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_ee",
+  "letter": "ழே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻē",
+  "components": [
+   "c_zh",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "zh",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_ai",
+  "letter": "ழை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻai",
+  "components": [
+   "c_zh",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "zh",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_o",
+  "letter": "ழொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻo",
+  "components": [
+   "c_zh",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "zh",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_oo",
+  "letter": "ழோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻō",
+  "components": [
+   "c_zh",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "zh",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_zh_au",
+  "letter": "ழௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḻau",
+  "components": [
+   "c_zh",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "zh",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex approximant",
+  "codepoints": [
+   "U+0BB4",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_a",
+  "letter": "ள",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷa",
+  "components": [
+   "c_ll",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "ll",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_aa",
+  "letter": "ளா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷā",
+  "components": [
+   "c_ll",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "ll",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_i",
+  "letter": "ளி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷi",
+  "components": [
+   "c_ll",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "ll",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_ii",
+  "letter": "ளீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷī",
+  "components": [
+   "c_ll",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "ll",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_u",
+  "letter": "ளு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷu",
+  "components": [
+   "c_ll",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "ll",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_uu",
+  "letter": "ளூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷū",
+  "components": [
+   "c_ll",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "ll",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_e",
+  "letter": "ளெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷe",
+  "components": [
+   "c_ll",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "ll",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_ee",
+  "letter": "ளே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷē",
+  "components": [
+   "c_ll",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "ll",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_ai",
+  "letter": "ளை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷai",
+  "components": [
+   "c_ll",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "ll",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_o",
+  "letter": "ளொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷo",
+  "components": [
+   "c_ll",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "ll",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_oo",
+  "letter": "ளோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷō",
+  "components": [
+   "c_ll",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "ll",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_ll_au",
+  "letter": "ளௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ḷau",
+  "components": [
+   "c_ll",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "ll",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "idaiyinam",
+  "articulation": "retroflex lateral",
+  "codepoints": [
+   "U+0BB3",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_a",
+  "letter": "ற",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟa",
+  "components": [
+   "c_rr",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "rr",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_aa",
+  "letter": "றா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟā",
+  "components": [
+   "c_rr",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "rr",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_i",
+  "letter": "றி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟi",
+  "components": [
+   "c_rr",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "rr",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_ii",
+  "letter": "றீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟī",
+  "components": [
+   "c_rr",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "rr",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_u",
+  "letter": "று",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟu",
+  "components": [
+   "c_rr",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "rr",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_uu",
+  "letter": "றூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟū",
+  "components": [
+   "c_rr",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "rr",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_e",
+  "letter": "றெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟe",
+  "components": [
+   "c_rr",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "rr",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_ee",
+  "letter": "றே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟē",
+  "components": [
+   "c_rr",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "rr",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_ai",
+  "letter": "றை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟai",
+  "components": [
+   "c_rr",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "rr",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_o",
+  "letter": "றொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟo",
+  "components": [
+   "c_rr",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "rr",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_oo",
+  "letter": "றோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟō",
+  "components": [
+   "c_rr",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "rr",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_rr_au",
+  "letter": "றௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṟau",
+  "components": [
+   "c_rr",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "rr",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "vallinam",
+  "articulation": "alveolar trill",
+  "codepoints": [
+   "U+0BB1",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_a",
+  "letter": "ன",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉa",
+  "components": [
+   "c_nnn",
+   "v_a"
+  ],
+  "vowel": "a",
+  "consonant": "nnn",
+  "length": "short",
+  "sign_position": "none",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_aa",
+  "letter": "னா",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉā",
+  "components": [
+   "c_nnn",
+   "v_aa"
+  ],
+  "vowel": "aa",
+  "consonant": "nnn",
+  "length": "long",
+  "sign_position": "right",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BBE"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_i",
+  "letter": "னி",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉi",
+  "components": [
+   "c_nnn",
+   "v_i"
+  ],
+  "vowel": "i",
+  "consonant": "nnn",
+  "length": "short",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BBF"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_ii",
+  "letter": "னீ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉī",
+  "components": [
+   "c_nnn",
+   "v_ii"
+  ],
+  "vowel": "ii",
+  "consonant": "nnn",
+  "length": "long",
+  "sign_position": "above",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_u",
+  "letter": "னு",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉu",
+  "components": [
+   "c_nnn",
+   "v_u"
+  ],
+  "vowel": "u",
+  "consonant": "nnn",
+  "length": "short",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BC1"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_uu",
+  "letter": "னூ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉū",
+  "components": [
+   "c_nnn",
+   "v_uu"
+  ],
+  "vowel": "uu",
+  "consonant": "nnn",
+  "length": "long",
+  "sign_position": "ligature",
+  "irregular": true,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BC2"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_e",
+  "letter": "னெ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉe",
+  "components": [
+   "c_nnn",
+   "v_e"
+  ],
+  "vowel": "e",
+  "consonant": "nnn",
+  "length": "short",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BC6"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_ee",
+  "letter": "னே",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉē",
+  "components": [
+   "c_nnn",
+   "v_ee"
+  ],
+  "vowel": "ee",
+  "consonant": "nnn",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BC7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_ai",
+  "letter": "னை",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉai",
+  "components": [
+   "c_nnn",
+   "v_ai"
+  ],
+  "vowel": "ai",
+  "consonant": "nnn",
+  "length": "long",
+  "sign_position": "left",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BC8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_o",
+  "letter": "னொ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉo",
+  "components": [
+   "c_nnn",
+   "v_o"
+  ],
+  "vowel": "o",
+  "consonant": "nnn",
+  "length": "short",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BCA"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_oo",
+  "letter": "னோ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉō",
+  "components": [
+   "c_nnn",
+   "v_oo"
+  ],
+  "vowel": "oo",
+  "consonant": "nnn",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BCB"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "cv_nnn_au",
+  "letter": "னௌ",
+  "category": "compound",
+  "tamil_name": null,
+  "romanization": "ṉau",
+  "components": [
+   "c_nnn",
+   "v_au"
+  ],
+  "vowel": "au",
+  "consonant": "nnn",
+  "length": "long",
+  "sign_position": "both",
+  "irregular": false,
+  "consonant_class": "mellinam",
+  "articulation": "alveolar nasal",
+  "codepoints": [
+   "U+0BA9",
+   "U+0BCC"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "g_ja",
+  "letter": "ஜ",
+  "category": "grantha",
+  "tamil_name": null,
+  "romanization": "ja",
+  "components": [],
+  "vowel": null,
+  "consonant": null,
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": "palatal stop (voiced)",
+  "codepoints": [
+   "U+0B9C"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "g_ssa",
+  "letter": "ஷ",
+  "category": "grantha",
+  "tamil_name": null,
+  "romanization": "ṣa",
+  "components": [],
+  "vowel": null,
+  "consonant": null,
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": "retroflex fricative",
+  "codepoints": [
+   "U+0BB7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "g_sa",
+  "letter": "ஸ",
+  "category": "grantha",
+  "tamil_name": null,
+  "romanization": "sa",
+  "components": [],
+  "vowel": null,
+  "consonant": null,
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": "alveolar fricative",
+  "codepoints": [
+   "U+0BB8"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "g_ha",
+  "letter": "ஹ",
+  "category": "grantha",
+  "tamil_name": null,
+  "romanization": "ha",
+  "components": [],
+  "vowel": null,
+  "consonant": null,
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": "glottal fricative",
+  "codepoints": [
+   "U+0BB9"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "g_ksa",
+  "letter": "க்ஷ",
+  "category": "grantha",
+  "tamil_name": null,
+  "romanization": "kṣa",
+  "components": [],
+  "vowel": null,
+  "consonant": null,
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": "velar stop + retroflex fricative",
+  "codepoints": [
+   "U+0B95",
+   "U+0BCD",
+   "U+0BB7"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ },
+ {
+  "id": "g_sri",
+  "letter": "ஸ்ரீ",
+  "category": "grantha",
+  "tamil_name": null,
+  "romanization": "śrī",
+  "components": [],
+  "vowel": null,
+  "consonant": null,
+  "length": null,
+  "sign_position": null,
+  "irregular": false,
+  "consonant_class": null,
+  "articulation": "ligature (ś + r + ī)",
+  "codepoints": [
+   "U+0BB8",
+   "U+0BCD",
+   "U+0BB0",
+   "U+0BC0"
+  ],
+  "audio": null,
+  "stroke_order": null,
+  "needs_review": true
+ }
+]
