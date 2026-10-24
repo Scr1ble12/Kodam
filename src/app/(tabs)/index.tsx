@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { ContinueLesson } from '../../components/ContinueLesson';
 import { GRID_PAD, LetterGrid, MAX_WIDTH } from '../../components/LetterGrid';
 import { NameModal } from '../../components/NameModal';
 import { Icon, IconButton, PrimaryButton, Segmented, T } from '../../components/ui';
@@ -79,6 +80,10 @@ export default function AlphabetScreen() {
               </T>
             </Pressable>
           </View>
+        </View>
+
+        <View style={{ paddingHorizontal: GRID_PAD, paddingBottom: 14 }}>
+          <ContinueLesson />
         </View>
 
         <View style={styles.listsBlock}>

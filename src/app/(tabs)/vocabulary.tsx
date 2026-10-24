@@ -2,6 +2,7 @@ import { router } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { ContinueLesson } from '../../components/ContinueLesson';
 import { Icon, PrimaryButton, T } from '../../components/ui';
 import { useProgress } from '../../lib/progress';
 import { useTheme } from '../../lib/theme';
@@ -67,6 +68,8 @@ export default function VocabularyScreen() {
             </T>
           )}
         </View>
+
+        <ContinueLesson />
 
         <View style={styles.sectionHead}>
           <T size={17} weight="bold">
