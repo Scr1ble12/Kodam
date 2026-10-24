@@ -24,7 +24,7 @@ An app that teaches the Tamil script first, then vocabulary, with spaced repetit
    - Easy customization: pick exactly which letters to drill
 2. **Vocabulary**, with the same level of customization (choose decks, build custom decks)
 3. **Lessons / teaching** built into the app
-4. **Clean, simple layout:** three tabs only (Alphabet · Vocabulary · Settings)
+4. **Clean, simple layout:** four tabs (Alphabet · Lessons · Vocabulary · Settings). Lessons became its own tab on 2026-10-24 at Aj's request.
 5. **Customizable look:** themes, accent color, font, letter size
 6. **Streak counter**
 7. **Practice reminders** (alphabet, vocab, or both)

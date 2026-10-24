@@ -40,7 +40,6 @@ function Root() {
         <Stack.Screen name="stats" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="reminder" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="review" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
-        <Stack.Screen name="lessons" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="lesson" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
         <Stack.Screen name="deck" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="deck-edit" options={{ animation: 'slide_from_bottom' }} />

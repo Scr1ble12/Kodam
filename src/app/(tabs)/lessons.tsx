@@ -1,36 +1,68 @@
 import { router } from 'expo-router';
 import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Icon, IconButton, Screen, T } from '../components/ui';
-import { LESSONS, UNITS } from '../data/lessons';
-import { useLessons } from '../lib/lessons';
-import { useTheme } from '../lib/theme';
+import { Icon, PrimaryButton, T } from '../../components/ui';
+import { LESSONS, UNITS, unitOf } from '../../data/lessons';
+import { useLessons } from '../../lib/lessons';
+import { useProgress } from '../../lib/progress';
+import { useTheme } from '../../lib/theme';
 
-/** The lesson path: every unit and lesson, in order. Any lesson can be opened. */
+/** The Lessons tab: the next lesson up top, then every unit and lesson in order. Any lesson can be opened. */
 export default function LessonsScreen() {
   const { colors } = useTheme();
+  const progress = useProgress();
   const { done, next } = useLessons();
   const finished = LESSONS.filter((l) => done[l.id]).length;
-  const close = () => (router.canGoBack() ? router.back() : router.replace('/'));
+  const nextUnit = next && unitOf(next.id);
 
   return (
-    <Screen>
+    <SafeAreaView edges={['top']} style={[styles.screen, { backgroundColor: colors.bg }]}>
       <ScrollView contentContainerStyle={styles.column}>
-        <View style={styles.top}>
-          <IconButton label="Close lessons" onPress={close}>
-            <Icon.Close color={colors.ink} />
-          </IconButton>
+        <View style={styles.header}>
+          <View>
+            <T size={13} tone="muted">
+              பாடங்கள்
+            </T>
+            <T size={30} weight="bold" style={{ lineHeight: 36 }}>
+              Lessons
+            </T>
+            <T size={13} tone="muted">
+              {finished} of {LESSONS.length} done · about 3 minutes each
+            </T>
+          </View>
+          <Pressable
+            accessibilityRole="button"
+            accessibilityLabel={`${progress.streak} day streak, see your stats`}
+            onPress={() => router.push('/stats')}
+            style={({ pressed }) => [styles.streak, { backgroundColor: colors.streakBg, opacity: pressed ? 0.7 : 1 }]}
+          >
+            <Icon.Flame color={colors.streakInk} />
+            <T size={15} weight="bold" style={{ color: colors.streakInk }}>
+              {progress.streak}
+            </T>
+            <T size={13} style={{ color: colors.streakInk }}>
+              {progress.streak === 1 ? 'day' : 'days'}
+            </T>
+          </Pressable>
         </View>
-        <View>
-          <T size={13} tone="muted">
-            பாடங்கள்
+
+        <View style={[styles.hero, { backgroundColor: colors.surface, borderColor: colors.line }]}>
+          <T size={13} weight="bold" tone="accent" style={{ letterSpacing: 0.8 }}>
+            {next ? (finished ? 'UP NEXT' : 'START HERE') : 'ALL DONE'}
           </T>
-          <T size={30} weight="bold" style={{ lineHeight: 36 }}>
-            Lessons
+          <T size={22} weight="bold">
+            {next ? next.title : 'You finished every lesson'}
           </T>
-          <T size={13} tone="muted">
-            {finished} of {LESSONS.length} done · each takes about 3 minutes
+          <T size={14} tone="muted">
+            {next ? `Lesson ${LESSONS.indexOf(next) + 1} · ${nextUnit?.title} · ${next.summary}` : 'More are on the way. Replay any lesson below.'}
           </T>
+          {next && (
+            <PrimaryButton
+              label={finished ? 'Continue' : 'Start the first lesson'}
+              onPress={() => router.push({ pathname: '/lesson', params: { id: next.id } })}
+            />
+          )}
         </View>
 
         {UNITS.map((unit, u) => (
@@ -103,13 +135,16 @@ export default function LessonsScreen() {
           Lessons teach the letters and words you then practice in your daily reviews.
         </T>
       </ScrollView>
-    </Screen>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  column: { width: '100%', maxWidth: 560, alignSelf: 'center', padding: 20, paddingTop: 8, gap: 18 },
-  top: { flexDirection: 'row' },
+  screen: { flex: 1 },
+  column: { width: '100%', maxWidth: 560, alignSelf: 'center', paddingHorizontal: 20, paddingTop: 16, paddingBottom: 32, gap: 18 },
+  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-end' },
+  streak: { flexDirection: 'row', alignItems: 'center', gap: 6, paddingHorizontal: 12, minHeight: 44, borderRadius: 999 },
+  hero: { borderRadius: 20, borderWidth: 1, padding: 16, gap: 8 },
   unitHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' },
   card: { borderRadius: 16, borderWidth: 1, paddingHorizontal: 14, paddingVertical: 14 },
   row: { flexDirection: 'row', alignItems: 'flex-start', gap: 12 },
