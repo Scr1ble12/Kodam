@@ -7,6 +7,7 @@ import { Icon, IconButton, PrimaryButton, Screen, T } from '../components/ui';
 import { stageLevel, useProgress } from '../lib/progress';
 import { speakTamil } from '../lib/speech';
 import { useTheme } from '../lib/theme';
+import { useUnlock } from '../lib/unlock';
 import { deckProgress, useVocab } from '../lib/vocab';
 
 /** One deck: its words, whether it's in the daily review, and a button to study it now. */
@@ -16,12 +17,14 @@ export default function DeckScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const { decks, isActive, setActive, removeDeck } = useVocab();
   const [deleting, setDeleting] = useState(false);
+  const { isDeckLocked } = useUnlock();
   const deck = decks.find((d) => d.id === id);
   if (!deck) return <Redirect href="/vocabulary" />;
 
   const close = () => (router.canGoBack() ? router.back() : router.replace('/vocabulary'));
   const { started, mastered, total } = deckProgress(deck.words, progress.get, progress.stage);
-  const on = isActive(deck.id);
+  const locked = !deck.custom && isDeckLocked(deck.id);
+  const on = isActive(deck.id) && !locked;
 
   return (
     <Screen>
@@ -53,26 +56,43 @@ export default function DeckScreen() {
           </T>
         </View>
 
-        <View style={[styles.card, styles.row, { backgroundColor: colors.surface, borderColor: colors.line }]}>
-          <View style={{ flex: 1 }}>
-            <T size={15}>In my daily review</T>
-            <T size={12} tone="muted">
-              New words from this deck show up in Today, a few each day.
+        {locked ? (
+          <View style={[styles.card, styles.locked, { backgroundColor: colors.surface, borderColor: colors.accent }]}>
+            <View style={styles.lockedHead}>
+              <Icon.Lock color={colors.accent} />
+              <T size={15} weight="bold">
+                Part of the Full Unlock
+              </T>
+            </View>
+            <T size={13} tone="muted">
+              Look through the words below and tap one to hear it. The unlock adds this deck to your reviews, along with every other deck and lesson.
             </T>
+            <PrimaryButton label="See the Full Unlock" onPress={() => router.push('/unlock')} />
           </View>
-          <Switch
-            value={on}
-            onValueChange={(v) => setActive(deck.id, v)}
-            trackColor={{ true: colors.accent, false: colors.line }}
-            accessibilityLabel="In my daily review"
-          />
-        </View>
+        ) : (
+          <>
+            <View style={[styles.card, styles.row, { backgroundColor: colors.surface, borderColor: colors.line }]}>
+              <View style={{ flex: 1 }}>
+                <T size={15}>In my daily review</T>
+                <T size={12} tone="muted">
+                  New words from this deck show up in Today, a few each day.
+                </T>
+              </View>
+              <Switch
+                value={on}
+                onValueChange={(v) => setActive(deck.id, v)}
+                trackColor={{ true: colors.accent, false: colors.line }}
+                accessibilityLabel="In my daily review"
+              />
+            </View>
 
-        <PrimaryButton
-          label={total ? 'Study this deck now' : 'Add words to study'}
-          disabled={!total}
-          onPress={() => router.push({ pathname: '/review', params: { deck: deck.id } })}
-        />
+            <PrimaryButton
+              label={total ? 'Study this deck now' : 'Add words to study'}
+              disabled={!total}
+              onPress={() => router.push({ pathname: '/review', params: { deck: deck.id } })}
+            />
+          </>
+        )}
 
         <View style={[styles.card, { backgroundColor: colors.surface, borderColor: colors.line }]}>
           {deck.words.map((w, i) => {
@@ -156,5 +176,7 @@ const styles = StyleSheet.create({
   word: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 10 },
   dots: { flexDirection: 'row', gap: 3 },
   dot: { width: 6, height: 6, borderRadius: 3 },
+  locked: { gap: 10, paddingVertical: 14 },
+  lockedHead: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   delete: { minHeight: 48, borderRadius: 14, borderWidth: 1.5, alignItems: 'center', justifyContent: 'center' },
 });

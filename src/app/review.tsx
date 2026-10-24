@@ -11,6 +11,7 @@ import { useProgress } from '../lib/progress';
 import type { Direction, LetterProgress } from '../lib/progress';
 import { showRoman } from '../lib/roman';
 import { useTheme } from '../lib/theme';
+import { useUnlock } from '../lib/unlock';
 import { useToday, useVocab } from '../lib/vocab';
 
 /** For words, letterToSound is Tamil → English and soundToLetter is English → Tamil. */
@@ -82,13 +83,17 @@ export default function ReviewScreen() {
   const { decks } = useVocab();
   const today = useToday();
   const params = useLocalSearchParams<{ today?: string; deck?: string }>();
-  const deck = decks.find((d) => d.id === params.deck);
+  const { isDeckLocked, isWordLocked } = useUnlock();
+  const found = decks.find((d) => d.id === params.deck);
+  const deck = found && (found.custom || !isDeckLocked(found.id)) ? found : undefined;
 
   const [items, setItems] = useState<Item[]>(() => {
     if (deck) {
       const get = (w: Word) => progress.get(w.id);
-      const fresh = deck.words.filter((w) => get(w).seen === 0).slice(0, DECK_NEW);
-      const review = deck.words
+      // A custom deck can hold words from topics that are part of the Full Unlock; those are skipped.
+      const words = deck.words.filter((w) => !isWordLocked(w.id));
+      const fresh = words.filter((w) => get(w).seen === 0).slice(0, DECK_NEW);
+      const review = words
         .filter((w) => get(w).seen > 0)
         .sort((a, b) => get(a).due - get(b).due || get(a).rung - get(b).rung)
         .slice(0, Math.max(DECK_SESSION - fresh.length, 0));

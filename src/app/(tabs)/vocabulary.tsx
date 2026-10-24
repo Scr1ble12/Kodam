@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Icon, PrimaryButton, T } from '../../components/ui';
 import { useProgress } from '../../lib/progress';
 import { useTheme } from '../../lib/theme';
+import { useUnlock } from '../../lib/unlock';
 import { deckProgress, useToday, useVocab } from '../../lib/vocab';
 import type { AnyDeck } from '../../lib/vocab';
 
@@ -107,7 +108,9 @@ function DeckRow({ deck }: { deck: AnyDeck }) {
   const { colors } = useTheme();
   const progress = useProgress();
   const { isActive } = useVocab();
-  const on = isActive(deck.id);
+  const { isDeckLocked } = useUnlock();
+  const locked = !deck.custom && isDeckLocked(deck.id);
+  const on = isActive(deck.id) && !locked;
   const { started, total } = deckProgress(deck.words, progress.get, progress.stage);
   // A short word fits the tile without being cut off; very short ones (like டீ) look lost in it.
   const sample =
@@ -116,7 +119,7 @@ function DeckRow({ deck }: { deck: AnyDeck }) {
   return (
     <Pressable
       accessibilityRole="button"
-      accessibilityLabel={`${deck.name}, ${started} of ${total} words started${on ? ', in daily review' : ''}`}
+      accessibilityLabel={`${deck.name}, ${started} of ${total} words started${on ? ', in daily review' : ''}${locked ? ', part of the Full Unlock' : ''}`}
       onPress={() => router.push({ pathname: '/deck', params: { id: deck.id } })}
       style={({ pressed }) => [
         styles.deck,
@@ -154,6 +157,8 @@ function DeckRow({ deck }: { deck: AnyDeck }) {
             ✓
           </T>
         </View>
+      ) : locked ? (
+        <Icon.Lock color={colors.muted} />
       ) : (
         <Icon.Chevron color={colors.muted} />
       )}

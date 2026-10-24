@@ -6,21 +6,24 @@ import { ListsProvider } from '../lib/lists';
 import { ProgressProvider } from '../lib/progress';
 import { RemindersProvider } from '../lib/reminders';
 import { ThemeProvider, useTheme } from '../lib/theme';
+import { UnlockProvider } from '../lib/unlock';
 import { VocabProvider } from '../lib/vocab';
 
 export default function RootLayout() {
   return (
     <ThemeProvider>
       <ProgressProvider>
-        <ListsProvider>
-          <VocabProvider>
-            <LessonsProvider>
-              <RemindersProvider>
-                <Root />
-              </RemindersProvider>
-            </LessonsProvider>
-          </VocabProvider>
-        </ListsProvider>
+        <UnlockProvider>
+          <ListsProvider>
+            <VocabProvider>
+              <LessonsProvider>
+                <RemindersProvider>
+                  <Root />
+                </RemindersProvider>
+              </LessonsProvider>
+            </VocabProvider>
+          </ListsProvider>
+        </UnlockProvider>
       </ProgressProvider>
     </ThemeProvider>
   );
@@ -41,6 +44,7 @@ function Root() {
         <Stack.Screen name="reminder" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="review" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
         <Stack.Screen name="lesson" options={{ animation: 'slide_from_bottom', gestureEnabled: false }} />
+        <Stack.Screen name="unlock" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="deck" options={{ animation: 'slide_from_bottom' }} />
         <Stack.Screen name="deck-edit" options={{ animation: 'slide_from_bottom' }} />
       </Stack>

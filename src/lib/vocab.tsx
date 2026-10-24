@@ -7,6 +7,7 @@ import type { Word } from '../data/words';
 import { dayKey, useProgress } from './progress';
 import type { LetterProgress } from './progress';
 import { useTheme } from './theme';
+import { useUnlock } from './unlock';
 
 /** A deck the learner built from words in any topic. */
 export type CustomDeck = { id: string; name: string; wordIds: string[] };
@@ -103,6 +104,7 @@ export function useToday() {
   const { decks, isActive } = useVocab();
   const progress = useProgress();
   const { settings } = useTheme();
+  const { isWordLocked } = useUnlock();
   return useMemo(() => {
     const now = Date.now();
     const seenIds = new Set<string>();
@@ -110,7 +112,7 @@ export function useToday() {
     for (const d of decks) {
       if (!isActive(d.id)) continue;
       for (const w of d.words) {
-        if (seenIds.has(w.id)) continue;
+        if (seenIds.has(w.id) || isWordLocked(w.id)) continue;
         seenIds.add(w.id);
         words.push(w);
       }
@@ -123,7 +125,7 @@ export function useToday() {
     // About 10 seconds per review question; a new word is an intro card plus a question.
     const minutes = Math.max(1, Math.round(((due.length + fresh.length * 2) * 10) / 60));
     return { due, fresh, minutes, activeCount: words.length, unseenLeft: unseen.length };
-  }, [decks, isActive, progress, settings.newWords]);
+  }, [decks, isActive, progress, settings.newWords, isWordLocked]);
 }
 
 /** Started / mastered counts for a set of words. */

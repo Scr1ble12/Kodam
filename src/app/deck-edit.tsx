@@ -4,6 +4,7 @@ import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native
 
 import { Icon, IconButton, PrimaryButton, Screen, T } from '../components/ui';
 import { DECKS } from '../data/words';
+import { useUnlock } from '../lib/unlock';
 import { useTheme } from '../lib/theme';
 import { useVocab } from '../lib/vocab';
 
@@ -19,6 +20,7 @@ export default function DeckEditScreen() {
     Object.fromEntries((existing?.wordIds ?? []).map((w) => [w, true])),
   );
   const [open, setOpen] = useState<string | null>(DECKS[0].id);
+  const { isDeckLocked } = useUnlock();
   const chosen = DECKS.flatMap((d) => d.words).filter((w) => picked[w.id]).map((w) => w.id);
   const close = () => (router.canGoBack() ? router.back() : router.replace('/vocabulary'));
 
@@ -64,13 +66,14 @@ export default function DeckEditScreen() {
           {DECKS.map((deck) => {
             const count = deck.words.filter((w) => picked[w.id]).length;
             const all = count === deck.words.length;
-            const expanded = open === deck.id;
+            const locked = isDeckLocked(deck.id);
+            const expanded = open === deck.id && !locked;
             return (
               <View key={deck.id} style={[styles.topic, { backgroundColor: colors.surface, borderColor: colors.line }]}>
                 <Pressable
                   accessibilityRole="button"
                   accessibilityState={{ expanded }}
-                  onPress={() => setOpen(expanded ? null : deck.id)}
+                  onPress={() => (locked ? router.push('/unlock') : setOpen(expanded ? null : deck.id))}
                   style={styles.topicHead}
                 >
                   <View style={{ flex: 1 }}>
@@ -78,12 +81,20 @@ export default function DeckEditScreen() {
                       {deck.name}
                     </T>
                     <T size={12} tone="muted">
-                      {count ? `${count} of ${deck.words.length} picked` : `${deck.words.length} words`}
+                      {locked
+                        ? `${deck.words.length} words · Full Unlock`
+                        : count
+                          ? `${count} of ${deck.words.length} picked`
+                          : `${deck.words.length} words`}
                     </T>
                   </View>
-                  <View style={{ transform: [{ rotate: expanded ? '90deg' : '0deg' }] }}>
-                    <Icon.Chevron color={colors.muted} />
-                  </View>
+                  {locked ? (
+                    <Icon.Lock color={colors.muted} />
+                  ) : (
+                    <View style={{ transform: [{ rotate: expanded ? '90deg' : '0deg' }] }}>
+                      <Icon.Chevron color={colors.muted} />
+                    </View>
+                  )}
                 </Pressable>
                 {expanded && (
                   <>
