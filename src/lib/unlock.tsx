@@ -19,6 +19,8 @@ export const FREE_DECKS = ['greetings'];
 export const FREE_UNITS = ['vowels', 'consonants'];
 
 const STORAGE_KEY = 'tamil-app/unlock/v1';
+/** Personal builds (the "preview" profile in eas.json) open everything, so you can use the full app on your own phone. */
+const UNLOCK_ALL = process.env.EXPO_PUBLIC_UNLOCK_ALL === '1';
 
 /** Expo Go and the web have no store connection; purchases only work in a real (or development) build. */
 export const PURCHASES_SUPPORTED =
@@ -58,7 +60,7 @@ type UnlockContextValue = {
 const UnlockContext = createContext<UnlockContextValue | null>(null);
 
 export function UnlockProvider({ children }: { children: ReactNode }) {
-  const [unlocked, setUnlocked] = useState(false);
+  const [unlocked, setUnlocked] = useState(UNLOCK_ALL);
   const [price, setPrice] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
