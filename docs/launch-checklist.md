@@ -67,6 +67,17 @@ Install it from the link Expo gives you.
 
 In development builds, Settings → Full Unlock also has a **"Test: pretend unlocked"** switch, so you can see both the free and the unlocked app without paying. This switch does nothing in store builds.
 
+## Put the full app on your own iPhone
+
+A personal build works offline like any installed app. The "preview" profile in `eas.json` opens every deck and lesson, so you can use everything without the purchase.
+
+- **With the Apple Developer account (best):**
+  1. Register your iPhone: `eas device:create`, then open the link it shows on the phone.
+  2. Build: `eas build --profile preview --platform ios`.
+  3. Open the install link Expo gives you on the iPhone. Turn on Developer Mode if iOS asks (Settings → Privacy & Security). The build keeps working for up to a year.
+- **Without paying, if you have a Mac:** install Xcode, plug in the iPhone and run `EXPO_PUBLIC_UNLOCK_ALL=1 npx expo run:ios --device --configuration Release`. Sign in with your normal Apple ID when Xcode asks. Apple makes free installs stop opening after 7 days, so you'd re-run it weekly.
+- **No account and no Mac (works today):** open https://scr1ble12.github.io/Kodam/app/ in Safari on the iPhone, tap Share → **Add to Home Screen**, then open Kodam from its new icon once while online. After that it works offline, with everything open. Progress stays on that phone. Reminders and the purchase don't exist in this version, and read-aloud uses the iPhone's own Tamil voice. To update it after changing the app, run `npm run build:web`, then commit and merge the new `docs/app` folder.
+
 ## 7. Build and submit
 
 ```
