@@ -36,7 +36,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
-    "glyphs": "python3 scripts/generate-glyphs.py"
+    "glyphs": "python3 scripts/generate-glyphs.py",
+    "build:web": "node scripts/build-web.mjs"
   },
   "private": true
 }

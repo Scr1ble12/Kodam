@@ -34,3 +34,8 @@ letter(432, 0.44, WHITE).save('assets/android-icon-monochrome.png')
 letter(1024, 0.6, CREAM).save('assets/splash-icon.png')
 letter(48, 0.62, CREAM, TEAL).save('assets/favicon.png')
 print('icons written to assets/')
+# The home-screen web app (scripts/build-web.mjs) picks these up from public/.
+letter(180, 0.64, CREAM, TEAL).convert('RGB').save('public/apple-touch-icon.png')
+letter(192, 0.64, CREAM, TEAL).convert('RGB').save('public/icon-192.png')
+letter(512, 0.64, CREAM, TEAL).convert('RGB').save('public/icon-512.png')
+print('web app icons written to public/')
